@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body, body div, header, footer, article {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+      body {
+        width: 100%;
+        margin: 0;
+      }
+      p, a {
+        font-family: Lato, sans-serif;
+        line-height: 1.5em;
+        margin-top: 0;
+      }
+      h1, h2 {
+        font-family: "Lato Heavy", sans-serif;
+        font-weight: bold;
+      }
+      h1 {
+        text-align: center;
+        margin: 4rem 0 2.5rem;
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin: 1.5rem 0 .5rem;
+      }
+      header {
+        width: 100%;
+        height: 80vh;
+        background-image: url('assets/bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-around;
+      }
+      header img, header div {
+        width: 250px;
+      }
+      #heading-text img {
+        margin-top: 2rem;
+      }
+      #heading-text p {
+        margin-top: -.5rem;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      #resources {
+        background: white;
+        padding-bottom: .5rem;
+      }
+      #resources h1 {
+        font-size: 1.5rem;
+        margin: .5rem 0;
+      }
+      #resources a {
+        width: 90%;
+        font-size: 1.2rem;
+        margin: .5rem;
+      }
+      article {
+        max-width: 729px;
+      }
+      .bigtext {
+        margin: 0;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+      }
+      section::before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        width: 16rem;
+        height: .25rem;
+        background: #092596;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      section {
+        max-width: 680px;
+        margin: 4rem 0 0;
+      }
+      section h1 {
+        margin: 2rem 0 0;
+      }
+      footer {
+        width: 100%;
+        height: 50px;
+        background: #092596;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+      }
+      footer a {
+        color: white;
+        margin: 1rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="assets/logo_glyph.svg"/>
+        <div id="heading-text">
+          <img src="assets/logo_text.svg"/>
+          <p>Feb 29th - Mar 1st, 2020</p>
+        </div>
+      </div>
+      <div id="resources">
+        <h1>Resources</h1>
+        <a href="https://learn.marihacks.com">Hacker Booklet</a>
+        <a href="https://github.com/MariHacks/learnathon-2018f">Learnathon Material</a>
+      </div>
+    </header>
+
+    <article>
+      <h1>What is MariHacks?</h1>
+      <p class="bigtext">
+        MariHacks is a 24 hours long hackathon that will bring together
+        over 100 developers and technology enthusiasts to create
+        revolutionary software projects. Meet fellow hackers, learn new
+        technologies, and hone your skills alongside amazing mentors.
+        <br>
+        <br>
+        Whether you're making your first app or have lots of experience,
+        join us for an amazing day of hacking!
+      </p>
+
+      <section>
+        <h1>FAQ</h1>
+
+        <h2>Hacking?</h2>
+        <p>
+          "Hacking", in the context of a hackathon, means leisure and
+          exploratory programming. Don't worry, you won't be creating
+          malicious software or hacking the NSA!
+        </p>
+
+        <h2>What is a hackathon?</h2>
+        <p>
+          A hackathon is where you turn your crazy ideas into real
+          stuff. It is an event where beginner and experienced hackers
+          gather together to work on innovative solutions to real-world
+          problems. At MariHacks, you can look forward to amazing guest
+          speakers, helpful workshops, skilled mentors and, of course,
+          awesome hacking!
+        </p>
+
+        <h2>What if I don't know how to code?</h2>
+        <p>
+          Then you've come to the right place! We will have great
+          workshops for beginners as well as experienced mentors to help
+          you build something you can be proud of.
+        </p>
+
+        <h2>Is there a cost?</h2>
+        <p>
+          Nope! We provide meals, drinks, snacks, swag, workspace and
+          WiFi for the day.
+        </p>
+
+        <h2>Who can come?</h2>
+        <p>
+          MariHacks is open to all enrolled CEGEP and High School
+          students. This year we are mainly welcoming students from
+          Montreal, New York, and Boston.
+        </p>
+
+        <h2>How do teams work?</h2>
+        <p>
+          Teams have a maximum of 4 members. You can select your
+          teammates when you register or you can register individually
+          without specified teammates.
+        </p>
+
+        <h2>What if I don't have a team?</h2>
+        <p>
+          Don't worry! We will have team formation sessions at the
+          beginning of MariHacks so you can find some teammates!
+        </p>
+
+        <h2>What will I eat?</h2>
+        <p>
+          We will provide food, drinks and snacks including lunch and
+          dinner! We'll do our best to accommodate all allergies and
+          dietary restrictions.
+        </p>
+
+        <h2>What should I make?</h2>
+        <p>
+          Anything you want! You can come with an idea, or come up with
+          an idea at the hackathon. However, we ask that you only start
+          coding when the hackathon begins.
+        </p>
+
+        <h2>What should I bring?</h2>
+        <p>
+          All you need is a valid student ID card and a laptop!
+        </p>
+
+        <h2>Where is it?</h2>
+        <p>
+          MariHacks 2020 will be held at the Shopify offices in Downtown
+          Montreal.
+        </p>
+
+        <h2 style="text-align:center;">Have any other questions?</h2>
+        <p style="text-align:center;">
+          Please email
+          <a href="mailto:team@marihacks.com">team@marihacks.com</a>
+          and we'll be happy to help!
+        </p>
+      </section>
+
+      <section>
+        <h1>SOME OF OUR PAST GUESTS</h1>
+      </section>
+
+      <section>
+        <h1>SCHEDULE</h1>
+        <p class="bigtext">Coming Soon!</p>
+      </section>
+
+      <section>
+        <h1>PREVIOUS PARTNERS</h1>
+      </section>
+    </article>
+
+    <footer>
+      <a href="https://www.facebook.com/marihacks/">facebook</a>
+      <a href="http://linkedin.com/company/11337766/">linkedin</a>
+      <a href="mailto:team@marihacks.com">email</a>
+    </footer>
+  </body>
+</html>
