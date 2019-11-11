@@ -1,108 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body, body div, header, footer, article {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-      }
-      body {
-        width: 100%;
-        margin: 0;
-      }
-      p, a {
-        font-family: Lato, sans-serif;
-        line-height: 1.5em;
-        margin-top: 0;
-      }
-      h1, h2 {
-        font-family: "Lato Heavy", sans-serif;
-        font-weight: bold;
-      }
-      h1 {
-        text-align: center;
-        margin: 4rem 0 2.5rem;
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 2rem;
-        margin: 1.5rem 0 .5rem;
-      }
-      header {
-        width: 100%;
-        height: 80vh;
-        background-image: url('assets/bg.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-content: space-around;
-      }
-      header img, header div {
-        width: 250px;
-      }
-      #heading-text img {
-        margin-top: 2rem;
-      }
-      #heading-text p {
-        margin-top: -.5rem;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-      #resources {
-        background: white;
-        padding-bottom: .5rem;
-      }
-      #resources h1 {
-        font-size: 1.5rem;
-        margin: .5rem 0;
-      }
-      #resources a {
-        width: 90%;
-        font-size: 1.2rem;
-        margin: .5rem;
-      }
-      article {
-        max-width: 729px;
-      }
-      .bigtext {
-        margin: 0;
-        text-align: center;
-        font-size: 1.8rem;
-        line-height: 2.6rem;
-      }
-      section::before {
-        display: inline-block;
-        content: "";
-        position: absolute;
-        width: 16rem;
-        height: .25rem;
-        background: #092596;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      section {
-        max-width: 680px;
-        margin: 4rem 0 0;
-      }
-      section h1 {
-        margin: 2rem 0 0;
-      }
-      footer {
-        width: 100%;
-        height: 50px;
-        background: #092596;
-        flex-flow: row;
-        justify-content: center;
-        align-items: center;
-      }
-      footer a {
-        color: white;
-        margin: 1rem;
-        font-size: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png"/>
+    <title>MariHacks</title>
   </head>
 
   <body>
@@ -116,8 +17,17 @@
       </div>
       <div id="resources">
         <h1>Resources</h1>
-        <a href="https://learn.marihacks.com">Hacker Booklet</a>
-        <a href="https://github.com/MariHacks/learnathon-2018f">Learnathon Material</a>
+        <div>
+          <h6>Hacker Booklet</h6>
+          <a href="https://learn.marihacks.com">
+            https://learn.marihacks.com
+          </a>
+        </div>
+        <div>
+          <h6>MariHacks Learnathon Material</h6>
+          <a href="https://github.com/MariHacks/learnathon-2018f">
+            https://github.com/MariHacks/learnathon-2018f
+          </a>
       </div>
     </header>
 
@@ -212,6 +122,8 @@
           Montreal.
         </p>
 
+        <img id="map" src="assets/map.png">
+
         <h2 style="text-align:center;">Have any other questions?</h2>
         <p style="text-align:center;">
           Please email
@@ -222,6 +134,32 @@
 
       <section>
         <h1>SOME OF OUR PAST GUESTS</h1>
+
+        <div id="guests">
+          <div>
+            <img src="assets/mentor/naomi.jpg">
+            <div>
+              <p><strong>Naomi Goldapple</strong></p>
+              <p>Director, ElementAI</p>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/mentor/richard.jpg">
+            <div>
+              <p><strong>Richard Btaiche</strong></p>
+              <p>Sr. Product Manager, Shopify</p>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/mentor/ravy.jpg">
+            <div>
+              <p><strong>Ravy Por</strong></p>
+              <p>Partnerships and Outreach Lead, Desjardins</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -229,15 +167,57 @@
         <p class="bigtext">Coming Soon!</p>
       </section>
 
-      <section>
+      <section id="sponsors">
+        <a id="mail"
+           href="mailto:sponsor@marihacks.com?subject=Interested partner!"
+           data-content="sponsor@marihacks.com"
+           data-type="mail">
+          Become a partner!
+        </a>
+
         <h1>PREVIOUS PARTNERS</h1>
+        <div class="tier1">
+          <img src="assets/sponsor/marianopolis.svg"/>
+        </div>
+        <div class="tier2">
+          <img src="assets/sponsor/shopify.svg"/>
+          <img src="assets/sponsor/yl.svg"/>
+        </div>
+        <div class="tier2">
+          <img src="assets/sponsor/real.jpg"/>
+          <img src="assets/sponsor/ey.png"/>
+        </div>
+        <div class="tier3">
+          <img src="assets/sponsor/lighthouselabs.png"/>
+          <img src="assets/sponsor/boom.jpg"/>
+          <img src="assets/sponsor/cae.png"/>
+        </div>
+        <div class="tier3">
+          <img src="assets/sponsor/dottech.png"/>
+          <img src="assets/sponsor/wolfram.png"/>
+          <img src="assets/sponsor/balsamiq.png"/>
+        </div>
+        <div class="tier4">
+          <img src="assets/sponsor/staples.png"/>
+          <img src="assets/sponsor/1password.png"/>
+          <img src="assets/sponsor/upstarted.png"/>
+        </div>
+        <div class="tier4">
+          <img src="assets/sponsor/mlh.svg"/>
+        </div>
       </section>
     </article>
 
     <footer>
-      <a href="https://www.facebook.com/marihacks/">facebook</a>
-      <a href="http://linkedin.com/company/11337766/">linkedin</a>
-      <a href="mailto:team@marihacks.com">email</a>
+      <a href="https://www.facebook.com/marihacks/">
+        <img src="assets/icon/fb.svg">
+      </a>
+      <a href="http://linkedin.com/company/11337766/">
+        <img src="assets/icon/in.svg">
+      </a>
+      <a href="mailto:team@marihacks.com">
+        <img src="assets/icon/email.svg">
+      </a>
     </footer>
   </body>
 </html>
