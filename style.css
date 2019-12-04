@@ -18,12 +18,13 @@ h1, h2 {
 }
 h1 {
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin: 4rem auto 2rem;
   font-size: 2.5rem;
+  max-width: 30rem;
 }
 h2 {
   font-size: 2rem;
-  margin: 1.5rem 0 .5rem;
+  margin: 1.5rem 0 .0rem;
 }
 .bigtext {
   text-align: center;
@@ -32,15 +33,55 @@ h2 {
 }
 header {
   width: 100%;
-  height: 80vh;
-  background-image: url('assets/bg.png');
+  height: 85vh;
+  background-image: url('assets/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-around;
 }
-header img, header div {
-  width: 250px;
+header img {
+  width: 100%;
+}
+#glyph {
+  margin: 2rem 0;
+}
+#header-contents {
+  max-width: 320px;
+  height: 100%;
+  justify-content: space-around;
+}
+#heading {
+  max-width: 250px;
+}
+#heading-text p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 0px;
+}
+#resources {
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+  padding: 1.0rem 1.6rem 1.6rem;
+}
+#resources h1 {
+  width: 100%;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#resources h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  margin: .8rem 0 0 ;
+}
+#resources a {
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: .5;
 }
 article {
   margin: 0 10px;
@@ -64,55 +105,10 @@ section {
   width: 100%;
   margin: 2.5rem 0 0;
 }
-#heading-text {
-  margin: 5px;
-}
-#heading-text img {
-  margin-top: 2rem;
-}
-#heading-text h1 {
-  font-size: 54px;
-  color: white;
-  font-weight: bold;
-  line-height: 0px;
-}
-#heading-text p {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 0px;
-}
-#resources {
-  background: white;
-  padding: 1.0rem 3.2rem;
-}
-#resources h1 {
-  font-size: 1.5rem;
-  margin: .2rem 0;
-}
-#resources div {
-  margin: 10px;
-}
-#resources h6 {
-  float: left;
-  width: 100%;
-  color: black;
-  font-size: 0.9rem;
-  font-family: Lato, sans-serif;
-  line-height: 0px;
-  margin: 12px;
-}
-#resources a {
-  float: left;
-  width: 100%;
-  font-size: 0.7rem;
-  line-height: 0px;
-}
 #guests {
-  flex-flow: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 #guests div {
   width: 171px; 
@@ -137,20 +133,22 @@ section {
   align-items: center;
 }
 #sponsors div {
-  flex-flow: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
   max-width: 100%;
   height: 100%;
-  margin: 2rem 0;
+  margin: 0rem 0;
 }
 #sponsors img {
   height: 100%;
-  margin: 0 2rem;
+  max-width: 100%;
+  margin: 2rem 1rem;
 }
-#sponsors .tier1 { height: 100px; }
-#sponsors .tier2 { height:  80px; }
-#sponsors .tier3 { height:  50px; }
-#sponsors .tier4 { height:  30px; }
+#sponsors .tier1 img { height: 100px; }
+#sponsors .tier2 img { height:  80px; }
+#sponsors .tier3 img { height:  50px; }
+#sponsors .tier4 img { height:  30px; }
 #mail {
   background-color: #092596;
   border-radius: 10px;
