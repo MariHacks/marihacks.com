@@ -58,7 +58,8 @@ header img {
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
-  line-height: 0px;
+  line-height: 0;
+  white-space: nowrap;
 }
 #resources {
   align-items: flex-start;
