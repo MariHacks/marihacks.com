@@ -66,6 +66,7 @@ header img {
   justify-content: space-between;
   width: 100%;
   background: white;
+  margin: 1.5rem 0 1.5rem;
   padding: 1.0rem 1.6rem 1.6rem;
 }
 #resources h1 {
@@ -154,10 +155,10 @@ section {
   background-color: #092596;
   border-radius: 10px;
   color: white;
-  padding: 7px 15px;
+  padding: 24px 85px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   margin: 2em 0 0;
 }
 footer {
