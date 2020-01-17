@@ -58,6 +58,10 @@ a {
   text-decoration: none;
   text-align: center;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+}
 header *, footer *, section * {
   z-index: 1;
 }
@@ -161,11 +165,12 @@ header #header-info {
 }
 header #header-info p {
   margin: 0;
+  margin-bottom: 0.4rem;
 }
 header #header-info .button {
   width: auto;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: .25rem;
   padding-bottom: .75rem;
 }
@@ -224,7 +229,6 @@ section#about .bottom {
 }
 section#about #pictures div p {
   text-align: center;
-  font-size: 1rem;
   font-weight: bold;
 }
 section#about #pictures div img {
@@ -255,6 +259,7 @@ section#about #pictures div img {
   }
   section#about #pictures p {
     margin: 0 1rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-aspect-ratio: 3/2) and (min-resolution: 192dpi) {
@@ -273,6 +278,23 @@ section#faq > .content > div {
 }
 section#faq > .content > div div {
   break-inside: avoid;
+}
+section#faq img {
+  width: 90%;
+}
+section#faq .collapsible {
+  background: transparent;
+  border: none !important;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  font-size: inherit;
+}
+section#faq .collapsible:hover {
+  background: #071e7d;
+}
+section#faq p {
+  display: none;
 }
 
 section#schedule {
@@ -383,4 +405,5 @@ footer a, footer p {
 footer a {
   font-size: 1rem;
   text-decoration: none;
+  margin: 1.0rem;
 }
