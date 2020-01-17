@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="navbar">
       <img src="assets/logo_full.svg"/>
       <ol>
         <li><a href="#about">About</a></li>
@@ -75,62 +75,64 @@
       <div class="content">
         <div>
           <div>
-            <h2>What is a hackathon?</h2>
+            <button class="collapsible"><h2>What is a hackathon?</h2></button>
             <p>A hackathon is where you turn your crazy ideas into real stuff. It is an event where beginner and experienced hackers gather together to work on innovative solutions to real-world problems. At MariHacks, you can look forward to amazing guest speakers, helpful workshops, skilled mentors and, of course, awesome hacking!</p>
           </div>
           <div>
-            <h2>What if I don't know how to code?</h2>
+            <button class="collapsible"><h2>What if I don't know how to code?</h2></button>
             <p>Then you've come to the right place! We will have great workshops for beginners as well as experienced mentors to get your started on your coding journey.</p>
           </div>
           <div>
-            <h2>How much does it cost?</h2>
+            <button class="collapsible"><h2>How much does it cost?</h2></button>
             <p>Nothing! We provide meals, drinks, snacks, swag, workspace, and WiFi during the event.</p>
           </div>
           <div>
-            <h2>Who can apply?</h2>
+            <button class="collapsible"><h2>Who can apply?</h2></button>
             <p>Any High School, CEGEP, and U0 students is eligible to apply!</p>
           </div>
           <div>
-            <h2>How many hackers per team?</h2>
+            <button class="collapsible"><h2>How many hackers per team?</h2></button>
             <p>Teams have a maximum of 4 members. You can select your teammates when you register or you can register individually without specified teammates.</p>
           </div>
           <div>
-            <h2>What if I don't have a team?</h2>
+            <button class="collapsible"><h2>What if I don't have a team?</h2></button>
             <p>Don't worry! We will have team formation sessions at the beginning of MariHacks so you can find some teammates!</p>
           </div>
           <div>
-            <h2>Where will I sleep?</h2>
+            <button class="collapsible"><h2>Where will I sleep?</h2></button>
             <p>We hope that you can stay up all night with everybody else to code and participate in activities! However, we understand if you want to get some beauty sleep. We will have some yoga mats available to use, but it would be better to bring your own sleeping bags.</p>
           </div>
           <div>
-            <h2>Where is the location?</h2>
+            <button class="collapsible"><h2>Where is the location?</h2></button>
             <p>
               Shopify offices in Downtown Montreal (490 Rue de la Gauchetière O). 
               <br><br>Easily accessible by metro Square Victoria-OACI.
               <br><br>Meter parking is available at your own expense.
+              <br><br>
+              <img src="assets/gmaps.png" alt="gmaps">
             </p>
           </div>
           <div>
-            <h2>When will applications close?</h2>
+            <button class="collapsible"><h2>When will applications close?</h2></button>
             <p>January 25, 2020 at 11:59pm EDT</p>
           </div>
           <div>
-            <h2>What should I bring?</h2>
+            <button class="collapsible"><h2>What should I bring?</h2></button>
             <p>An ID, a laptop, chargers, comfortable clothes, and any toiletries you may need for the weekend. Beyond that, you're welcome to bring a deck of cards, hardware to hack with, any instruments, and your friends!</p>
           </div>
           <div>
-            <h2>I’m interested in volunteering</h2>
-            <p>We always need more hands on deck. Please email us if you are interested in helping out!</p>
+            <button class="collapsible"><h2>I’m interested in volunteering</h2></button>
+            <p>We always need more hands on deck. Please <a href="mailto:team@marihacks.com">email us</a> if you are interested in helping out!</p>
           </div>
           <div>
-            <h2>I’m interested in mentoring!</h2>
+            <button class="collapsible"><h2>I’m interested in mentoring!</h2></button>
             <p>
               If you are an experienced programmer who loves to help others, we’d love to have you. 
               Please fill out <a href="http://bit.ly/MHMentors2020">the mentor application form</a>.
             </p>
           </div>
           <div>
-            <h2>I still have a question...</h2>
+            <button class="collapsible"><h2>I still have a question...</h2></button>
             <p>
               Please email
               <a href="mailto:team@marihacks.com">team@marihacks.com</a>
@@ -216,12 +218,44 @@
       </div>
     </section>
 
-      <footer>
-        <div class="blocks-bottom"></div>
+    <footer>
+      <div class="blocks-bottom"></div>
       <div class="content">
-        <a href="https://www.facebook.com/marihacks/">Facebook</a>
-        <a href="http://linkedin.com/company/11337766/">LinkedIn</a>
+        <a href="https://www.facebook.com/marihacks/">
+          <img src="assets/icon/fb.svg" height="16" alt="facebook">
+        </a>
+        <a href="http://linkedin.com/company/11337766/">
+          <img src="assets/icon/in.svg" height="16" alt="linkedin">
+        </a>
       </div>
     </footer>
   </body>
+  <script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
 </html>
