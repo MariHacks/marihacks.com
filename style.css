@@ -61,6 +61,7 @@ a {
 .sticky {
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 header *, footer *, section * {
   z-index: 1;
@@ -228,6 +229,7 @@ section#about .bottom {
   align-self: flex-end;
 }
 section#about #pictures div p {
+  margin-top: 0.5rem;
   text-align: center;
   font-weight: bold;
 }
@@ -264,6 +266,7 @@ section#about #pictures div img {
 }
 @media (max-aspect-ratio: 3/2) and (min-resolution: 192dpi) {
   section#about #pictures { width: 110%; }
+  section#faq p { font-size: 1.4rem; }
 }
 
 section#faq {
@@ -279,10 +282,7 @@ section#faq > .content > div {
 section#faq > .content > div div {
   break-inside: avoid;
 }
-section#faq img {
-  width: 90%;
-}
-section#faq .collapsible {
+section#faq button {
   background: transparent;
   border: none !important;
   padding: 0;
@@ -290,11 +290,15 @@ section#faq .collapsible {
   text-align: left;
   font-size: inherit;
 }
-section#faq .collapsible:hover {
-  background: #071e7d;
-}
 section#faq p {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+section#faq img {
+  display: inline-block;
+  margin-left: 0.5rem;
+  height: 1.0rem;
 }
 
 section#schedule {
@@ -354,11 +358,34 @@ section#sponsors > .content .sponsors img {
   flex-grow: 1;
   width: auto;
   margin: .5rem 1rem;
-  height: 2.5rem;
 }
+section#sponsors > .content .sponsors .tier-1 {
+  width: 100%;
+  text-align: center;
+}
+section#sponsors > .content .sponsors .tier-2 {
+  width: 100%;
+  text-align: center;
+}
+section#sponsors > .content .sponsors .tier-3 {
+  width: 100%;
+  text-align: center;
+}
+section#sponsors > .content .sponsors .tier-4 {
+  width: 100%;
+  text-align: center;
+}
+section#sponsors > .content .sponsors .tier-1 img { height: 4rem }
+section#sponsors > .content .sponsors .tier-2 img { height: 3.5rem }
+section#sponsors > .content .sponsors .tier-3 img { height: 3.0rem }
+section#sponsors > .content .sponsors .tier-4 img { height: 2.5rem }
+
 section#sponsors > .content .sponsors img#logo-yl {
   margin: -.25rem 1rem;
-  height: 3.0rem;
+  height: 3.5rem;
+}
+section#sponsors > .content .sponsors img#Autodesk {
+  height: 3.3rem;
 }
 section#sponsors > .content .buttons {
   display: flex;
@@ -378,13 +405,13 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   background: var(--bg-dark);
   margin-top: 2rem;
 }
 footer > div.blocks-bottom {
   width: 100%;
-  bottom: 4rem;
+  bottom: 5rem;
 }
 footer > .content {
   display: flex;
@@ -395,12 +422,32 @@ footer > .content {
   margin: 0 1rem;
 }
 footer > .content > div {
-  display: flex;
-  flex-flow: row nowrap;
+  display: flow-root;
+  flex-flow: row wrap;
+}
+footer > .content > div#foot > div#message {
+  color: white;
+  width: 100vw;
+  text-align: right;
+  margin-top: 0.6rem;
+}
+footer > .content > div#foot > div#message > p { margin-right: 1.0rem; margin-bottom: 0.5rem }
+footer > .content > div#foot > div#icons {
+  padding-top: 1.0rem;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+footer > .content > div#foot {
+  justify-content: space-around;
+  align-items: center;
 }
 footer a, footer p {
   color: white;
   margin: 0 .25rem;
+}
+footer img {
+  height: 1.5rem;
 }
 footer a {
   font-size: 1rem;
