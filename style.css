@@ -347,7 +347,7 @@ section#learn p {
 }
 
 section#sponsors > .content {
-  max-width: 80rem;
+  max-width: 60rem;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -356,18 +356,45 @@ section#sponsors > .content {
 section#sponsors > .content .sponsors { 
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin: .2rem 0;
 }
 section#sponsors > .content .sponsors img {
   flex-grow: 1;
   width: auto;
-  margin: .5rem 1rem;
-  height: 2.5rem;
+  max-width: 96vw;
+  margin: 2rem .5rem;
 }
-section#sponsors > .content .sponsors img#logo-yl {
-  margin: -.25rem 1rem;
-  height: 3.0rem;
+section#sponsors .sponsors.tier1 img {
+  height: 8rem;
+}
+section#sponsors .sponsors.tier2 img {
+  height: 4rem;
+}
+section#sponsors .sponsors.tier3 img {
+  height: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+section#sponsors .sponsors.tier4 img {
+  height: 1.75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+section#sponsors .sponsors img#logo-yl {
+  height: 4.5rem;
+  margin-top: -.25rem;
+  margin-bottom: -.25rem;
+}
+section#sponsors .sponsors img#logo-concordia {
+  height: 10rem;
+  margin: 0 -.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: -2.5rem;
+}
+section#sponsors .sponsors img#logo-shopify {
+  height: 5rem;
 }
 section#sponsors > .content .buttons {
   display: flex;
