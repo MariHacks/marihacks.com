@@ -348,6 +348,14 @@ section#learn p {
   font-size: 1.5rem;
 }
 
+section#mlh {
+  background: var(--bg-dark);
+}
+section#mlh p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 section#sponsors > .content {
   max-width: 60rem;
   display: flex;
