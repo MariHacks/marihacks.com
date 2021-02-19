@@ -120,6 +120,20 @@ nav ol li a {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+#mlh-trust-badge{
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  position:absolute;
+  left:50px;
+  top:10;
+  width:10%;
+  z-index:10000;
+}
+
+
+
 @media screen and (orientation: portrait) {
   nav ol {
     justify-content: space-evenly;
@@ -135,8 +149,8 @@ nav ol li a {
 header {
   display: flex;
   width: 100%;
-  height: calc(100vh - 2rem); /* subtract navbar + padding */
-  min-height: 92vh;
+  height: calc(100vh - 15rem); /* subtract navbar + padding */
+  min-height: 100vh;
   max-height: 120vh;
   padding-top: 1rem;
   flex-flow: column nowrap;
@@ -162,9 +176,9 @@ header .content #header-info {
 header #logo-glyph {
   margin-top: 1rem;
   width: auto;
-  height: 19rem;
+  height: 15rem;
   max-width: 98vw;
-  max-height: calc(100vh - 8rem);
+  max-height: calc(100vh - 30rem);
 }
 header #header-info > img {
   height: 5rem;
@@ -184,11 +198,12 @@ header #header-info .button {
   width: auto;
   font-size: 1.5rem;
   margin-top: 1.25rem;
-  padding: .25rem;
+  padding: .5rem;
   padding-bottom: .75rem;
+  height: fit-content;
 }
 header > p {
-  font-size: 2.0rem;
+  font-size: 1.8em;
   text-align: center;
   margin: 0 .25rem 2rem;
 }
@@ -293,6 +308,8 @@ section#about #pictures div img {
     flex-flow: column !important;
   }
 }
+
+
 
 section#faq {
   background: var(--bg-dark);
@@ -451,3 +468,13 @@ footer img {
   width: auto;
   filter: brightness(0) invert(1); /* make image white */
 }
+
+
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+
+  #mlh-trust-badge{
+    display: none;
+  }
+}
+  
