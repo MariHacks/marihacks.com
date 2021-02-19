@@ -144,12 +144,13 @@ nav ol li a {
   nav img {
     display: none;
   }
+
 }
 
 header {
   display: flex;
   width: 100%;
-  height: calc(100vh - 15rem); /* subtract navbar + padding */
+  height: calc(100vh - 1rem); /* subtract navbar + padding */
   min-height: 100vh;
   max-height: 120vh;
   padding-top: 1rem;
@@ -165,6 +166,7 @@ header > div.blocks-top {
   min-width: 100%;
 }
 header > .content {
+  margin-top: 15vh;
   width: 80%;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -181,9 +183,11 @@ header #logo-glyph {
   max-height: calc(100vh - 30rem);
 }
 header #header-info > img {
+  position: relative;
   height: 5rem;
   width: auto;
   max-width: 98vw;
+  margin-bottom: 1rem;
 }
 header #header-info {
   height: 16rem;
@@ -196,10 +200,11 @@ header #header-info p {
 }
 header #header-info .button {
   width: auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 1.25rem;
   padding: .5rem;
   padding-bottom: .75rem;
+  margin-bottom: .25em;
   height: fit-content;
 }
 header > p {
@@ -471,10 +476,21 @@ footer img {
 
 
 /* On screens that are 600px wide or less */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 910px) {
 
   #mlh-trust-badge{
     display: none;
   }
+
+
+  header #logo-glyph {
+    margin-top: 1rem;
+    width: auto;
+    height: 10rem;
+    max-width: 98vw;
+    max-height: calc(100vh - 30rem);
+  }
+
+
 }
   
