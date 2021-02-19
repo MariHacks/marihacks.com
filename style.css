@@ -150,7 +150,7 @@ nav ol li a {
 header {
   display: flex;
   width: 100%;
-  height: calc(100vh - 15rem); /* subtract navbar + padding */
+  height: calc(100vh - 22rem); /* subtract navbar + padding */
   /*min-height: 100vh;*/
   max-height: 120vh;
   padding-top: 1rem;
