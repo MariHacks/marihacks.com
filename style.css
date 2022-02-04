@@ -20,7 +20,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: #092596;
+  background: linear-gradient(var(--bg-light), var(--bg-dark) 50%, var(--bg-light));
 }
 h1, h2, p {
   color: white;
@@ -224,10 +224,11 @@ section > .content {
   margin: 0 1rem;
   max-width: 80rem;
 }
-
+/*
 section#about {
   background: linear-gradient(var(--bg-light), var(--bg-dark));
 }
+*/
 section#about > .content {
   margin: 0 2rem;
   display: flex;
@@ -316,10 +317,11 @@ section#about #pictures div img {
 }
 
 
-
+/*
 section#faq {
   background: var(--bg-dark);
 }
+*/
 section#faq > .content {
   width: calc(100% - 4rem);
   display: grid;
@@ -330,10 +332,11 @@ section#faq > .content > div {
 section#faq > .content > div div {
   break-inside: avoid;
 }
-
+/*
 section#schedule {
   background: linear-gradient(var(--bg-dark), var(--bg-light));
 }
+*/
 section#schedule > div.blocks-right {
   height: 100%;
   transform: translateY(-80%) scaleX(-1);
@@ -362,18 +365,20 @@ section#schedule .time {
   font-weight: bold;
   margin-right: 1rem;
 }
-
+/*
 section#learn {
   background: var(--bg-dark);
 }
+*/
 section#learn p {
   text-align: center;
   font-size: 1.5rem;
 }
-
+/*
 section#mlh {
   background: var(--bg-dark);
 }
+*/
 section#mlh p {
   text-align: center;
   font-size: 1.5rem;
@@ -438,6 +443,18 @@ section#sponsors > .content .buttons {
 }
 section#sponsors .button {
   margin: .5rem;
+}
+
+
+section#past-sponsors > .content .past-sponsors img {
+    flex-grow: 1;
+    width: auto;
+    max-width: 96vw;
+    margin: 2rem .5rem;
+    align-items: center;
+  }
+section#past-sponsors .past-sponsors img{
+    height: 4rem;
 }
 
 footer {
