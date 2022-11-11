@@ -4,18 +4,27 @@
   --blocks-height: 268px;
   --button-height: 1.5rem;
   --button-width: 12.5rem;
-  --bg-light: #092596;
-  --bg-dark: #051760;
+  /* --bg-light: #092596;
+  --bg-dark: #051760; */
+  --bg-light: #1e3baf;
+  --bg-dark: #071c71;
   --bg-pastel: #DDEDFF;
   --color-text-hi: #A2CDFF;
 }
+@font-face {
+  font-family: 'Open Sans';
+  src: url(assets/OpenSans-Regular.ttf); 
+  /* in case google fonts is blocked */
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 html {
   margin: 0;
   left: 0;
   right: 0;
   scroll-behavior: smooth;
-  font-family: Lato, Arial, sans-serif;
-  font-size: 1em;
+  font-family: 'Open Sans', Lato, Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 body {
   height: 100%;
@@ -46,7 +55,9 @@ a {
 .button {
   border: 2px solid white;
   padding: .25rem;
-  height: var(--button-height);
+  /* height: var(--button-height); */
+  height : fit-content;
+  padding: 1em 1.5em;
   width: var(--button-width);
   border-radius: calc(var(--button-height) / 2);
   background: #DDEDFF;
@@ -511,4 +522,4 @@ footer img {
 
 
 }
-  
+ 
