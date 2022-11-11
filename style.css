@@ -11,29 +11,37 @@
   --bg-pastel: #DDEDFF;
   --color-text-hi: #A2CDFF;
 }
+
 @font-face {
   font-family: 'Open Sans';
-  src: url(assets/OpenSans-Regular.ttf); 
+  src: url(assets/OpenSans-Regular.ttf);
   /* in case google fonts is blocked */
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html {
   margin: 0;
   left: 0;
   right: 0;
   scroll-behavior: smooth;
   font-family: 'Open Sans', Lato, Arial, sans-serif;
-  font-size: 1.1em;
-  line-height: 1.5;
+  font-size: 1.05em;
+  line-height: 1.3;
 }
+
 body {
   height: 100%;
   margin: 0;
   background: linear-gradient(var(--bg-light), var(--bg-dark) 50%, var(--bg-light));
 }
-h1, h2, p {
+
+h1,
+h2,
+p {
   color: white;
 }
+
 h1 {
   font-family: "Lato Bold", Arial, sans-serif;
   font-size: 2.5rem;
@@ -41,22 +49,26 @@ h1 {
   text-align: center;
   margin-bottom: 1rem;
 }
+
 h2 {
   margin: 0;
   padding: 1rem 0 .5rem;
 }
+
 p {
   margin: 0;
   font-size: 1rem;
 }
+
 a {
   color: var(--color-text-hi)
 }
+
 .button {
   border: 2px solid white;
   padding: .25rem;
   /* height: var(--button-height); */
-  height : fit-content;
+  height: fit-content;
   padding: 1em 1.5em;
   width: var(--button-width);
   border-radius: calc(var(--button-height) / 2);
@@ -67,20 +79,31 @@ a {
   text-decoration: none;
   text-align: center;
 }
-header *, footer *, section * {
+
+header *,
+footer *,
+section * {
   z-index: 1;
 }
-div.blocks-top, div.blocks-left, div.blocks-right, div.blocks-bottom {
+
+div.blocks-top,
+div.blocks-left,
+div.blocks-right,
+div.blocks-bottom {
   position: absolute;
   z-index: 0;
 }
-div.blocks-top, div.blocks-bottom {
+
+div.blocks-top,
+div.blocks-bottom {
   width: 100%;
   background-image: var(--blocks-top);
   height: var(--blocks-height);
   background-repeat: repeat-x;
 }
-div.blocks-left, div.blocks-right {
+
+div.blocks-left,
+div.blocks-right {
   height: 100%;
   background-image: var(--blocks-left);
   width: var(--blocks-height);
@@ -88,10 +111,24 @@ div.blocks-left, div.blocks-right {
   -webkit-mask-image: -webkit-linear-gradient(#0000 0%, #000 20%, #000 80%, #0000 100%);
   mask-image: linear-gradient(#0000 0%, #000 20%, #000 80%, #0000 100%);
 }
-div.blocks-top    { top:    0; }
-div.blocks-bottom { bottom: 0; transform: scaleY(-1); }
-div.blocks-left   { left:   0; }
-div.blocks-right  { right:  0; transform: scaleX(-1); }
+
+div.blocks-top {
+  top: 0;
+}
+
+div.blocks-bottom {
+  bottom: 0;
+  transform: scaleY(-1);
+}
+
+div.blocks-left {
+  left: 0;
+}
+
+div.blocks-right {
+  right: 0;
+  transform: scaleX(-1);
+}
 
 nav {
   display: flex;
@@ -103,14 +140,14 @@ nav {
   height: 2.5rem;
   background: var(--bg-pastel);
 }
+
 nav img {
   height: 2rem;
   width: auto;
   /* Set icon colour to var(--bg-dark) */
-  filter: brightness(0) saturate(100%)
-          invert(12%) sepia(54%) saturate(2890%) hue-rotate(219deg)
-          brightness(94%) contrast(115%);
+  filter: brightness(0) saturate(100%) invert(12%) sepia(54%) saturate(2890%) hue-rotate(219deg) brightness(94%) contrast(115%);
 }
+
 nav ol {
   width: 100%;
   padding: 0;
@@ -120,10 +157,12 @@ nav ol {
   justify-content: flex-end;
   align-items: center;
 }
+
 nav ol li {
   display: inline-block;
   margin: 0 1rem;
 }
+
 nav ol li a {
   color: var(--bg-dark);
   font-size: 1rem;
@@ -132,15 +171,15 @@ nav ol li a {
   text-decoration: none;
 }
 
-#mlh-trust-badge{
-  display:block;
-  max-width:100px;
-  min-width:60px;
-  position:absolute;
-  left:50px;
-  top:10;
-  width:10%;
-  z-index:10000;
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: absolute;
+  left: 50px;
+  top: 10;
+  width: 10%;
+  z-index: 10000;
 }
 
 
@@ -149,9 +188,11 @@ nav ol li a {
   nav ol {
     justify-content: space-evenly;
   }
+
   nav ol li {
     margin: 0;
   }
+
   nav img {
     display: none;
   }
@@ -161,7 +202,8 @@ nav ol li a {
 header {
   display: flex;
   width: 100%;
-  height: calc(100vh - 22rem); /* subtract navbar + padding */
+  height: calc(100vh - 22rem);
+  /* subtract navbar + padding */
   /*min-height: 100vh;*/
   min-height: 100vh;
   max-height: 120vh;
@@ -170,23 +212,28 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
+
 header div {
   display: flex;
 }
-header > div.blocks-top {
+
+header>div.blocks-top {
   top: 2.5rem;
   min-width: 100%;
 }
-header > .content {
+
+header>.content {
   margin-top: 15vh;
   width: 80%;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
+
 header .content #header-info {
   flex-flow: column;
 }
+
 header #logo-glyph {
   margin-top: 1rem;
   width: auto;
@@ -194,22 +241,26 @@ header #logo-glyph {
   max-width: 98vw;
   max-height: calc(100vh - 30rem);
 }
-header #header-info > img {
+
+header #header-info>img {
   position: relative;
   height: 5rem;
   width: auto;
   max-width: 98vw;
   margin-bottom: 1rem;
 }
+
 header #header-info {
   height: 16rem;
   width: auto;
   align-items: flex-end;
   justify-content: center;
 }
+
 header #header-info p {
   margin: 0;
 }
+
 header #header-info .button {
   width: auto;
   font-size: 1.2rem;
@@ -219,7 +270,8 @@ header #header-info .button {
   margin-bottom: .25em;
   height: fit-content;
 }
-header > p {
+
+header>p {
   font-size: 1.8em;
   text-align: center;
   margin: 0 .25rem 2rem;
@@ -231,28 +283,33 @@ section {
   align-items: center;
   width: 100%;
 }
-section > .content {
+
+section>.content {
   margin: 0 1rem;
   max-width: 80rem;
 }
+
 /*
 section#about {
   background: linear-gradient(var(--bg-light), var(--bg-dark));
 }
 */
-section#about > .content {
+section#about>.content {
   margin: 0 2rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-section#about > div.blocks-left {
+
+section#about>div.blocks-left {
   height: 100%;
   transform: translateY(-10%);
 }
+
 section#about p {
   font-size: 1.5rem;
 }
+
 section#about #pictures {
   display: flex;
   flex-flow: row nowrap;
@@ -261,25 +318,30 @@ section#about #pictures {
   width: 90%;
   height: 16rem;
 }
-section#about #pictures > div {
+
+section#about #pictures>div {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
+
 section#about .top {
   align-self: flex-start;
 }
+
 section#about .bottom {
   align-self: flex-end;
 }
+
 section#about #pictures div p {
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
   margin-top: .25rem;
 }
+
 section#about #pictures div img {
   object-fit: cover;
   object-position: center;
@@ -288,40 +350,51 @@ section#about #pictures div img {
   width: 10rem;
   height: 10rem;
 }
+
 @media screen and (orientation: landscape) and (min-width: 50rem) {
   section#about #pictures div img {
     width: 8rem;
     height: 8rem;
   }
 }
+
 @media screen and (orientation: portrait) {
   section#about #pictures {
     height: initial;
     max-width: 32rem;
     flex-flow: column;
   }
+
   section#about #pictures div img {
     width: 8rem;
     height: 8rem;
   }
-  section#about #pictures > div.top {
+
+  section#about #pictures>div.top {
     align-self: flex-end;
     flex-flow: row;
   }
-  section#about #pictures > div.bottom {
+
+  section#about #pictures>div.bottom {
     align-self: flex-start;
     flex-flow: row-reverse;
   }
+
   section#about #pictures p {
     margin: 0 1rem;
   }
 }
+
 @media screen and (orientation: portrait) and (max-aspect-ratio: 2/3) {
-  section#about #pictures { width: 70%; }
+  section#about #pictures {
+    width: 70%;
+  }
+
   section#about #pictures div img {
     width: 8rem;
     height: 8rem;
   }
+
   section#about #pictures div {
     flex-flow: column !important;
   }
@@ -333,49 +406,59 @@ section#faq {
   background: var(--bg-dark);
 }
 */
-section#faq > .content {
+section#faq>.content {
   width: calc(100% - 4rem);
   display: grid;
 }
-section#faq > .content > div {
+
+section#faq>.content>div {
   columns: 25rem;
 }
-section#faq > .content > div div {
+
+section#faq>.content>div div {
   break-inside: avoid;
 }
+
 /*
 section#schedule {
   background: linear-gradient(var(--bg-dark), var(--bg-light));
 }
 */
-section#schedule > div.blocks-right {
+section#schedule>div.blocks-right {
   height: 100%;
   transform: translateY(-80%) scaleX(-1);
 }
-section#schedule > .content {
+
+section#schedule>.content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
-section#schedule p, section#schedule h2 {
+
+section#schedule p,
+section#schedule h2 {
   font-size: 1.5rem;
 }
+
 section#schedule h2 {
   color: var(--color-text-hi);
   padding: 0;
 }
-section#schedule > .content .items {
+
+section#schedule>.content .items {
   width: 20rem;
   margin-bottom: 1rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
 }
+
 section#schedule .time {
   font-weight: bold;
   margin-right: 1rem;
 }
+
 /*
 section#learn {
   background: var(--bg-dark);
@@ -385,6 +468,7 @@ section#learn p {
   text-align: center;
   font-size: 1.5rem;
 }
+
 /*
 section#mlh {
   background: var(--bg-dark);
@@ -395,77 +479,111 @@ section#mlh p {
   font-size: 1.5rem;
 }
 
-section#sponsors > .content {
+section#sponsors>.content {
   max-width: 60rem;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
 }
-section#sponsors > .content .sponsors { 
+
+section#sponsors>.content .sponsors {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   margin: .2rem 0;
 }
-section#sponsors > .content .sponsors img {
+
+section#sponsors>.content .sponsors img {
   flex-grow: 1;
   width: auto;
   max-width: 96vw;
   margin: 2rem .5rem;
 }
+
 section#sponsors .sponsors.tier1 img {
   height: 8rem;
 }
+
+
+@media screen and (max-width: 910px) {
+  section#sponsors .sponsors.tier1 {
+    display: flex;
+    flex-direction: colum;
+
+    /* align-items: center; */
+    /* flex-grow: 0; */
+  }
+
+  section#sponsors .sponsors.tier1>* {
+    /* height: 6rem; */
+    /* margin-bottom: 2rem; */
+    display: block;
+
+  }
+
+  section#sponsors>.content .sponsors img {
+    flex-grow: 0;
+  }
+}
+
 section#sponsors .sponsors.tier2 img {
   height: 4rem;
 }
+
 section#sponsors .sponsors.tier3 img {
   height: 2.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 section#sponsors .sponsors.tier4 img {
   height: 1.75rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 section#sponsors .sponsors img#logo-yl {
   height: 4.5rem;
   margin-top: -.25rem;
   margin-bottom: -.25rem;
 }
+
 section#sponsors .sponsors img#logo-concordia {
   height: 10rem;
   margin: 0 -.5rem;
   margin-top: -1.5rem;
   margin-bottom: -2.5rem;
 }
+
 section#sponsors .sponsors img#logo-shopify {
   height: 5rem;
 }
-section#sponsors > .content .buttons {
+
+section#sponsors>.content .buttons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
 }
+
 section#sponsors .button {
   margin: .5rem;
 }
 
 
-section#past-sponsors > .content .past-sponsors img {
-    flex-grow: 1;
-    width: auto;
-    max-width: 96vw;
-    margin: 2rem .5rem;
-    align-items: center;
-  }
-section#past-sponsors .past-sponsors img{
-    height: 4rem;
+section#past-sponsors>.content .past-sponsors img {
+  flex-grow: 1;
+  width: auto;
+  max-width: 96vw;
+  margin: 2rem .5rem;
+  align-items: center;
+}
+
+section#past-sponsors .past-sponsors img {
+  height: 4rem;
 }
 
 footer {
@@ -479,11 +597,13 @@ footer {
   background: var(--bg-dark);
   margin-top: 2rem;
 }
-footer > div.blocks-bottom {
+
+footer>div.blocks-bottom {
   width: 100%;
   bottom: 4rem;
 }
-footer > .content {
+
+footer>.content {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -493,33 +613,47 @@ footer > .content {
   max-width: 16rem;
   margin: 0 1rem;
 }
+
 footer a {
   display: block;
   margin: 0 .25rem;
 }
+
 footer img {
   height: 1.75rem;
   width: auto;
-  filter: brightness(0) invert(1); /* make image white */
+  filter: brightness(0) invert(1);
+  /* make image white */
 }
 
 
 /* On screens that are 600px wide or less */
 @media screen and (max-width: 910px) {
 
-  #mlh-trust-badge{
+  #mlh-trust-badge {
     display: none;
   }
 
 
   header #logo-glyph {
     margin-top: 1rem;
+    margin-bottom: 3rem;
     width: auto;
-    height: 10rem;
+    height: 9rem;
     max-width: 98vw;
-    max-height: calc(100vh - 30rem);
+    max-height: calc(100vh - 9rem);
   }
 
 
 }
- 
+@media screen and (max-width : 1100px) {
+
+  header #logo-glyph {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    width: auto;
+    height: 15rem;
+    max-width: 98vw;
+    max-height: calc(100vh - 30rem);
+  }
+}
