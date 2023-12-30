@@ -74,7 +74,7 @@ const Cards = () => {
             Harum recusandae facere atque ratione neque optio eius, quod
             obcaecati aspernatur corrupti consectetur eos illo cupiditate. Neque
             debitis provident voluptatum!"
-          imgSrc="../../carousel/img1.jpg"
+          imgSrc="./carousel/img1.jpg"
           stats={["20 mentors", "100 schools"]}
         />
         <Card
@@ -83,7 +83,7 @@ const Cards = () => {
             Harum recusandae facere atque ratione neque optio eius, quod
             obcaecati aspernatur corrupti consectetur eos illo cupiditate. Neque
             debitis provident voluptatum!"
-          imgSrc="../../carousel/img3.jpg"
+          imgSrc="./carousel/img3.jpg"
           stats={["50 workshops"]}
         />
         <Card
@@ -92,7 +92,7 @@ const Cards = () => {
             Harum recusandae facere atque ratione neque optio eius, quod
             obcaecati aspernatur corrupti consectetur eos illo cupiditate. Neque
             debitis provident voluptatum!"
-          imgSrc="../../carousel/img2.jpg"
+          imgSrc="./carousel/img2.jpg"
           stats={["11 000$ in prizes"]}
         />
       </div>

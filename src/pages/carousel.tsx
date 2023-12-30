@@ -6,14 +6,14 @@ const CarouselItem = ({ img }: { img: string }) => {
 
 const Carousel = () => {
   const images: string[] = [
-    "../../public/carousel/img1.jpg",
-    "../../public/carousel/img2.jpg",
-    "../../public/carousel/img3.jpg",
-    "../../public/carousel/DSCF5800.jpg",
-    "../../public/carousel/DSCF5872.jpg",
-    "../../public/carousel/DSCF5928.jpg",
-    "../../public/carousel/DSCF5938.jpg",
-    "../../public/carousel/DSCF5946.jpg",
+    "./carousel/img1.jpg",
+    "./carousel/img2.jpg",
+    "./carousel/img3.jpg",
+    "./carousel/DSCF5800.jpg",
+    "./carousel/DSCF5872.jpg",
+    "./carousel/DSCF5928.jpg",
+    "./carousel/DSCF5938.jpg",
+    "./carousel/DSCF5946.jpg",
   ];
   return (
     <div className="carousel-container">

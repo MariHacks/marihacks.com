@@ -10,9 +10,9 @@ const Carousel = () => {
 
   console.log(currentIndex);
   const images = [
-    "../../public/carousel/img1.jpg",
-    "../../public/carousel/img2.jpg",
-    "../../public/carousel/img3.jpg",
+    "./carousel/img1.jpg",
+    "./carousel/img2.jpg",
+    "./carousel/img3.jpg",
   ];
   const viewPreviousImg = () => {
     if (currentIndex === 0) {
