@@ -7,28 +7,28 @@
 }
 
 .layer1 {
-    background-image: url("../../bg.svg");
+    background-image: url("../../assets/bg.svg");
 }
 
 .wave-layer {
-    background-image: url("../../wave2.svg");
+    background-image: url("../../assets/wave2.svg");
 }
 .stars {
     background-attachment: fixed;
-    background-image: url("../../stars.svg");
+    background-image: url("../../assets/stars.svg");
 }
 
 .img1 {
-    background-image: url("../../carousel/img1.jpg");
+    background-image: url("../../assets/carousel/img1.jpg");
 
 }
 
 .img2 {
-    background-image: url("../../carousel/img2.jpg");
+    background-image: url("../../assets/carousel/img2.jpg");
 
 }
 
 .img3 {
-    background-image: url("../../carousel/img3.jpg");
+    background-image: url("../../assets/carousel/img3.jpg");
 
 }

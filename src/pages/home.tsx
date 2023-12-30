@@ -2,11 +2,9 @@ import "../css/background.css";
 import "../css/landing.css";
 
 import About from "./about";
-import Cards from "./cards";
 import Carousel from "./carousel";
 import Faq from "./faq";
 import Footer from "../components/footer";
-import { Masonry } from "@mui/lab";
 import Navbar from "../components/navbar";
 import Sponsors from "./sponsors";
 import { TypeAnimation } from "react-type-animation";
@@ -49,7 +47,7 @@ const Landing = () => {
           </p>
         </div>
       </div>
-      <img src="../../images/duck_logo.png" className="h-[500px]" />
+      <img src="../../assets/images/duck_logo.png" className="h-[500px]" />
     </div>
   );
 };
