@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    /* Two in a row */
+    .sponsor-logo-gold {
+        @apply m-8 h-[250px]
+    }
+
+    /* Three in a row */
+    .sponsor-logo-silver {
+        @apply m-8 h-[125px]
+    }
+
+    .sponsor-card {
+        box-shadow:4px 4px 0px 0px rgba(106,120,171); 
+        @apply h-full rounded-lg mx-5 border border-[#6A78AB] bg-white m-4
+    }
+    
+    
+}
