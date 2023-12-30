@@ -10,7 +10,7 @@ const Navbar = () => {
         <a href="#home">
           <img
             className="h-[100px] aspect-square"
-            src="../assets/images/logo.png"
+            src="../public/images/logo.png"
           />
         </a>
         <div className="h-[60px] ml-[20px] border-l border-white"></div>

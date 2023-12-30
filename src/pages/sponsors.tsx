@@ -18,20 +18,20 @@ const SilverSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
 
 const Sponsors = () => {
   const sponsors = {
-    uofm: { imgUrl: "../../assets/sponsors/uofm.png", link: "" },
-    marianopolis: { imgUrl: "../../assets/sponsors/mari.png", link: "" },
-    onepassword: { imgUrl: "../../assets/sponsors/1password.png", link: "" },
+    uofm: { imgUrl: "../../public/sponsors/uofm.png", link: "" },
+    marianopolis: { imgUrl: "../../public/sponsors/mari.png", link: "" },
+    onepassword: { imgUrl: "../../public/sponsors/1password.png", link: "" },
     wolfram: {
-      imgUrl: "../../assets/sponsors/wolfram.png",
+      imgUrl: "../../public/sponsors/wolfram.png",
       link: "https://www.wolfram.com/",
     },
-    echo: { imgUrl: "../../assets/sponsors/echo.png", link: "" },
-    brebeufhx: { imgUrl: "../../assets/sponsors/brebeufhx.png", link: "" },
+    echo: { imgUrl: "../../public/sponsors/echo.png", link: "" },
+    brebeufhx: { imgUrl: "../../public/sponsors/brebeufhx.png", link: "" },
     brebeufhxnoir: {
-      imgUrl: "../../assets/sponsors/brebeufhxnoir.png",
+      imgUrl: "../../public/sponsors/brebeufhxnoir.png",
       link: "",
     },
-    mlh: "../../assets/sponsors/mlh.png",
+    mlh: "../../public/sponsors/mlh.png",
   };
   return (
     <div className="w-full flex flex-col items-center">

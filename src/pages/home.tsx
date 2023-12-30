@@ -47,7 +47,7 @@ const Landing = () => {
           </p>
         </div>
       </div>
-      <img src="../../assets/images/duck_logo.png" className="h-[500px]" />
+      <img src="../../public/images/duck_logo.png" className="h-[500px]" />
     </div>
   );
 };
