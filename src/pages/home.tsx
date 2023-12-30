@@ -57,14 +57,14 @@ const Home = () => {
     <div className="">
       <section
         id="home"
-        className="bg-[#001220] bg-[url('./stars.svg')] bg-fixed"
+        className="bg-[#001220] bg-[url('/stars.svg')] bg-fixed"
       >
         <Navbar />
         <div className="h-[100px]"></div>
 
         <Landing />
 
-        <div className="spacer bg-[url('./bg.svg')] h-[200px]"></div>
+        <div className="spacer bg-[url('/bg.svg')] h-[200px]"></div>
       </section>
       <div className="bg-[--secondary-color]">
         <section id="about" className="px-64">
