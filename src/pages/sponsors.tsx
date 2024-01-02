@@ -1,5 +1,7 @@
 import "../css/sponsors.css";
 
+import { Link } from "react-router-dom";
+
 const GoldSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
   return (
     <a className="sponsor-logo-gold" href={link}>
@@ -62,6 +64,15 @@ const Sponsors = () => {
         </div>
       </div>
 
+      <div className="flex">
+        <Link className="sponsors-button boldText mr-5" to="/more">
+          Become a sponsor
+        </Link>
+        <Link className="sponsors-button boldText" to="/more">
+          See prospectus
+        </Link>
+      </div>
+
       <p className="boldText text-[48px] mt-8">Partners</p>
       <p className="text-[24px]">We work with the best.</p>
       <hr className="w-1/4 border border-black my-8" />
@@ -70,8 +81,6 @@ const Sponsors = () => {
         <SilverSponsor imgSrc={sponsors.mlh} link="" />
         <SilverSponsor imgSrc={sponsors.brebeufhxnoir.imgUrl} link="" />
       </div>
-
-      {/* Prospectus */}
     </div>
   );
 };

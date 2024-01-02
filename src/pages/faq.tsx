@@ -1,5 +1,9 @@
 import "../css/faq.css";
 
+import { FaCaretDown, FaCaretRight } from "react-icons/fa6";
+
+import { useState } from "react";
+
 const FaqCard = ({
   question,
   answer,
@@ -7,10 +11,14 @@ const FaqCard = ({
   question: string;
   answer: string;
 }) => {
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   return (
-    <div className="faq-card my-2">
-      <p className="boldText text-[24px]">{question}</p>
-      <p className="">{answer}</p>
+    <div className="faq-card my-2" onClick={() => setIsExpanded(!isExpanded)}>
+      <div className="flex items-center justify-between text-[24px]">
+        <p className="boldText">{question}</p>
+        {isExpanded ? <FaCaretDown /> : <FaCaretRight />}
+      </div>
+      {isExpanded ? <p>{answer}</p> : null}
     </div>
   );
 };
@@ -84,13 +92,13 @@ const Faq = () => {
     <div className="flex flex-col items-center">
       <hr className="w-1/4 border border-black my-8" />
 
-      <div className="flex">
-        <div className="w-1/3 flex flex-col">
+      <div className="w-full px-16 flex">
+        <div className="w-1/3 whi h-fit flex flex-col">
           {faqColOne.map((faq) => {
             return <FaqCard question={faq.question} answer={faq.answer} />;
           })}
         </div>
-        <div className="w-1/3 flex flex-col">
+        <div className="w-1/3 h-fit flex flex-col">
           {faqColTwo.map((faq) => {
             return <FaqCard question={faq.question} answer={faq.answer} />;
           })}

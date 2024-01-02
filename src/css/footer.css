@@ -2,15 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
+  /* Two in a row */
 
-    /* Two in a row */
-
-    .footer-social-info {
-        @apply w-fit flex items-center hover:opacity-70 transition
-    }
-   
-    
-    
+  .footer-social-info {
+    @apply w-fit flex items-center hover:opacity-70 transition;
+  }
 }

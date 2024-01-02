@@ -3,35 +3,34 @@
 @tailwind utilities;
 
 @layer components {
-    .navbar-link {
-        box-shadow: 2px 2px 0px 0px ;
-        @apply px-[20px] py-[10px] ml-[40px]
+  .navbar-link {
+    box-shadow: 2px 2px 0px 0px;
+    @apply px-[20px] py-[10px] ml-[40px]
         border border-white rounded-2xl
         hover:translate-x-[2px] hover:translate-y-[2px]
         transition hover:bg-[--primary-color] text-white
-        w-fit
-    }
+        w-fit;
+  }
 
-    .navbar-links:hover {
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0);
-    }
+  .navbar-links:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0);
+  }
 
-    .navbar-register-button {
-        box-shadow: 2px 2px 0px 0px rgba(106,120,171); 
-        @apply px-[20px] py-[10px]
+  .navbar-register-button {
+    box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
+    @apply px-[20px] py-[10px]
         rounded-2xl border border-[#6A78AB]
         hover:translate-x-[2px] hover:translate-y-[2px]
         transition bg-[--primary-color] 
-        text-white
-    }
+        text-white;
+  }
 
-    .navbar-register-button:hover {
-        box-shadow: 0px 0px 0px 0px rgba(106,120,171); 
-    }
+  .navbar-register-button:hover {
+    box-shadow: 0px 0px 0px 0px rgba(106, 120, 171);
+  }
 
-    .navbar {   
-        @apply w-full fixed flex px-[30px] items-center justify-between bg-[#001220] z-10
-    }
+  .navbar {
+    @apply w-full fixed h-[8%] top-0 flex px-[32px]
+    items-center justify-between bg-[#001220] z-10;
+  }
 }
-
-

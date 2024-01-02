@@ -2,24 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    .about-carousel {
-        box-shadow: 6px 6px 0px 0px rgba(106,120,171); 
-        @apply w-full rounded-2xl border
-        border-[#6A78AB]
-    }
-    
+  .about-carousel {
+    box-shadow: 6px 6px 0px 0px rgba(106, 120, 171);
+    @apply w-full rounded-2xl border
+        border-[#6A78AB];
+  }
 
+  .about-card {
+    box-shadow: 6px 6px 0px 0px rgba(106, 120, 171);
+    @apply rounded-2xl border w-1/2 flex items-center justify-center mr-10 
+        border-[#6A78AB] bg-white;
+  }
 
-    .about-card {
-        box-shadow: 6px 6px 0px 0px rgba(106,120,171); 
-        @apply rounded-2xl border w-1/2 flex items-center justify-center mr-10 
-        border-[#6A78AB] bg-white
-    }
-
-    .about-caret {
-        @apply text-[32px] text-white absolute mx-3
-    }
-
+  .about-caret {
+    @apply text-[32px] text-white absolute mx-3;
+  }
 }

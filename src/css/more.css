@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    /* [page]-name */
-    .more-cards {
-        box-shadow: 8px 8px 0px 0px rgba(106,120,171); 
-        @apply transition
+  /* [page]-name */
+  .more-cards {
+    box-shadow: 8px 8px 0px 0px var(--border-main-color);
+    @apply transition
         hover:translate-x-[2px] hover:translate-y-[2px]
-        rounded-2xl border border-[#6A78AB] 
+        rounded-2xl border border-[#6A78AB];
+  }
 
-    }
+  .more-cards:hover {
+    box-shadow: 0px 0px 0px 0px var(--border-main-color);
+  }
 
-   
-
-    .more-cards:hover {
-        box-shadow: 0px 0px 0px 0px rgba(106,120,171); 
-    }
+  .more-stats {
+    box-shadow: 2px 2px 0px 0px var(--border-main-color);
+    @apply px-5 py-2 mr-2 text-white bg-[--primary-color] w-fit rounded-full border
+    border-[--border-main-color];
+  }
 }

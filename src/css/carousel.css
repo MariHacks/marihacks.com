@@ -2,54 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-
-    .carousel-container {
-        box-shadow:0px 8px 0px 0px rgba(106,120,171); 
-        @apply my-16 whitespace-nowrap overflow-hidden
-        bg-white border-y border-[--border-main-color] relative
-
-    } 
-    .carousel-container::before {
-        @apply w-[100px] h-full absolute top-0 left-0 z-[1]
-        bg-gradient-to-r from-[--secondary-color] to-transparent;;
-        content: "";
-    }
-    .carousel-container::after {
-        @apply w-[100px] h-full absolute top-0 right-0 z-[1]
+  .carousel-container {
+    box-shadow: 0px 8px 0px 0px rgba(106, 120, 171);
+    @apply my-16 whitespace-nowrap overflow-hidden
+        bg-white border-y border-[--border-main-color] relative;
+  }
+  .carousel-container::before {
+    @apply w-[100px] h-full absolute top-0 left-0 z-[1]
+        bg-gradient-to-r from-[--secondary-color] to-transparent;
+    content: "";
+  }
+  .carousel-container::after {
+    @apply w-[100px] h-full absolute top-0 right-0 z-[1]
         bg-gradient-to-r from-transparent to-[--secondary-color];
-        content: "";
-    }
+    content: "";
+  }
 
-    .carousel-track {
-        animation: 35s slide infinite linear;
-      
-        @apply w-full h-[500px] flex py-16 
-    
-    }
+  .carousel-track {
+    animation: 35s slide infinite linear;
 
-    /* .carousel-track:hover {
+    @apply w-full h-[500px] flex py-16;
+  }
+
+  /* .carousel-track:hover {
         animation-play-state: paused;
     } */
 
-   
-   
-    .carousel-img {
-        box-shadow:4px 4px 0px 0px rgba(106,120,171); 
+  .carousel-img {
+    box-shadow: 4px 4px 0px 0px rgba(106, 120, 171);
 
-        @apply h-full rounded-lg mx-5 border border-[#6A78AB]
+    @apply h-full rounded-lg mx-5 border border-[#6A78AB];
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
     }
-
-
-
-
-    @keyframes slide {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-284%);
-        }
+    to {
+      transform: translateX(-284%);
     }
+  }
 }

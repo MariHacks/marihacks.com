@@ -69,7 +69,7 @@ const About = () => {
                 Programming club
               </a>
             </div>
-            <div className="mt-2 boldText hover:text-blue-500">
+            <div className="w-fit mt-2 boldText hover:text-blue-500">
               <Link to="/more" className="">
                 Learn more
               </Link>

@@ -1,20 +1,17 @@
-@import url('general-sans.css');
+@import url("general-sans.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-    font-family: 'GeneralSans-Medium';
-    scroll-behavior: smooth;
-    --primary-color: #081E74;
-    --secondary-color: #DDEDFF;
-    --border-main-color: #6A78AB;
-
+  font-family: "GeneralSans-Medium";
+  scroll-behavior: smooth;
+  --primary-color: #081e74;
+  --secondary-color: #ddedff;
+  --border-main-color: #6a78ab;
 }
 
 .boldText {
-    font-family: 'GeneralSans-Bold';
+  font-family: "GeneralSans-Bold";
 }
-
