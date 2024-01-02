@@ -54,13 +54,14 @@ const Landing = () => {
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen">
       <section
         id="home"
-        className="bg-[#001220] bg-[url('/stars.svg')] bg-fixed"
+        className="h-full bg-[#001220] bg-[url('/stars.svg')] bg-fixed"
       >
-        <Navbar />
-        <section className="h-[10%]"></section>
+        <header className="h-[10%]">
+          <Navbar />
+        </header>
         <Landing />
 
         <div className="spacer bg-[url('/bg.svg')] h-[200px]"></div>

@@ -30,7 +30,7 @@
   }
 
   .navbar {
-    @apply w-full fixed h-[8%] top-0 flex px-[32px]
+    @apply w-full fixed h-[10%] top-0 flex px-[32px]
     items-center justify-between bg-[#001220] z-10;
   }
 }
