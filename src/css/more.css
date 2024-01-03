@@ -6,9 +6,9 @@
   /* [page]-name */
   .more-cards {
     box-shadow: 8px 8px 0px 0px var(--border-main-color);
-    @apply transition
-        hover:translate-x-[2px] hover:translate-y-[2px]
-        rounded-2xl border border-[#6A78AB];
+    @apply transition flex flex-col items-center justify-between bg-white 
+    hover:translate-x-[2px] hover:translate-y-[2px]
+    rounded-2xl border border-[#6A78AB] p-8;
   }
 
   .more-cards:hover {
@@ -19,5 +19,11 @@
     box-shadow: 2px 2px 0px 0px var(--border-main-color);
     @apply px-5 py-2 mr-2 text-white bg-[--primary-color] w-fit rounded-full border
     border-[--border-main-color];
+  }
+
+  @media (max-width: 768px) {
+    .more-cards {
+      box-shadow: 4px 4px 0px 0px var(--border-main-color);
+    }
   }
 }

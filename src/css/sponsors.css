@@ -5,22 +5,24 @@
 @layer components {
   /* Two in a row */
   .sponsor-logo-gold {
-    @apply m-8 h-[250px];
+    @apply m-3 w-full h-full
+    md:m-8;
   }
 
   /* Three in a row */
   .sponsor-logo-silver {
-    @apply m-8 h-[125px];
+    @apply m-3
+    md:m-8;
   }
 
   .sponsor-card {
     box-shadow: 4px 4px 0px 0px var(--border-main-color);
-    @apply h-full rounded-lg mx-5 border border-[--border-main-color] bg-white m-4;
+    @apply h-full rounded-lg border border-[--border-main-color] bg-white mx-8 p-8;
   }
 
   .sponsors-button {
     box-shadow: 2px 2px 0px 0px var(--border-main-color);
-    @apply px-[20px] py-[10px] text-[20px]
+    @apply px-[20px] py-[10px]
     rounded-2xl border border-[--border-main-color]
     hover:translate-x-[2px] hover:translate-y-[2px]
     transition bg-[--primary-color] 
@@ -29,5 +31,14 @@
 
   .sponsors-button:hover {
     box-shadow: 0px 0px 0px 0px var(--border-main-color);
+  }
+
+  @media (max-width: 768px) {
+    .sponsor-card {
+      box-shadow: 2px 2px 0px 0px var(--border-main-color);
+    }
+    .sponsors-button {
+      @apply text-[12px] px-[10px] py-[4px] rounded-xl;
+    }
   }
 }

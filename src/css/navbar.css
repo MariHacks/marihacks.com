@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 @layer components {
+  .navbar {
+    @apply w-full fixed top-0 flex px-8
+    items-center justify-between bg-[#001220] z-10;
+  }
+
+  .navbar-logo {
+    @apply h-[100px];
+  }
+
+  .navbar-title {
+    @apply hidden;
+  }
+
+  .navbar-links {
+    @apply flex items-center;
+  }
+
   .navbar-link {
     box-shadow: 2px 2px 0px 0px;
     @apply px-[20px] py-[10px] ml-[40px]
@@ -12,11 +29,16 @@
         w-fit;
   }
 
-  .navbar-links:hover {
+  .navbar-link:hover {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0);
   }
 
-  .navbar-register-button {
+  .navbar-separator {
+    @apply ml-[20px] h-[60px]
+    border-l border-white;
+  }
+
+  .navbar-register-btn {
     box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
     @apply px-[20px] py-[10px]
         rounded-2xl border border-[#6A78AB]
@@ -25,12 +47,37 @@
         text-white;
   }
 
-  .navbar-register-button:hover {
+  .navbar-register-btn:hover {
     box-shadow: 0px 0px 0px 0px rgba(106, 120, 171);
   }
 
-  .navbar {
-    @apply w-full fixed h-[10%] top-0 flex px-[32px]
-    items-center justify-between bg-[#001220] z-10;
+  .navbar-responsive-btn {
+    @apply hidden;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      @apply h-[60px] px-4;
+    }
+
+    .navbar-logo {
+      @apply hidden;
+    }
+
+    .navbar-title {
+      @apply inline text-[20px] text-white;
+    }
+
+    .navbar-links {
+      @apply hidden;
+    }
+
+    .navbar-register-btn {
+      @apply hidden;
+    }
+
+    .navbar-responsive-btn {
+      @apply block text-white text-[32px];
+    }
   }
 }

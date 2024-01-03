@@ -7,12 +7,29 @@
     text-shadow: 6px 6px rgba(255, 255, 255);
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
-    @apply -tracking-[12px];
+    @apply -tracking-[12px] text-[200px] leading-[142px];
   }
 
   .subtitle {
     box-shadow: 2px 2px 0px 0px rgba(255, 224, 59, 0.55);
-    @apply px-[15px] py-[10px] w-fit
-        border border-black rounded-2xl bg-[#FFE03B];
+    @apply px-[15px] py-[10px] w-fit text-[20px]
+    border border-black rounded-2xl bg-[#FFE03B];
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      text-shadow: 2px 2px rgba(255, 255, 255);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      @apply -tracking-[3px] text-[90px] leading-[66px];
+    }
+
+    .subtitle {
+      @apply text-[12px] px-[10px] py-[2px] rounded-lg;
+    }
+
+    .landing-title-moscot {
+      @apply flex flex-col items-center;
+    }
   }
 }

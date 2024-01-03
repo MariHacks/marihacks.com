@@ -16,14 +16,18 @@ const Carousel = () => {
     "./carousel/DSCF5946.jpg",
   ];
   return (
-    <div className="carousel-container">
-      <div className="carousel-track">
-        {images.map((image) => {
-          return <CarouselItem img={image}></CarouselItem>;
-        })}
-        {images.map((image) => {
-          return <CarouselItem img={image}></CarouselItem>;
-        })}
+    <div className="w-full flex flex-col items-center">
+      <hr className="w-1/4 border border-black my-4 md:my-8" />
+
+      <div className="carousel-container">
+        <div className="carousel-track">
+          {images.map((image) => {
+            return <CarouselItem img={image}></CarouselItem>;
+          })}
+          {images.map((image) => {
+            return <CarouselItem img={image}></CarouselItem>;
+          })}
+        </div>
       </div>
     </div>
   );

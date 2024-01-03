@@ -1,6 +1,12 @@
 .spacer {
+  position: absolute;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.stars {
+  background-image: url("./stars.svg");
+  background-repeat: no-repeat;
 }

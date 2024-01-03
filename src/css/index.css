@@ -4,14 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "GeneralSans-Medium";
-  scroll-behavior: smooth;
-  --primary-color: #081e74;
-  --secondary-color: #ddedff;
-  --border-main-color: #6a78ab;
-}
+@layer components {
+  :root {
+    font-family: "GeneralSans-Medium";
+    scroll-behavior: smooth;
+    --primary-color: #081e74;
+    --secondary-color: #ddedff;
+    --border-main-color: #6a78ab;
+    @apply w-screen;
+  }
 
-.boldText {
-  font-family: "GeneralSans-Bold";
+  .boldText {
+    font-family: "GeneralSans-Bold";
+  }
+
+  .section-title {
+    @apply text-[24px] boldText text-center
+    md:text-[48px];
+  }
+
+  .section-subtitle {
+    @apply text-center text-[14px]
+    md:text-[24px];
+  }
+
+  @media (max-width: 768px) {
+  }
 }

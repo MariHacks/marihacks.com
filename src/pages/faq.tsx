@@ -14,11 +14,11 @@ const FaqCard = ({
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   return (
     <div className="faq-card my-2" onClick={() => setIsExpanded(!isExpanded)}>
-      <div className="flex items-center justify-between text-[24px]">
+      <div className="flex items-center justify-between md:text-[24px]">
         <p className="boldText">{question}</p>
         {isExpanded ? <FaCaretDown /> : <FaCaretRight />}
       </div>
-      {isExpanded ? <p>{answer}</p> : null}
+      {isExpanded ? <p className="faq-answer">{answer}</p> : null}
     </div>
   );
 };
@@ -90,20 +90,20 @@ const Faq = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <hr className="w-1/4 border border-black my-8" />
+      <hr className="w-1/4 border border-black my-4 md:my-8" />
 
-      <div className="w-full px-16 flex">
-        <div className="w-1/3 whi h-fit flex flex-col">
+      <div className="w-full flex md:flex-row flex-col">
+        <div className="faq-col">
           {faqColOne.map((faq) => {
             return <FaqCard question={faq.question} answer={faq.answer} />;
           })}
         </div>
-        <div className="w-1/3 h-fit flex flex-col">
+        <div className="faq-col">
           {faqColTwo.map((faq) => {
             return <FaqCard question={faq.question} answer={faq.answer} />;
           })}
         </div>
-        <div className="w-1/3 h-fit flex flex-col">
+        <div className="faq-col">
           {faqColThree.map((faq) => {
             return <FaqCard question={faq.question} answer={faq.answer} />;
           })}

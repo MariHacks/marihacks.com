@@ -30,13 +30,13 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-1/2 flex flex-col items-center relative">
-      <div className="w-full flex rounded-lg">
-        <button className="h-full  left-0" onClick={viewPreviousImg}>
+    <div className="md:w-1/2 flex flex-col items-center relative">
+      <div className="w-full flex items-center rounded-lg">
+        <button className="h-full left-0" onClick={viewPreviousImg}>
           <FaCaretLeft className="about-caret left-0" />
         </button>
         <img className="about-carousel" src={images[currentIndex]} alt="" />
-        <button className="h-full  right-0" onClick={viewNextImg}>
+        <button className="h-full right-0" onClick={viewNextImg}>
           <FaCaretRight className="about-caret right-0" />
         </button>
       </div>
@@ -48,38 +48,41 @@ const Carousel = () => {
 
 const About = () => {
   return (
-    <div className="w-full flex flex-col my-20">
-      <div className="flex w-full justify-between">
+    <div className="w-full flex flex-col px-8">
+      <div className="flex flex-col md:flex-row w-full">
         <div className="about-card">
-          <div className="w-3/4 h-auto">
-            <p className="text-[32px] boldText">What is MariHacks?</p>
-            <p>
-              MariHacks is Montreal's first and largest 2-day hackathon for
-              CEGEP and High School students. We will bring together over 200
-              developers and technology enthusiasts to create revolutionary
-              software projects. Meet fellow hackers, learn new technologies,
-              and hone your skills alongside amazing mentors.
-            </p>
-            <div className="flex mt-2">
-              <p className="mr-1">Organized by Marianopolis'</p>
+          <p className="text-[20px] md:text-[36px] boldText">
+            What is MariHacks?
+          </p>
+          <p className="">
+            MariHacks is Montreal's first and largest 2-day hackathon for CEGEP
+            and High School students. We will bring together over 200 developers
+            and technology enthusiasts to create revolutionary software
+            projects. Meet fellow hackers, learn new technologies, and hone your
+            skills alongside amazing mentors.
+          </p>
+          <p className="mt-2">
+            Organized by Marianopolis'{" "}
+            {
               <a
                 className="boldText hover:text-blue-500"
                 href="https://mariprogramming.vercel.app/"
               >
                 Programming club
               </a>
-            </div>
-            <div className="w-fit mt-2 boldText hover:text-blue-500">
-              <Link to="/more" className="">
-                Learn more
-              </Link>
-            </div>
-            {/* <div className="w-fit mt-3">
+            }
+          </p>
+
+          <div className="w-fit boldText hover:text-blue-500 mt-2">
+            <Link to="/more" className="">
+              Learn more
+            </Link>
+          </div>
+          {/* <div className="w-fit mt-3">
               <Link to="/more" className="themedButtonLearnMore">
                 Learn more
               </Link>
             </div> */}
-          </div>
         </div>
 
         <Carousel />
