@@ -1,10 +1,10 @@
 import "../css/navbar.css";
 
 import { IoClose, IoMenu } from "react-icons/io5";
-import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import ThemedButtons from "./themedButtons";
+import { useState } from "react";
 
 const NavbarLink = ({ link, text }: { link: string; text: string }) => {
   return (
