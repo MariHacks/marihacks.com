@@ -16,8 +16,30 @@
     border border-black rounded-2xl bg-[#FFE03B];
   }
 
+  .title-figma {
+    /* MARI HACKS */
+
+    /* MARI HACKS */
+    font-size: 200px;
+    line-height: 71%;
+    /* or 142px */
+    letter-spacing: -0.08em;
+    color: var(--spaceColor);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 6px 6px 0px rgba(255, 255, 255, 0.55);
+  }
+
   @media (max-width: 768px) {
     .title {
+      text-shadow: 2px 2px rgba(255, 255, 255);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      @apply -tracking-[3px] text-[90px] leading-[66px];
+    }
+
+    .title-figma {
+      font-size: 90px;
       text-shadow: 2px 2px rgba(255, 255, 255);
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: white;

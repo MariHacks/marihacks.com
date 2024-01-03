@@ -33,14 +33,11 @@ const Landing = () => {
   return (
     <div className="h-full px-10 md:px-20 flex flex-col items-center justify-center md:justify-between md:flex-row">
       <div className="md:w-1/2">
-        <div className="landing-title-moscot">
-          <p className="boldText title">
-            MARI
-            <br />
-            HACKS
-          </p>
-          {/* <img src="./images/duck_logo.png" className="md:hidden w-1/2" /> */}
-        </div>
+        <p className="boldText title-figma">
+          MARI
+          <br />
+          HACKS
+        </p>
 
         <div className="md:ml-2 md:mt-16 mt-4">
           <p className="subtitle boldText">Marianopolis' very own Hackathon.</p>
@@ -66,12 +63,12 @@ const Home = () => {
     <div className="">
       <section
         id="home"
-        className="relative w-screen h-screen bg-[#001220] stars bg-contain bg-fixed"
+        className="relative w-screen h-screen bg-[--spaceColor] stars bg-contain bg-fixed"
       >
         <Navbar />
         <Landing />
 
-        <div className="spacer wave sh-[100px] md:h-[200px] bottom-0"></div>
+        <div className="spacer wave h-[100px] md:h-[200px] bottom-0"></div>
       </section>
       <div className="bg-[--secondary-color]">
         <hr className="border border-black mx-[10%]" />

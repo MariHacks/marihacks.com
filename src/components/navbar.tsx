@@ -1,10 +1,10 @@
 import "../css/navbar.css";
 
 import { IoClose, IoMenu } from "react-icons/io5";
+import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import ThemedButtons from "./themedButtons";
-import { useState } from "react";
 
 const NavbarLink = ({ link, text }: { link: string; text: string }) => {
   return (
@@ -16,9 +16,31 @@ const NavbarLink = ({ link, text }: { link: string; text: string }) => {
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
+  // const width = window.innerWidth;
+  // var prevScrollpos = window.scrollY;
+  // window.onscroll = function () {
+  //   var currentScrollPos = window.scrollY;
+  //   if (width < 768) return;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     document.getElementById("navbar")!.style.top = "0";
+  //   } else {
+  //     document.getElementById("navbar")!.style.top = "-100px";
+  //     setIsExpanded(false);
+  //   }
+
+  //   if (window.screenX > -5) {
+  //     prevScrollpos = currentScrollPos;
+  //   }
+  // };
+
+  window.onscroll = function () {
+    setIsExpanded(false);
+  };
+
   return (
-    <nav className="navbar">
-      <div className="flex items-center">
+    <>
+      <nav id="navbar" className={`navbar scrollFeature`}>
         <a className="flex items-center" href="#home">
           <img className="navbar-logo" src="./images/logo.png" />
           <p className="navbar-title boldText">MariHacks</p>
@@ -30,23 +52,32 @@ const Navbar = () => {
           <ThemedButtons link="#FAQ" text="FAQ" />
           <NavbarLink link="/more" text="More" />
         </div>
-      </div>
-      <Link to="/" className="navbar-register-btn">
-        Register
-      </Link>
 
+        <Link to="/" className="navbar-register-btn">
+          Register
+        </Link>
+
+        {isExpanded ? (
+          <IoClose
+            onClick={() => setIsExpanded(false)}
+            className="navbar-responsive-btn"
+          />
+        ) : (
+          <IoMenu
+            onClick={() => setIsExpanded(true)}
+            className="navbar-responsive-btn"
+          />
+        )}
+      </nav>
       {isExpanded ? (
-        <IoClose
-          onClick={() => setIsExpanded(false)}
-          className="navbar-responsive-btn"
-        />
-      ) : (
-        <IoMenu
-          onClick={() => setIsExpanded(true)}
-          className="navbar-responsive-btn"
-        />
-      )}
-    </nav>
+        <div className="fixed w-full top-[60px] bg-[--spaceColor] z-10 flex flex-col items-center p-8">
+          <ThemedButtons link="#about" text="About" />
+          <ThemedButtons link="#sponsors" text="Sponsors" />
+          <ThemedButtons link="#FAQ" text="FAQ" />
+          <NavbarLink link="/more" text="More" />
+        </div>
+      ) : null}
+    </>
   );
 };
 

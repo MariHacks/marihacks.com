@@ -4,14 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+#about {
+  scroll-margin-top: 100px;
+}
+
+#sponsors {
+  scroll-margin-top: 100px;
+}
+
+#FAQ {
+  scroll-margin-top: 100px;
+}
+
 @layer components {
   :root {
     font-family: "GeneralSans-Medium";
     scroll-behavior: smooth;
     --primary-color: #081e74;
     --secondary-color: #ddedff;
+    --spaceColor: black;
     --border-main-color: #6a78ab;
-    @apply w-screen;
+    overscroll-behavior-y: contain;
+    @apply w-screen bg-black;
   }
 
   .boldText {
