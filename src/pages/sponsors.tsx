@@ -25,8 +25,8 @@ const Sponsors = () => {
   };
   const imgDir = "./sponsors";
   const sponsors: { [key: string]: SponsorInfo } = {
-    msu: { imgUrl: `${imgDir}/msu.png`, link: "" },
-    concordia: { imgUrl: `${imgDir}/concordia.png`, link: "" },
+    msu: { imgUrl: `./sponsors/msu.png`, link: "" },
+    concordia: { imgUrl: `$./sponsors/concordia.png`, link: "" },
     uofm: { imgUrl: "./sponsors/uofm.png", link: "" },
     marianopolis: { imgUrl: "./sponsors/mari.png", link: "" },
     onepassword: { imgUrl: "./sponsors/1password.png", link: "" },
