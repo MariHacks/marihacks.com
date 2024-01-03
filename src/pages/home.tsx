@@ -6,10 +6,8 @@ import Carousel from "./carousel";
 import Faq from "./faq";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import ScrollToTop from "../components/scrollToTop";
 import Sponsors from "./sponsors";
 import { TypeAnimation } from "react-type-animation";
-import { useEffect } from "react";
 
 const Quotes = () => {
   return (
