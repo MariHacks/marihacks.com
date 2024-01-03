@@ -6,7 +6,11 @@ const Footer = () => {
   return (
     <footer className="flex items-center justify-between mt-20 h-[100px] bg-[--primary-color] px-6 py-2 text-white">
       <div className="h-2/3 md:h-full flex items-center">
-        <img className="h-full mr-5" src="./images/duck_logo.png" alt="" />
+        <img
+          className="hidden md:block h-full mr-5"
+          src="./images/duck_logo.png"
+          alt=""
+        />
         <p className="boldText md:text-[24px]">MariHacks</p>
       </div>
 
