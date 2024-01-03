@@ -7,5 +7,10 @@
 }
 
 .stars {
-  background-repeat: no-repeat;
+  background-image: url("./stars.svg");
+  background-repeat: repeat;
+}
+
+.wave {
+  background-image: url("./bg.svg");
 }

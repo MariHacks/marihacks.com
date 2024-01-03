@@ -9,18 +9,10 @@ interface CardProps {
   title: string;
   description: string;
   imgSrc: string;
-  stats: string[];
   link: string;
 }
 
-const Card = ({
-  subtitle,
-  title,
-  description,
-  imgSrc,
-  stats,
-  link,
-}: CardProps) => {
+const Card = ({ subtitle, title, description, imgSrc, link }: CardProps) => {
   return (
     <Link to={link} className="more-cards">
       <div className="flex flex-col justify-center">
@@ -88,7 +80,6 @@ const Cards = () => {
             That being said, our hackathon strives to inspire learning, innovation and collaboration, which would not be possible without mentors. 
             If you are an experienced programmer in one or more domains who loves to help others, we would love to have you!"
             imgSrc="./carousel/img1.jpg"
-            stats={["20 mentors", "100 schools"]}
             link=""
           />
           <Card
@@ -99,7 +90,6 @@ const Cards = () => {
             obcaecati aspernatur corrupti consectetur eos illo cupiditate. Neque
             debitis provident voluptatum!"
             imgSrc="./carousel/DSCF5946.jpg"
-            stats={["5 sponsors"]}
             link=""
           />
           <Card
@@ -109,7 +99,6 @@ const Cards = () => {
           They're the perfect way for hackers to get started on a new technology or to learn about a topic in more depth! 
           Introductory and advanced workshops on a wide variety of topics are welcome, such as:"
             imgSrc="./carousel/img3.jpg"
-            stats={["50 workshops"]}
             link=""
           />
           <Card
@@ -117,7 +106,6 @@ const Cards = () => {
             title="Volunteering"
             description="MariHacks is run by a small team of Marianopolis students, and the event would not be as fun or even possible without our amazing volunteers! If you are available during some parts or the entirety of MariHacks (see our schedule) and are interested in helping out, don't hesitate to sign up to volunteer!"
             imgSrc="./carousel/img2.jpg"
-            stats={["11 000$ in prizes"]}
             link=""
           />
           <Card
@@ -125,7 +113,6 @@ const Cards = () => {
             title="Cool Prizes"
             description="MariHacks offers lots of great prizes to add to the fun! Up to 11 000 $ CAD worth of prizes will be offered to our participants."
             imgSrc="./carousel/img2.jpg"
-            stats={["11 000$ in prizes"]}
             link=""
           />
         </div>

@@ -23,7 +23,7 @@ const Sponsors = () => {
     imgUrl: string;
     link: string;
   };
-  const imgDir = "./sponsors";
+  // const imgDir = "./sponsors";
   const sponsors: { [key: string]: SponsorInfo } = {
     msu: { imgUrl: "./sponsors/msu.png", link: "" },
     concordia: { imgUrl: "./sponsors/concordia.png", link: "" },
