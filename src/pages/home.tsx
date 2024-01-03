@@ -66,12 +66,12 @@ const Home = () => {
     <div className="">
       <section
         id="home"
-        className="relative w-screen h-screen bg-[#001220] bg-contain bg-repeat stars bg-fixed"
+        className="relative w-screen h-screen bg-[#001220] bg-[url('/stars.svg')] bg-contain bg-repeat stars bg-fixed"
       >
         <Navbar />
         <Landing />
 
-        <div className="spacer bg-[url('./bg.svg')] h-[100px] md:h-[200px] bottom-0"></div>
+        <div className="spacer bg-[url('/bg.svg')] h-[100px] md:h-[200px] bottom-0"></div>
       </section>
       <div className="bg-[--secondary-color]">
         <hr className="border border-black mx-[10%]" />
