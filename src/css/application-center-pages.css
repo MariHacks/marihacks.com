@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* [page]-name */
+
+  .acp-container {
+    @apply bg-[--secondary-color] px-4 md:px-32 py-8 md:h-screen;
+  }
+  .acp-title {
+    @apply text-[32px] md:text-[48px];
+  }
+
+  .acp-bullet-point {
+    @apply my-2;
+  }
+
+  .acp-apply-btn {
+    box-shadow: 2px 2px 0px 0px var(--border-main-color);
+    @apply px-[20px] py-[10px]
+        rounded-2xl border border-[#6A78AB]
+        hover:translate-x-[2px] hover:translate-y-[2px]
+        transition bg-[--primary-color] mt-8
+        text-white w-fit;
+  }
+
+  .acp-apply-btn:hover {
+    box-shadow: 0px 0px 0px 0px var(--border-main-color);
+  }
+
+  .acp-card-bg {
+    box-shadow: 4px 4px 0px 0px var(--border-main-color);
+    @apply w-full h-fit rounded-lg border border-[--border-main-color] bg-white p-8 my-8
+    dark:bg-white text-[14px]
+    lg:flex md:text-[16px];
+  }
+
+  .acp-text {
+    @apply lg:w-1/2 flex flex-col md:mr-5;
+  }
+  .acp-img {
+    @apply w-1/2 bg-black;
+  }
+
+  .acp-apply-btn-disabled {
+    box-shadow: 2px 2px 0px 0px var(--border-main-color);
+    cursor: not-allowed;
+    opacity: 0.5;
+    @apply px-[20px] py-[10px]
+    rounded-2xl border border-[#6A78AB]
+    transition bg-[--primary-color] mt-8
+    text-white w-fit hover:translate-x-[0px] hover:translate-y-[0px];
+  }
+
+  @media (max-width: 768px) {
+    .acp-img {
+      @apply hidden;
+    }
+  }
+}

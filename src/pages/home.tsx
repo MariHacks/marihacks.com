@@ -23,7 +23,7 @@ const Quotes = () => {
       ]}
       wrapper="p"
       speed={25}
-      className="boldText text-[20px] md:text-[48px] text-center my-[3%]"
+      className="font-bold text-[20px] md:text-[48px] text-center my-[3%]"
       repeat={Infinity}
     />
   );
@@ -31,17 +31,19 @@ const Quotes = () => {
 
 const Landing = () => {
   return (
-    <div className="h-full px-10 md:px-20 flex flex-col items-center justify-center md:justify-between md:flex-row">
-      <div className="md:w-1/2">
-        <p className="boldText title-figma">
+    <div className="h-full px-10 md:px-20 flex flex-col items-center justify-center lg:flex-row">
+      <div className="lg:w-1/2">
+        <p className="font-bold title">
           MARI
           <br />
           HACKS
         </p>
 
-        <div className="md:ml-2 md:mt-16 mt-4">
-          <p className="subtitle boldText">Marianopolis' very own Hackathon.</p>
-          <hr className="my-4 md:my-8" />
+        <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4">
+          <p className="subtitle font-bold">
+            Marianopolis' very own Hackathon.
+          </p>
+          <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[12px] md:text-[16px]">
             April 5-6, 2024
           </p>
@@ -52,7 +54,7 @@ const Landing = () => {
       </div>
       <img
         src="./images/duck_logo.png"
-        className="w-3/4 mt-10 md:w-1/2 md:m-0"
+        className="w-3/4 mt-10 lg:w-1/2 md:m-0"
       />
     </div>
   );
@@ -74,7 +76,7 @@ const Home = () => {
         <hr className="border border-black mx-[10%]" />
         <Quotes />
         <hr className="border border-black mx-[10%]" />
-        <section id="about" className="py-10 md:px-32">
+        <section id="about" className="py-10 md:px-16">
           <About />
         </section>
         <section id="photos" className="">
@@ -83,14 +85,14 @@ const Home = () => {
           <Carousel />
         </section>
 
-        <section id="sponsors" className="py-10 md:px-32">
+        <section id="sponsors" className="py-10 lg:px-16">
           <p className="section-title">Sponsors</p>
           <p className="section-subtitle">
             MariHacks wouldn't be possible without them.
           </p>
           <Sponsors />
         </section>
-        <section id="FAQ" className="md:px-32">
+        <section id="FAQ" className="lg:px-16">
           <p className="section-title">FAQ</p>
           <p className="section-subtitle">Questions? No problem.</p>
 

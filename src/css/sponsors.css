@@ -6,18 +6,19 @@
   /* Two in a row */
   .sponsor-logo-gold {
     @apply m-3 w-full h-full
-    md:m-8;
+    lg:m-8;
   }
 
   /* Three in a row */
   .sponsor-logo-silver {
     @apply m-3
-    md:m-8;
+    lg:m-8;
   }
 
   .sponsor-card {
     box-shadow: 4px 4px 0px 0px var(--border-main-color);
-    @apply h-full rounded-lg border border-[--border-main-color] bg-white mx-8 p-8;
+    @apply h-full rounded-lg border border-[--border-main-color] bg-white mx-8 p-8
+    dark:bg-white;
   }
 
   .sponsors-button {

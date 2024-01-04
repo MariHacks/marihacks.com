@@ -1,111 +1,111 @@
 import "../css/faq.css";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { FaCaretDown, FaCaretRight } from "react-icons/fa6";
+import { faqColOne, faqColThree, faqColTwo } from "../docs/faq";
 
 import { useState } from "react";
 
 const FaqCard = ({
   question,
   answer,
+  isExpanded,
+  onClick,
 }: {
   question: string;
   answer: string;
+  isExpanded: boolean;
+  onClick: () => void;
 }) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   return (
-    <div className="faq-card my-2" onClick={() => setIsExpanded(!isExpanded)}>
-      <div className="flex items-center justify-between md:text-[24px]">
-        <p className="boldText">{question}</p>
+    <div className="faq-card my-2" onClick={onClick}>
+      <div className="flex items-center justify-between md:text-[24px] transition-all">
+        <p className="font-bold">{question}</p>
         {isExpanded ? <FaCaretDown /> : <FaCaretRight />}
       </div>
-      {isExpanded ? <p className="faq-answer">{answer}</p> : null}
+
+      {isExpanded ? (
+        <AnimatePresence mode={"wait"}>
+          <motion.div
+            initial="initialState"
+            animate="animateState"
+            exit="exitState"
+            transition={{
+              type: "tween",
+              duration: 0.5,
+            }}
+            variants={{
+              initialState: {
+                opacity: 0,
+              },
+              animateState: {
+                opacity: 1,
+              },
+              exitState: {
+                opacity: 0,
+              },
+            }}
+          >
+            <p className="faq-answer">{answer}</p>
+          </motion.div>
+        </AnimatePresence>
+      ) : null}
     </div>
   );
 };
 
 const Faq = () => {
-  // To put on a seperate file
-  const faqColOne: { question: string; answer: string }[] = [
-    {
-      question: "What is a hackathon?",
-      answer:
-        "A hackathon is where you turn your crazy ideas into real stuff. It is an event where beginner and experienced hackers gather together to work on innovative solutions to real-world problems. At MariHacks, you can look forward to amazing guest speakers, helpful workshops, skilled mentors and, of course, awesome hacking!",
-    },
-    {
-      question: "How much does it cost?",
-      answer:
-        "Nothing! The entire event will be held in-person and all you need to participate is a computer.",
-    },
-    {
-      question: "What if I don't know how to code?",
-      answer:
-        "Then you've come to the right place! We will have great workshops for beginners as well as experienced mentors to get your started on your coding journey.",
-    },
-    {
-      question: "Who can apply?",
-      answer: "Any High School, CEGEP, and U0 students is eligible to apply!",
-    },
-  ];
+  const [expandedIndex, setActiveIndex] = useState<number | null>(null);
 
-  const faqColTwo: { question: string; answer: string }[] = [
-    {
-      question: "How many hackers per team?",
-      answer:
-        "Teams have a maximum of 4 members. You can select your teammates when you register or you can register individually without specified teammates.",
-    },
-
-    {
-      question: "What if I don't have a team?",
-      answer:
-        "Don't worry! We will have team formation sessions at the beginning of MariHacks so you can find some teammates!",
-    },
-
-    {
-      question: "Where is the location?",
-      answer:
-        "Last year, the event was held virtual because of COVID restrictions. This 6th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
-    },
-    {
-      question: "When will applications close?",
-      answer:
-        "Applications will open soon, so stay tuned! If you have some of your team members who did not get their Eventbrite ticket, send us an email at team@marihacks.com.",
-    },
-  ];
-  const faqColThree: { question: string; answer: string }[] = [
-    {
-      question: "I'm interested in judging!",
-      answer: "",
-    },
-    {
-      question: "I'm interested in presenting a workshop!",
-      answer: "",
-    },
-    {
-      question: "I'm interested in mentoring!",
-      answer: "",
-    },
-
-    { question: "I still have a question...", answer: "" },
-  ];
+  const onFaqExpand = (index: number) => {
+    if (index === expandedIndex) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+    }
+  };
 
   return (
     <div className="flex flex-col items-center">
       <hr className="w-1/4 border border-black my-4 md:my-8" />
-
-      <div className="w-full flex md:flex-row flex-col">
+      <div className="w-full flex lg:flex-row flex-col">
         <div className="faq-col">
-          {faqColOne.map((faq) => {
-            return <FaqCard question={faq.question} answer={faq.answer} />;
+          {faqColOne.map((faq, key) => {
+            return (
+              <FaqCard
+                key={key}
+                question={faq.question}
+                answer={faq.answer}
+                isExpanded={faq.index === expandedIndex}
+                onClick={() => onFaqExpand(faq.index)}
+              />
+            );
           })}
         </div>
         <div className="faq-col">
-          {faqColTwo.map((faq) => {
-            return <FaqCard question={faq.question} answer={faq.answer} />;
+          {faqColTwo.map((faq, key) => {
+            return (
+              <FaqCard
+                key={key}
+                question={faq.question}
+                answer={faq.answer}
+                isExpanded={faq.index === expandedIndex}
+                onClick={() => onFaqExpand(faq.index)}
+              />
+            );
           })}
         </div>
         <div className="faq-col">
-          {faqColThree.map((faq) => {
-            return <FaqCard question={faq.question} answer={faq.answer} />;
+          {faqColThree.map((faq, key) => {
+            return (
+              <FaqCard
+                key={key}
+                question={faq.question}
+                answer={faq.answer}
+                isExpanded={faq.index === expandedIndex}
+                onClick={() => onFaqExpand(faq.index)}
+              />
+            );
           })}
         </div>
       </div>

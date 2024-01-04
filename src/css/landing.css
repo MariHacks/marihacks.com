@@ -3,55 +3,50 @@
 @tailwind utilities;
 
 @layer components {
-  .title {
-    text-shadow: 6px 6px rgba(255, 255, 255);
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: white;
-    @apply -tracking-[12px] text-[200px] leading-[142px];
-  }
-
   .subtitle {
     box-shadow: 2px 2px 0px 0px rgba(255, 224, 59, 0.55);
     @apply px-[15px] py-[10px] w-fit text-[20px]
     border border-black rounded-2xl bg-[#FFE03B];
   }
 
-  .title-figma {
+  .title {
     /* MARI HACKS */
 
     /* MARI HACKS */
     font-size: 200px;
     line-height: 71%;
     /* or 142px */
+    text-shadow: 6px 6px 0px rgba(255, 255, 255, 0.55);
     letter-spacing: -0.08em;
     color: var(--spaceColor);
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
-    text-shadow: 6px 6px 0px rgba(255, 255, 255, 0.55);
+    @apply text-center lg:text-left;
+  }
+
+  @media (max-width: 1280px) {
+    .title {
+      text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.55);
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: white;
+      @apply -tracking-[3px] text-[150px] leading-[108px];
+    }
+
+    .subtitle {
+      @apply text-[16px] px-[10px] py-[5px] rounded-lg;
+    }
   }
 
   @media (max-width: 768px) {
     .title {
-      text-shadow: 2px 2px rgba(255, 255, 255);
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: white;
-      @apply -tracking-[3px] text-[90px] leading-[66px];
-    }
-
-    .title-figma {
-      font-size: 90px;
-      text-shadow: 2px 2px rgba(255, 255, 255);
+      text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.55);
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: white;
       @apply -tracking-[3px] text-[90px] leading-[66px];
     }
 
     .subtitle {
-      @apply text-[12px] px-[10px] py-[2px] rounded-lg;
-    }
-
-    .landing-title-moscot {
-      @apply flex flex-col items-center;
+      @apply text-[12px] px-[10px] py-[4px] rounded-lg;
     }
   }
 }

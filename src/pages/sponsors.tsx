@@ -1,6 +1,7 @@
 import "../css/sponsors.css";
 
 import { Link } from "react-router-dom";
+import { sponsors } from "../docs/sponsors";
 
 const GoldSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
   return (
@@ -19,34 +20,24 @@ const SilverSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
 };
 
 const Sponsors = () => {
-  type SponsorInfo = {
-    imgUrl: string;
-    link: string;
-  };
-  // const imgDir = "./sponsors";
-  const sponsors: { [key: string]: SponsorInfo } = {
-    msu: { imgUrl: "./sponsors/msu.png", link: "" },
-    concordia: { imgUrl: "./sponsors/concordia.png", link: "" },
-    uofm: { imgUrl: "./sponsors/uofm.png", link: "" },
-    marianopolis: { imgUrl: "./sponsors/mari.png", link: "" },
-    onepassword: { imgUrl: "./sponsors/1password.png", link: "" },
-    wolfram: {
-      imgUrl: "./sponsors/wolfram.png",
-      link: "https://www.wolfram.com/",
-    },
-    echo: { imgUrl: "./sponsors/echo.png", link: "" },
-    brebeufhx: { imgUrl: "./sponsors/brebeufhx.png", link: "" },
-    brebeufhxnoir: {
-      imgUrl: "./sponsors/brebeufhxnoir.png",
-      link: "",
-    },
-    mlh: { imgUrl: "./sponsors/mlh.png", link: "" },
-  };
   return (
     <div className="w-full flex flex-col items-center">
       <hr className="w-1/4 border border-black my-4 md:my-8" />
 
       <div className="sponsor-card">
+        {/* <div className="grid grid-cols-2 gap-8">
+          {sponsorsArray.map((sponsor: SponsorInfo) => {
+            return <GoldSponsor imgSrc={sponsor.imgUrl} link={sponsor.link} />;
+          })}
+        </div> */}
+
+        <div className="flex md:flex-row flex-col items-center justify-center">
+          <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
+          <GoldSponsor
+            imgSrc={sponsors.leadingleaders.imgUrl}
+            link={sponsors.concordia.link}
+          />
+        </div>
         <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor imgSrc={sponsors.msu.imgUrl} link={sponsors.msu.link} />
           <GoldSponsor
@@ -66,10 +57,7 @@ const Sponsors = () => {
         </div>
 
         <div className="flex md:flex-row flex-col justify-center items-center">
-          <SilverSponsor
-            imgSrc={sponsors.onepassword.imgUrl}
-            link="https://1password.com/"
-          />
+          <SilverSponsor imgSrc={sponsors.onepassword.imgUrl} link="" />
           <SilverSponsor
             imgSrc={sponsors.wolfram.imgUrl}
             link={sponsors.wolfram.link}
@@ -79,15 +67,15 @@ const Sponsors = () => {
       </div>
 
       <div className="flex md:my-8 mb-4">
-        <Link className="sponsors-button mr-5" to="/more">
+        <Link className="sponsors-button mr-5" to="/sponsor">
           Become a sponsor
         </Link>
-        <Link className="sponsors-button" to="/more">
+        <Link className="sponsors-button" to="/">
           See prospectus
         </Link>
       </div>
 
-      <p className="boldText section-title">Partners</p>
+      <p className="font-bold section-title">Partners</p>
       <p className="section-subtitle">We work with the best.</p>
       <hr className="w-1/4 border border-black my-4 md:my-8" />
 

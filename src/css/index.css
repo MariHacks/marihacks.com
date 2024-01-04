@@ -25,15 +25,18 @@
     --spaceColor: black;
     --border-main-color: #6a78ab;
     overscroll-behavior-y: contain;
-    @apply w-screen bg-black;
   }
 
-  .boldText {
+  .font-bold {
     font-family: "GeneralSans-Bold";
   }
 
+  .font-light {
+    font-family: "GeneralSans-Light";
+  }
+
   .section-title {
-    @apply text-[24px] boldText text-center
+    @apply text-[24px] font-bold text-center
     md:text-[48px];
   }
 

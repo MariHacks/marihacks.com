@@ -43,19 +43,18 @@ const Navbar = () => {
       <nav id="navbar" className={`navbar scrollFeature`}>
         <a className="flex items-center" href="#home">
           <img className="navbar-logo" src="./images/logo.png" />
-          <p className="navbar-title boldText">MariHacks</p>
+          <p className="navbar-title font-bold">MariHacks</p>
         </a>
         <div className="navbar-links">
           <div className="navbar-separator"></div>
           <ThemedButtons link="#about" text="About" />
           <ThemedButtons link="#sponsors" text="Sponsors" />
           <ThemedButtons link="#FAQ" text="FAQ" />
-          <NavbarLink link="/more" text="More" />
+          <NavbarLink link="/application-center" text="Application Center" />
+          <Link to="/registration" className="navbar-register-btn">
+            Register
+          </Link>
         </div>
-
-        <Link to="/" className="navbar-register-btn">
-          Register
-        </Link>
 
         {isExpanded ? (
           <IoClose
@@ -74,7 +73,10 @@ const Navbar = () => {
           <ThemedButtons link="#about" text="About" />
           <ThemedButtons link="#sponsors" text="Sponsors" />
           <ThemedButtons link="#FAQ" text="FAQ" />
-          <NavbarLink link="/more" text="More" />
+          <NavbarLink link="/application-center" text="Application Center" />
+          <Link to="/registration" className="navbar-register-btn">
+            Register
+          </Link>
         </div>
       ) : null}
     </>

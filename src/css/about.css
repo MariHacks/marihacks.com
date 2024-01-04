@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .about-container {
+    @apply flex flex-col lg:flex-row w-full;
+  }
   .about-carousel {
     box-shadow: 6px 6px 0px 0px rgba(106, 120, 171);
     @apply w-full rounded-2xl border
@@ -21,10 +24,41 @@
     md:text-[32px];
   }
 
+  @media (max-width: 1024px) {
+    .about-card {
+      box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
+      @apply w-full p-5 mr-0 mb-5;
+    }
+
+    .about-carousel {
+      box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .about-card {
+      box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
+      @apply w-1/2 p-5 mr-10 text-[14px];
+    }
+
+    .about-carousel {
+      box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .about-card {
+      @apply w-full;
+    }
+
+    .about-carousel {
+      box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
+    }
+  }
+
   @media (max-width: 768px) {
     .about-card {
       box-shadow: 2px 2px 0px 0px rgba(106, 120, 171);
-
       @apply w-full p-5 mr-0 mb-5 text-[12px];
     }
 

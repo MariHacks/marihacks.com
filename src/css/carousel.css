@@ -21,7 +21,6 @@
 
   .carousel-track {
     animation: 35s slide infinite linear;
-
     @apply w-full h-[200px] md:h-[500px] flex py-8 md:py-16;
   }
 

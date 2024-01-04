@@ -6,6 +6,6 @@
   /* Two in a row */
 
   .footer-social-info {
-    @apply w-fit flex items-center hover:opacity-70 transition ml-5;
+    @apply w-fit flex items-center hover:opacity-70 transition ml-2 md:ml-5;
   }
 }

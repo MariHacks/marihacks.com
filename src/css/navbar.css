@@ -18,7 +18,7 @@
   }
 
   .navbar-links {
-    @apply flex items-center;
+    @apply w-full flex items-center;
   }
 
   .navbar-link {
@@ -28,7 +28,7 @@
         hover:translate-x-[2px] hover:translate-y-[2px]
         transition hover:bg-[--primary-color] text-white
         w-full mb-2 text-center
-        md:w-fit md:mb-0 md:ml-[40px];
+        lg:w-fit lg:mb-0 lg:ml-[40px];
   }
 
   .navbar-link:hover {
@@ -57,7 +57,7 @@
     @apply hidden;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .navbar {
       @apply h-[60px] px-4;
     }
@@ -75,7 +75,7 @@
     }
 
     .navbar-register-btn {
-      @apply hidden;
+      @apply w-full text-center;
     }
 
     .navbar-responsive-btn {
