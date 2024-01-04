@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import BackArrow from "../../components/backArrow";
+import BackArrow from "../../components/BackArrow";
 import { imageManager } from "../../helper/ressourceManagers";
 
 const Registration = () => {

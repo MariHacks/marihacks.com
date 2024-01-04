@@ -1,4 +1,4 @@
-import BackArrow from "../../components/backArrow";
+import BackArrow from "../../components/BackArrow";
 
 const Sponsor = () => {
   const bulletPoints = [

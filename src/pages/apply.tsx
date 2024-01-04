@@ -1,6 +1,6 @@
 import "../css/apply.css";
 
-import BackArrow from "../components/backArrow";
+import BackArrow from "../components/BackArrow";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../components/scrollToTop";
 

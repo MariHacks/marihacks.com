@@ -1,6 +1,6 @@
 import "../../css/application-center-pages.css";
 
-import BackArrow from "../../components/backArrow";
+import BackArrow from "../../components/BackArrow";
 import { SiGmail } from "react-icons/si";
 
 const Mentorship = () => {
