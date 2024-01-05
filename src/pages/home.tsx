@@ -34,14 +34,14 @@ const Quotes = () => {
 const Landing = () => {
   return (
     <div className="h-full px-10 md:px-20 flex flex-col items-center justify-center lg:flex-row">
-      <div className="lg:w-1/2">
+      <div className="lg:w-1/2 z-10">
         <p className="font-bold title">
           MARI
           <br />
           HACKS
         </p>
 
-        <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4">
+        <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4 z-10">
           <p className="subtitle font-bold">
             Marianopolis' very own Hackathon.
           </p>
@@ -54,7 +54,7 @@ const Landing = () => {
           </p>
         </div>
       </div>
-      <img src="./images/duck_logo.png" className="landing-img" />
+      <img src="./images/duck_logo.png" className="landing-img z-10" />
     </div>
   );
 };
@@ -62,10 +62,7 @@ const Landing = () => {
 const Home = () => {
   return (
     <div className="">
-      <section
-        id="home"
-        className="relative w-screen h-screen bg-[--spaceColor]"
-      >
+      <section id="home" className="relative w-full h-screen bg-[--spaceColor]">
         <AnimatePresence mode={"wait"}>
           <motion.div
             initial="initialState"

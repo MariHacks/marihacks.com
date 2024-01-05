@@ -24,7 +24,7 @@ const Card = ({ subtitle, title, link }: CardProps) => {
 
 const Apply = () => {
   return (
-    <div className="bg-[--secondary-color] md:h-screen">
+    <div className="apply-bg">
       <ScrollToTop />
       <div className="p-4 md:p-16 flex flex-col">
         <BackArrow text="Home" link="/" />

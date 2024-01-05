@@ -74,7 +74,7 @@ const Sponsors = () => {
       </div>
 
       <div className="flex md:my-8 mb-4">
-        <Link className="sponsors-button mr-5" to="/sponsor">
+        <Link className="sponsors-button mr-5" to="/sponsorship">
           Become a sponsor
         </Link>
         <a

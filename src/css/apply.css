@@ -4,6 +4,9 @@
 
 @layer components {
   /* [page]-name */
+  .apply-bg {
+    @apply bg-[--secondary-color] h-screen;
+  }
   .apply-cards {
     box-shadow: 8px 8px 0px 0px var(--border-main-color);
     @apply transition flex flex-col items-center justify-between bg-white 
@@ -21,9 +24,24 @@
     border-[--border-main-color];
   }
 
+  @media (max-width: 1024px) {
+    .apply-bg {
+      @apply h-full;
+    }
+  }
+
+  @media (max-height: 950px) {
+    .apply-bg {
+      @apply h-full;
+    }
+  }
+
   @media (max-width: 768px) {
     .apply-cards {
       box-shadow: 4px 4px 0px 0px var(--border-main-color);
+    }
+    .apply-bg {
+      @apply h-full;
     }
   }
 }

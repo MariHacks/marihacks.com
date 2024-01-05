@@ -13,8 +13,8 @@
     /* MARI HACKS */
 
     /* MARI HACKS */
-    font-size: 200px;
-    line-height: 71%;
+    font-size: 175px;
+    line-height: 73%;
     /* or 142px */
     text-shadow: 6px 6px 0px rgba(255, 255, 255, 0.55);
     letter-spacing: -0.08em;
@@ -25,7 +25,7 @@
   }
 
   .landing-img {
-    @apply w-3/4 mt-10 lg:w-1/2 md:m-0;
+    @apply w-2/5;
   }
 
   @media (max-width: 1400px) {
@@ -45,7 +45,7 @@
     }
   }
 
-  @media (max-height: 1000px) {
+  @media (max-height: 900px) {
     .title {
       text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.55);
       -webkit-text-stroke-width: 2px;
