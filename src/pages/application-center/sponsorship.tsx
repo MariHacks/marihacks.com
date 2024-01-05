@@ -4,12 +4,12 @@ import { imageManager } from "../../helper/ressourceManagers";
 
 const Sponsorship = () => {
   const bulletPoints = [
-    "Mentions during the opening ceremony (all tiers)",
-    "Hosting sponsored challenges and prizes (all tiers)",
-    "Welcoming company mentors and judges",
-    "Logo exposure on website, social media posts, t-shirts...",
-    "Dedicated booth!",
-    "Sponsors can propose custom involvement plans",
+    "Mentions during the opening ceremony",
+    "Sponsoring challenges and prizes",
+    "Sending company mentors, judges and keynote speakers",
+    "Extensive Logo exposure on the website, social media posts, t-shirts …",
+    "Dedicated booth",
+    "Sponsors can propose custom involvement plans tailored to their goals",
   ];
   return (
     <div className="acp-container">
@@ -54,7 +54,7 @@ const Sponsorship = () => {
               Sponsor MariHacks
             </a>
             <a
-              className="acp-apply-btn"
+              className="acp-apply-btn md:ml-5"
               href={imageManager("prospectus_2024").pdf}
             >
               See prospectus

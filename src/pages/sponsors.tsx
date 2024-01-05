@@ -58,12 +58,18 @@ const Sponsors = () => {
         </div>
 
         <div className="flex md:flex-row flex-col justify-center items-center">
-          <SilverSponsor imgSrc={sponsors.onepassword.imgUrl} link="" />
+          <SilverSponsor
+            imgSrc={sponsors.onepassword.imgUrl}
+            link={sponsors.onepassword.link}
+          />
           <SilverSponsor
             imgSrc={sponsors.wolfram.imgUrl}
             link={sponsors.wolfram.link}
           />
-          <SilverSponsor imgSrc={sponsors.echo.imgUrl} link="" />
+          <SilverSponsor
+            imgSrc={sponsors.echo.imgUrl}
+            link={sponsors.echo.link}
+          />
         </div>
       </div>
 
@@ -84,8 +90,11 @@ const Sponsors = () => {
       <hr className="w-1/4 border border-black my-4 md:my-8" />
 
       <div className="sponsor-card md:w-1/2 flex items-center">
-        <SilverSponsor imgSrc={sponsors.mlh.imgUrl} link="" />
-        <SilverSponsor imgSrc={sponsors.brebeufhxnoir.imgUrl} link="" />
+        <SilverSponsor imgSrc={sponsors.mlh.imgUrl} link={sponsors.mlh.link} />
+        <SilverSponsor
+          imgSrc={sponsors.brebeufhxnoir.imgUrl}
+          link={sponsors.brebeufhxnoir.link}
+        />
       </div>
     </div>
   );
