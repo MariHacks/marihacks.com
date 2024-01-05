@@ -25,6 +25,7 @@
     --spaceColor: black;
     --border-main-color: #6a78ab;
     overscroll-behavior-y: contain;
+    background-color: var(--secondary-color);
   }
 
   .font-bold {

@@ -6,7 +6,7 @@
   /* [page]-name */
 
   .acp-container {
-    @apply bg-[--secondary-color] px-4 md:px-32 py-8 md:h-screen;
+    @apply bg-[--secondary-color] px-4 md:px-32 py-8;
   }
   .acp-title {
     @apply text-[32px] md:text-[48px];
@@ -58,14 +58,14 @@
       @apply hidden;
     }
 
-    .acp-container {
+    /* .acp-container {
       @apply h-full;
-    }
+    } */
   }
 
   @media (max-height: 600px) {
-    .acp-container {
+    /* .acp-container {
       @apply h-full;
-    }
+    } */
   }
 }
