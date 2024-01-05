@@ -69,7 +69,7 @@ const Navbar = () => {
         )}
       </nav>
       {isExpanded ? (
-        <div className="fixed w-full top-[60px] bg-[--spaceColor] z-10 flex flex-col items-center p-8">
+        <div className="fixed w-full top-[60px] bg-[--spaceColor] z-30 flex flex-col items-center p-8">
           <ThemedButtons link="#about" text="About" />
           <ThemedButtons link="#sponsors" text="Sponsors" />
           <ThemedButtons link="#FAQ" text="FAQ" />
