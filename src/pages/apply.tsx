@@ -48,12 +48,12 @@ const Apply = () => {
           />
           <Card subtitle="SEE WORKSHOPS" title="Workshops" link="/workshops" />
           <Card
-            subtitle="APPLE TO BE A VOLUNTEER"
+            subtitle="APPLY TO BE A VOLUNTEER"
             title="Volunteering"
             link="/volunteering"
           />
           <Card
-            subtitle="APPLE TO BE A JUDGE"
+            subtitle="APPLY TO BE A JUDGE"
             title="Judging"
             link="/judging"
           />

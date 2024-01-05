@@ -5,7 +5,7 @@
 @layer components {
   .navbar {
     background-image: url("/stars.svg");
-    @apply fixed top-0 w-full flex items-center px-8 bg-[--spaceColor] z-10 bg-right-top
+    @apply fixed top-0 w-full flex items-center px-8 bg-[--spaceColor] z-20 bg-right-top
     hover:bg-center transition-all ease-out duration-1000;
   }
 
