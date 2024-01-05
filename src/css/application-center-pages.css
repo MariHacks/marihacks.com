@@ -57,5 +57,15 @@
     .acp-img {
       @apply hidden;
     }
+
+    .acp-container {
+      @apply h-full;
+    }
+  }
+
+  @media (max-height: 600px) {
+    .acp-container {
+      @apply h-full;
+    }
   }
 }

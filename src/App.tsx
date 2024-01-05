@@ -2,10 +2,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Apply from "./pages/apply";
 import Home from "./pages/home";
+import Judging from "./pages/application-center/judging";
 import Mentorship from "./pages/application-center/mentorship";
 import Prizes from "./pages/application-center/prizes";
 import Registration from "./pages/application-center/registration";
-import Sponsor from "./pages/application-center/sponsor";
+import Sponsorship from "./pages/application-center/sponsorship";
 import Volunteering from "./pages/application-center/volunteering";
 import Workshop from "./pages/application-center/workshop";
 
@@ -23,8 +24,8 @@ const router = createBrowserRouter([
     element: <Mentorship />,
   },
   {
-    path: "/sponsor",
-    element: <Sponsor />,
+    path: "/sponsorship",
+    element: <Sponsorship />,
   },
   {
     path: "/volunteering",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/workshops",
     element: <Workshop />,
+  },
+  {
+    path: "/judging",
+    element: <Judging />,
   },
   {
     path: "/prizes",

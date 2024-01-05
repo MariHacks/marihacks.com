@@ -1,6 +1,7 @@
 import "../css/sponsors.css";
 
 import { Link } from "react-router-dom";
+import { imageManager } from "../helper/ressourceManagers";
 import { sponsors } from "../docs/sponsors";
 
 const GoldSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
@@ -70,9 +71,12 @@ const Sponsors = () => {
         <Link className="sponsors-button mr-5" to="/sponsor">
           Become a sponsor
         </Link>
-        <Link className="sponsors-button" to="/">
+        <a
+          className="sponsors-button"
+          href={imageManager("prospectus_2024").pdf}
+        >
           See prospectus
-        </Link>
+        </a>
       </div>
 
       <p className="font-bold section-title">Partners</p>

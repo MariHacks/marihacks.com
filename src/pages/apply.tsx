@@ -43,14 +43,19 @@ const Apply = () => {
           />
           <Card
             subtitle="APPLY TO BE A SPONSOR"
-            title="Sponsor"
-            link="/sponsor"
+            title="Sponsorship"
+            link="/sponsorship"
           />
           <Card subtitle="SEE WORKSHOPS" title="Workshops" link="/workshops" />
           <Card
             subtitle="APPLE TO BE A VOLUNTEER"
             title="Volunteering"
             link="/volunteering"
+          />
+          <Card
+            subtitle="APPLE TO BE A JUDGE"
+            title="Judging"
+            link="/judging"
           />
           <Card subtitle="SEE PRIZES" title="Cool Prizes" link="/prizes" />
           <Link

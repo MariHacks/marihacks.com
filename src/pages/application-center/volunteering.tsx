@@ -34,7 +34,7 @@ const Volunteering = () => {
             })}
           </ul>
 
-          <a className="acp-apply-btn" href="">
+          <a className="acp-apply-btn-disabled" href="">
             Apply to be a volunteer
           </a>
         </div>

@@ -28,7 +28,6 @@ const Registration = () => {
 
   useEffect(() => {
     countdown();
-    console.log("HELLO");
   }, []);
 
   setInterval(() => {
@@ -44,9 +43,11 @@ const Registration = () => {
         <div className="flex flex-col items-center">
           <p className="font-bold acp-title">Register</p>
           <p className="text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-            explicabo maiores velit quasi, nobis minima qui, aliquam minus vitae
-            dicta commodi ad, vel eius totam vero quam cum molestiae nemo!
+            Welcome to MariHacks VII!
+            <br /> We're thrilled to invite all Cegep and high school students
+            to join us for an unforgettable hackathon experience on April 5-6,
+            2024. MariHacks is an opportunity for young minds to come together,
+            push boundaries, and turn their creative ideas into reality!
           </p>
 
           <div className="mt-8">

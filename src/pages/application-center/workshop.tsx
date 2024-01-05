@@ -44,7 +44,7 @@ const Workshop = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
 
-          <a className="acp-apply-btn" href="">
+          <a className="acp-apply-btn-disabled" href="">
             Present a workshop
           </a>
         </div>

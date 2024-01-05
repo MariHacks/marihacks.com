@@ -46,7 +46,7 @@ const Mentorship = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
 
-          <a className="acp-apply-btn" href="">
+          <a className="acp-apply-btn-disabled" href="">
             Apply to be a mentor
           </a>
         </div>

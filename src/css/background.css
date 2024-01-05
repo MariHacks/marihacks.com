@@ -13,4 +13,18 @@
 
 .wave {
   background-image: url("/bg.svg");
+  height: 200px;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  .wave {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wave {
+    height: 100px;
+  }
 }

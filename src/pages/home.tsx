@@ -1,6 +1,8 @@
 import "../css/background.css";
 import "../css/landing.css";
 
+import { AnimatePresence, motion } from "framer-motion";
+
 import About from "./about";
 import Carousel from "./carousel";
 import Faq from "./faq";
@@ -52,10 +54,7 @@ const Landing = () => {
           </p>
         </div>
       </div>
-      <img
-        src="./images/duck_logo.png"
-        className="w-3/4 mt-10 lg:w-1/2 md:m-0"
-      />
+      <img src="./images/duck_logo.png" className="landing-img" />
     </div>
   );
 };
@@ -65,12 +64,34 @@ const Home = () => {
     <div className="">
       <section
         id="home"
-        className="relative w-screen h-screen bg-[--spaceColor] stars bg-contain bg-fixed"
+        className="relative w-screen h-screen bg-[--spaceColor]"
       >
+        <AnimatePresence mode={"wait"}>
+          <motion.div
+            initial="initialState"
+            animate="animateState"
+            exit="exitState"
+            transition={{
+              type: "tween",
+              duration: 3,
+            }}
+            variants={{
+              initialState: {
+                opacity: 0,
+              },
+              animateState: {
+                opacity: 1,
+              },
+              exitState: {
+                opacity: 0,
+              },
+            }}
+            className="absolute w-full h-full stars bg-fixed bg-contain"
+          ></motion.div>
+        </AnimatePresence>
         <Navbar />
         <Landing />
-
-        <div className="spacer wave h-[100px] md:h-[200px] bottom-0"></div>
+        <div className="spacer wave"></div>
       </section>
       <div className="bg-[--secondary-color]">
         <hr className="border border-black mx-[10%]" />
