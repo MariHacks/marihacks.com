@@ -73,7 +73,7 @@ const About = () => {
           </p>
 
           <div className="w-fit font-bold hover:text-blue-500 mt-2">
-            <Link to="/more" className="">
+            <Link to="/application-center" className="">
               Learn more
             </Link>
           </div>
