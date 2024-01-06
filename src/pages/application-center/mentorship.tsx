@@ -2,6 +2,7 @@ import "../../css/application-center-pages.css";
 
 import BackArrow from "../../components/BackArrow";
 import { SiGmail } from "react-icons/si";
+import { imageManager } from "../../helper/ressourceManagers";
 
 const Mentorship = () => {
   const bulletPoints = [
@@ -46,11 +47,14 @@ const Mentorship = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
 
-          <a className="acp-apply-btn-disabled" href="">
+          <a
+            className="acp-apply-btn-disabled"
+            // href=""
+          >
             Apply to be a mentor
           </a>
         </div>
-        <div className="acp-img"></div>
+        <img className="acp-img" src={imageManager("mentorship").acpImg} />
       </div>
     </div>
   );

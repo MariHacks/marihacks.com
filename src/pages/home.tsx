@@ -16,11 +16,25 @@ const Quotes = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        "Best pre-university Hackathon.",
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        "Free for everyone.",
+        "Code. Solve. Repeat.",
         1000,
-        "Most exciting and fun event.",
+        "Youth Coding, Future Building.",
+        1000,
+        "Innovation Starts Here.",
+        1000,
+        "Crack the Code, Shape the Future.",
+        1000,
+        "Students, Code, Create.",
+        1000,
+        "Challenge Accepted, Code Completed.",
+        1000,
+        "High School, Cegep, Hack On!",
+        1000,
+        "Coding Minds, Changing Game.",
+        1000,
+        "Hack Hard, Learn Fast.",
+        1000,
+        "Young Coders, Big Impact.",
         1000,
       ]}
       wrapper="p"

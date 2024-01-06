@@ -50,7 +50,10 @@ const Sponsorship = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
           <div className="flex flex-col md:flex-row md:items-center mt-8">
-            <a className="acp-apply-btn" href="">
+            <a
+              className="acp-apply-btn"
+              href="https://forms.gle/44oZrJkWsZmNAJ7P6"
+            >
               Sponsor MariHacks
             </a>
             <a
@@ -61,7 +64,7 @@ const Sponsorship = () => {
             </a>
           </div>
         </div>
-        <div className="acp-img"></div>
+        <img className="acp-img" src={imageManager("sponsors").acpImg} />
       </div>
     </div>
   );

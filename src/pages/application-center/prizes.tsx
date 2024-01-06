@@ -1,4 +1,5 @@
 import BackArrow from "../../components/BackArrow";
+import { imageManager } from "../../helper/ressourceManagers";
 
 const Prizes = () => {
   const bulletPoints = [
@@ -46,7 +47,7 @@ const Prizes = () => {
             See more
           </a>
         </div>
-        <div className="acp-img"></div>
+        <img className="acp-img" src={imageManager("prizes").acpImg} />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import BackArrow from "../../components/BackArrow";
+import { imageManager } from "../../helper/ressourceManagers";
 
 const Judging = () => {
   const bulletPoints = [
@@ -39,7 +40,7 @@ const Judging = () => {
             Apply to be a judge
           </a>
         </div>
-        <div className="acp-img"></div>
+        <img className="acp-img" src={imageManager("judging").acpImg} />
       </div>
     </div>
   );

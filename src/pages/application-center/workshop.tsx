@@ -1,5 +1,6 @@
 import BackArrow from "../../components/BackArrow";
 import { SiGmail } from "react-icons/si";
+import { imageManager } from "../../helper/ressourceManagers";
 
 const Workshop = () => {
   const bulletPoints = [
@@ -44,11 +45,14 @@ const Workshop = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
 
-          <a className="acp-apply-btn-disabled" href="">
+          <a
+            className="acp-apply-btn-disabled"
+            // href=""
+          >
             Present a workshop
           </a>
         </div>
-        <div className="acp-img"></div>
+        <img className="acp-img" src={imageManager("workshop").acpImg} />
       </div>
     </div>
   );

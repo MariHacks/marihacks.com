@@ -32,15 +32,17 @@
   .acp-card-bg {
     box-shadow: 4px 4px 0px 0px var(--border-main-color);
     @apply w-full h-fit rounded-lg border border-[--border-main-color] bg-white p-8 my-8
-    dark:bg-white text-[14px]
-    lg:flex md:text-[16px];
+    dark:bg-white text-[14px] flex
+    md:text-[16px];
   }
 
   .acp-text {
     @apply lg:w-1/2 flex flex-col md:mr-5;
   }
+
   .acp-img {
-    @apply w-1/2 bg-black;
+    box-shadow: 4px 4px 0px 0px var(--border-main-color);
+    @apply w-1/2 h-fit rounded-xl border border-[#6A78AB];
   }
 
   .acp-apply-btn-disabled {
@@ -53,9 +55,25 @@
     text-white w-fit hover:translate-x-[0px] hover:translate-y-[0px];
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
+    .acp-card-bg {
+      @apply flex items-start;
+    }
     .acp-img {
-      @apply hidden;
+      @apply w-1/2 h-auto;
+    }
+
+    /* .acp-container {
+      @apply h-full;
+    } */
+  }
+
+  @media (max-width: 1024px) {
+    .acp-card-bg {
+      @apply flex flex-col;
+    }
+    .acp-img {
+      @apply mt-10 w-full h-auto;
     }
 
     /* .acp-container {

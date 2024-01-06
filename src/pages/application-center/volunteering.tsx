@@ -1,4 +1,5 @@
 import BackArrow from "../../components/BackArrow";
+import { imageManager } from "../../helper/ressourceManagers";
 
 const Volunteering = () => {
   const bulletPoints = [
@@ -38,7 +39,7 @@ const Volunteering = () => {
             Apply to be a volunteer
           </a>
         </div>
-        <div className="acp-img"></div>
+        <img className="acp-img" src={imageManager("volunteering").acpImg} />
       </div>
     </div>
   );
