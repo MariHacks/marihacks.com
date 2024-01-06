@@ -36,7 +36,7 @@ const Sponsors = () => {
           <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
           <GoldSponsor
             imgSrc={sponsors.leadingleaders.imgUrl}
-            link={sponsors.concordia.link}
+            link={sponsors.leadingleaders.link}
           />
         </div>
         <div className="flex md:flex-row flex-col items-center justify-center">
