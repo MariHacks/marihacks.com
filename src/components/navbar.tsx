@@ -42,7 +42,7 @@ const Navbar = () => {
     <>
       <nav id="navbar" className={`navbar scrollFeature`}>
         <a className="flex items-center" href="#home">
-          <img className="navbar-logo" src="./images/logo.png" />
+          <img className="navbar-logo" src="./images/new_logo_gradient.png" />
           <p className="navbar-title font-bold">MariHacks</p>
         </a>
         <div className="navbar-links">
