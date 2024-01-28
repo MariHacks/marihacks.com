@@ -50,7 +50,7 @@ const Registration = () => {
             push boundaries, and turn their creative ideas into reality!
           </p>
           <div className="flex flex-col items-center mt-8">
-            <p className="">Time before the event:</p>
+            <p className="">Time left before the event:</p>
             <p>
               {days} days {hours} hrs {minutes} min {seconds} sec
             </p>
