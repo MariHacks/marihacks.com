@@ -20,28 +20,28 @@ const router = createBrowserRouter([
     element: <Apply />,
   },
   {
-    path: "/mentorship",
+    path: "/application-center/mentorship",
     element: <Mentorship />,
   },
   {
-    path: "/sponsorship",
+    path: "/application-center/sponsorship",
     element: <Sponsorship />,
   },
   {
-    path: "/volunteering",
+    path: "/application-center/volunteering",
     element: <Volunteering />,
   },
 
   {
-    path: "/workshops",
+    path: "/application-center/workshops",
     element: <Workshop />,
   },
   {
-    path: "/judging",
+    path: "/application-center/judging",
     element: <Judging />,
   },
   {
-    path: "/prizes",
+    path: "/application-center/prizes",
     element: <Prizes />,
   },
   {

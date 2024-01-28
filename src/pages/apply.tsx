@@ -13,7 +13,7 @@ interface CardProps {
 
 const Card = ({ subtitle, title, link }: CardProps) => {
   return (
-    <Link to={link} className="apply-cards">
+    <Link to={`/application-center${link}`} className="apply-cards">
       <div className="flex flex-col justify-center items-center">
         <p className="font-bold text-[32px]">{title}</p>
         <p>{subtitle}</p>

@@ -5,8 +5,6 @@ export type SponsorInfo = {
   link: string;
 };
 
-console.log(imageManager("concordia").sponsorImg);
-
 export const sponsors: { [key: string]: SponsorInfo } = {
   nbc: { imgUrl: imageManager("nbc").sponsorImg, link: "https://www.nbc.ca/" },
   leadingleaders: {

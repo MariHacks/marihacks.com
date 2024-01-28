@@ -38,7 +38,7 @@ const Registration = () => {
 
   return (
     <div className="acp-container">
-      <BackArrow text="Application center" link="/application-center" />
+      <BackArrow text="Home" link="/" />
       <div className="acp-card-bg mx-auto lg:w-1/2 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <p className="font-bold acp-title">Register</p>
@@ -49,11 +49,19 @@ const Registration = () => {
             2024. MariHacks is an opportunity for young minds to come together,
             push boundaries, and turn their creative ideas into reality!
           </p>
-
-          <div className="mt-8">
-            {days} days {hours} hrs {minutes} min {seconds} sec
+          <div className="flex flex-col items-center mt-8">
+            <p className="">Time before the event:</p>
+            <p>
+              {days} days {hours} hrs {minutes} min {seconds} sec
+            </p>
           </div>
-          <a className="acp-apply-btn-disabled">Registration disabled</a>
+
+          <a
+            className="acp-apply-btn-disabled"
+            // href="https://docs.google.com/forms/d/1H34d0e5evac8JgcJF6C0VckwGNma_kUCPMPycXTXYfA/edit"
+          >
+            Registration disabled
+          </a>
         </div>
 
         <img
