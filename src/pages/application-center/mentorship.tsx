@@ -54,7 +54,11 @@ const Mentorship = () => {
             Apply to be a mentor
           </a>
         </div>
-        <img className="acp-img" src={imageManager("mentorship").acpImg} />
+        <img
+          className="acp-img"
+          src={imageManager("mentorship").acpImg}
+          alt="photo"
+        />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import { sponsors } from "../docs/sponsors";
 const GoldSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
   return (
     <a className="sponsor-logo-gold" href={link}>
-      <img className="w-full" src={imgSrc} alt={link} />
+      <img loading="lazy" className="w-full" src={imgSrc} alt={link} />
     </a>
   );
 };
@@ -15,7 +15,7 @@ const GoldSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
 const SilverSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
   return (
     <a className="sponsor-logo-silver" href={link}>
-      <img className="w-full" src={imgSrc} alt={link} />
+      <img loading="lazy" className="w-full" src={imgSrc} alt={link} />
     </a>
   );
 };
@@ -74,7 +74,10 @@ const Sponsors = () => {
       </div>
 
       <div className="flex md:my-8 mb-4">
-        <Link className="sponsors-button mr-5" to="/sponsorship">
+        <Link
+          className="sponsors-button mr-5"
+          to="/application-center/sponsorship"
+        >
           Become a sponsor
         </Link>
         <a

@@ -52,7 +52,11 @@ const Workshop = () => {
             Present a workshop
           </a>
         </div>
-        <img className="acp-img" src={imageManager("workshop").acpImg} />
+        <img
+          className="acp-img"
+          src={imageManager("workshop").acpImg}
+          alt="photo"
+        />
       </div>
     </div>
   );

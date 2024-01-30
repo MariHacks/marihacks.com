@@ -47,7 +47,11 @@ const Prizes = () => {
             See more
           </a>
         </div>
-        <img className="acp-img" src={imageManager("prizes").acpImg} />
+        <img
+          className="acp-img"
+          src={imageManager("prizes").acpImg}
+          alt="photo"
+        />
       </div>
     </div>
   );

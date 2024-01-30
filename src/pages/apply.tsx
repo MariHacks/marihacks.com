@@ -1,6 +1,7 @@
 import "../css/apply.css";
 
 import BackArrow from "../components/BackArrow";
+import Footer from "../components/footer";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../components/scrollToTop";
 
@@ -69,6 +70,7 @@ const Apply = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

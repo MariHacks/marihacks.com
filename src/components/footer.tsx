@@ -6,12 +6,18 @@ const Footer = () => {
   return (
     <footer className="flex items-center justify-between mt-8 h-[80px] md:h-[125px] bg-[--primary-color] px-6 py-2 text-white">
       <div className="h-2/3 md:h-full flex items-center">
-        <img
-          className="hidden md:block h-full mr-5"
+        <a href="#home">
+          <img
+            className="navbar-logo"
+            src="./images/new_logo_gradient_cropped.png"
+          />
+        </a>
+
+        {/* <img
+          className="hidden md:block h-full ml-5"
           src="./images/duck_logo.png"
           alt=""
-        />
-        <p className="font-bold md:text-[24px]">MariHacks</p>
+        /> */}
       </div>
 
       <div className="flex flex-col items-end justify-between md:flex-row md:items-center md:text-[24px]">

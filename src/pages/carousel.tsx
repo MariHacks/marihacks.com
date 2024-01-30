@@ -3,7 +3,14 @@ import "../css/carousel.css";
 import { imageManager } from "../helper/ressourceManagers";
 
 const CarouselItem = ({ img }: { img: string }) => {
-  return <img className="carousel-img" src={img} />;
+  return (
+    <img
+      loading="lazy"
+      className="carousel-img"
+      src={img}
+      alt="last year's photo :)"
+    />
+  );
 };
 
 const Carousel = () => {

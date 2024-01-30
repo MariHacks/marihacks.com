@@ -42,7 +42,11 @@ const Volunteering = () => {
             Apply to be a volunteer
           </a>
         </div>
-        <img className="acp-img" src={imageManager("volunteering").acpImg} />
+        <img
+          className="acp-img"
+          src={imageManager("volunteering").acpImg}
+          alt="photo"
+        />
       </div>
     </div>
   );

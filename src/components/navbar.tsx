@@ -46,7 +46,6 @@ const Navbar = () => {
             className="navbar-logo"
             src="./images/new_logo_gradient_cropped.png"
           />
-          <p className="navbar-title font-bold">MariHacks</p>
         </a>
         <div className="navbar-links">
           <div className="navbar-separator"></div>

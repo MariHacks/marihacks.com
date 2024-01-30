@@ -40,7 +40,11 @@ const Judging = () => {
             Apply to be a judge
           </a>
         </div>
-        <img className="acp-img" src={imageManager("judging").acpImg} />
+        <img
+          className="acp-img"
+          src={imageManager("judging").acpImg}
+          alt="photo"
+        />
       </div>
     </div>
   );

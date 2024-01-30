@@ -13,10 +13,6 @@
     @apply h-[100px];
   }
 
-  .navbar-title {
-    @apply hidden;
-  }
-
   .navbar-links {
     @apply w-full flex items-center;
   }
@@ -63,7 +59,7 @@
     }
 
     .navbar-logo {
-      @apply hidden;
+      @apply h-[75px];
     }
 
     .navbar-title {

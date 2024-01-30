@@ -67,7 +67,7 @@ const Registration = () => {
         <img
           className="w-2/3"
           src={imageManager("duck_logo").brandImg}
-          alt=""
+          alt="photo"
         />
       </div>
     </div>

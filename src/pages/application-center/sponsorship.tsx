@@ -64,7 +64,11 @@ const Sponsorship = () => {
             </a>
           </div>
         </div>
-        <img className="acp-img" src={imageManager("sponsors").acpImg} />
+        <img
+          className="acp-img"
+          src={imageManager("sponsors").acpImg}
+          alt="photo"
+        />
       </div>
     </div>
   );
