@@ -37,16 +37,26 @@ const Apply = () => {
         {/* Sponsor card */}
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card
-            subtitle="APPLY TO BE A MENTOR"
-            title="Mentorship"
-            link="/mentorship"
-          />
+          <Link
+            to="/registration"
+            className="apply-cards bg-[--primary-color] text-white"
+          >
+            <div className="flex flex-col justify-center items-center">
+              <p className="font-bold text-[32px]">Register</p>
+              <p>REGISTRATION</p>
+            </div>
+          </Link>
           <Card
             subtitle="APPLY TO BE A SPONSOR"
             title="Sponsorship"
             link="/sponsorship"
           />
+          <Card
+            subtitle="APPLY TO BE A MENTOR"
+            title="Mentorship"
+            link="/mentorship"
+          />
+
           <Card subtitle="SEE WORKSHOPS" title="Workshops" link="/workshops" />
           <Card
             subtitle="APPLY TO BE A VOLUNTEER"
@@ -59,15 +69,6 @@ const Apply = () => {
             link="/judging"
           />
           <Card subtitle="SEE PRIZES" title="Cool Prizes" link="/prizes" />
-          <Link
-            to="/registration"
-            className="apply-cards bg-[--primary-color] text-white"
-          >
-            <div className="flex flex-col justify-center items-center">
-              <p className="font-bold text-[32px]">Register</p>
-              <p>REGISTRATION</p>
-            </div>
-          </Link>
         </div>
       </div>
       <Footer />

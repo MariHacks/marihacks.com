@@ -40,22 +40,28 @@ const Registration = () => {
     <div className="acp-container">
       <BackArrow text="Home" link="/" />
       <div className="acp-card-bg mx-auto lg:w-1/2 flex flex-col items-center">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-center">
           <p className="font-bold acp-title">Register</p>
-          <p className="text-center">
-            Welcome to MariHacks VII!
-            <br /> We're thrilled to invite all Cegep and high school students
-            to join us for an unforgettable hackathon experience on April 5-6,
-            2024. MariHacks is an opportunity for young minds to come together,
-            push boundaries, and turn their creative ideas into reality!
+          <p className="font-bold">Welcome to MariHacks VII!</p>
+          <p className="my-4">
+            We're thrilled to invite all Cegep and high school students to join
+            us for an unforgettable hackathon experience on{" "}
+            <span className="font-bold">April 5-6, 2024</span>. MariHacks is an
+            opportunity for young minds to come together, push boundaries, and
+            turn their creative ideas into reality!
           </p>
+          <p>
+            Applications for MariHacks VII open on{" "}
+            <span className="font-bold">February 5th</span> and we will contact
+            the selected applicants when the registration closes.
+          </p>
+
           <div className="flex flex-col items-center mt-8">
             <p className="">Time left before the event:</p>
             <p>
               {days} days {hours} hrs {minutes} min {seconds} sec
             </p>
           </div>
-
           <a
             className="acp-apply-btn-disabled"
             // href="https://docs.google.com/forms/d/1H34d0e5evac8JgcJF6C0VckwGNma_kUCPMPycXTXYfA/edit"

@@ -33,10 +33,17 @@ const Sponsors = () => {
         </div> */}
 
         <div className="flex md:flex-row flex-col items-center justify-center">
+          <GoldSponsor
+            imgSrc={sponsors.marianopolis.imgUrl}
+            link={sponsors.marianopolis.link}
+          />
+        </div>
+
+        <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
           <GoldSponsor
-            imgSrc={sponsors.leadingleaders.imgUrl}
-            link={sponsors.leadingleaders.link}
+            imgSrc={sponsors.wolfram.imgUrl}
+            link={sponsors.wolfram.link}
           />
         </div>
         <div className="flex md:flex-row flex-col items-center justify-center">
@@ -52,8 +59,8 @@ const Sponsors = () => {
             link={sponsors.uofm.link}
           />
           <GoldSponsor
-            imgSrc={sponsors.marianopolis.imgUrl}
-            link={sponsors.marianopolis.link}
+            imgSrc={sponsors.leadingleaders.imgUrl}
+            link={sponsors.leadingleaders.link}
           />
         </div>
 
@@ -62,10 +69,7 @@ const Sponsors = () => {
             imgSrc={sponsors.onepassword.imgUrl}
             link={sponsors.onepassword.link}
           />
-          <SilverSponsor
-            imgSrc={sponsors.wolfram.imgUrl}
-            link={sponsors.wolfram.link}
-          />
+
           <SilverSponsor
             imgSrc={sponsors.echo.imgUrl}
             link={sponsors.echo.link}
