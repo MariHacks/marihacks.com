@@ -18,7 +18,7 @@ const Workshop = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Workshops</p>
           <p className="">
-            Panelist registration will open very soon! Workshops, technical or
+            Panelist registration is now open! Workshops, technical or
             non-technical, are essential to MariHacks. They're the perfect way
             for hackers to get started on a new technology or learn more about a
             topic in depth!

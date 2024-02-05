@@ -14,15 +14,15 @@ const Judging = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Judging</p>
           <p className="">
-            Judging registration will open very soon! Based on the judging
-            criteria for the submissions, judges would bring their expert
-            insights in order to select the winners. Thus, if you are a
-            professional in the field of programming or have a professional
-            background of working with hackathons, MariHacks would love to
-            welcome you as a judge for our event!
+            Judging registration is now open! Based on the judging criteria for
+            the submissions, judges would bring their expert insights in order
+            to select the winners. Thus, if you are a professional in the field
+            of programming or have a professional background of working with
+            hackathons, MariHacks would love to welcome you as a judge for our
+            event!
           </p>
           <br className="my-2" />
-          <p>Little sneakpeak:</p>
+          <p>As part of the panel of judges, your roles usually include:</p>
           <ul className="list-disc ml-5">
             {bulletPoints.map((bulletPoint, key) => {
               return (

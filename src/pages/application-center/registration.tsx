@@ -51,9 +51,9 @@ const Registration = () => {
             turn their creative ideas into reality!
           </p>
           <p>
-            Applications for MariHacks VII open on{" "}
-            <span className="font-bold">February 5th</span> and we will contact
-            the selected applicants when the registration closes.
+            Applications for MariHacks VII are now{" "}
+            <span className="font-bold">open</span> , so sign up now! We will
+            send out application decisions after registration closes.
           </p>
 
           <div className="flex flex-col items-center mt-8">
@@ -63,10 +63,10 @@ const Registration = () => {
             </p>
           </div>
           <a
-            className="acp-apply-btn-disabled"
-            // href="https://docs.google.com/forms/d/1H34d0e5evac8JgcJF6C0VckwGNma_kUCPMPycXTXYfA/edit"
+            className="acp-apply-btn"
+            href="https://forms.gle/NNYzGUh9u6fZu3Cq8"
           >
-            Registration disabled
+            Registration form
           </a>
         </div>
 
