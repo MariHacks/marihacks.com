@@ -16,15 +16,15 @@ const Volunteering = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Volunteering</p>
           <p className="">
-            Volunteer registration will open very soon! MariHacks is run by a
-            small team of Marianopolis students, and the event would not be as
-            fun or even possible without our amazing volunteers! If you are a
-            CEGEP student interested in helping out and you are available during
-            some parts or the entirety of MariHacks (see our schedule), don’t
-            hesitate to sign up to volunteer!
+            Volunteer registration is now open! MariHacks is run by a small team
+            of Marianopolis students, and the event would not be as fun or even
+            possible without our amazing volunteers! If you are a CEGEP student
+            interested in helping out and you are available during some parts or
+            the entirety of MariHacks (see our schedule), don't hesitate to sign
+            up to volunteer!
           </p>
           <br className="my-2" />
-          <p>Some of a mentor's roles usually include:</p>
+          <p>Some of a volunteer's roles could include helping us:</p>
           <ul className="list-disc ml-5">
             {bulletPoints.map((bulletPoint, key) => {
               return (

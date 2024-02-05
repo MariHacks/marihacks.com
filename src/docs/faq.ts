@@ -18,7 +18,7 @@ export const faqColOne: faqCol = [
 
     question: "How much does it cost?",
     answer:
-      "Nothing! The entire event will be held in-person and all you need to participate is a computer.",
+      "Nothing! That's right, we provide all food, drinks and even prizes for free—the entire event will be held in-person at Marianopolis, and all you need to participate is a computer.",
   },
   {
     index: 3,
@@ -32,7 +32,7 @@ export const faqColOne: faqCol = [
     index: 4,
 
     question: "Who can apply?",
-    answer: "Any High School, CEGEP, and U0 students is eligible to apply!",
+    answer: "Any high school, CEGEP, or U0 student is eligible to apply!",
   },
 ];
 
@@ -50,30 +50,31 @@ export const faqColTwo: faqCol = [
 
     question: "What if I don't have a team?",
     answer:
-      "Don't worry! We will have team formation sessions at the beginning of MariHacks so you can find some teammates!",
+      "Don't worry! We'll have team formation sessions at the beginning of our event so you can find some teammates." +
+      " Our Discord server (invitations will be sent to selected participants) is also a great place to form teams!",
   },
 
   {
     index: 7,
 
-    question: "Where is the location?",
+    question: "Where will MariHacks be held?",
     answer:
       "The 7th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
   },
   {
     index: 8,
 
-    question: "When will applications open?",
+    question: "When can I apply?",
     answer:
-      "Hacker applications will open on February 5th." +
-      " Keep an eye out for the application form in our application center!",
+      "Applications for participants, volunteers, mentors, judges, and guest speakers opened on February 5!" +
+      " Sign up at our application center before March 10 to make sure you don't miss out!",
   },
   {
     index: 13,
 
     question: "Who can stay overnight at MariHacks?",
     answer:
-      "CEGEP students, volunteers and mentors can stay overnight at MariHacks as long as all necessary information is provided (see the registration forms).s" +
+      "CEGEP students, volunteers and mentors can stay overnight at MariHacks as long as all necessary information is provided (see the registration forms)." +
       " Judges and guest speakers are welcome to stay as well." +
       " However, if you are a high school student, you will not be able to stay overnight.",
   },
@@ -84,24 +85,33 @@ export const faqColThree: faqCol = [
 
     question: "I'm interested in judging!",
     answer:
-      "If you have professional experience related to MariHacks, we'd love to invite you. " +
-      " Judge registration will open soon, please stay tuned or send an application through application center!",
+      "If you have professional experience related to MariHacks, we'd love to invite you." +
+      " Judging registration is open as of February 5, and the form can be found in our application center!",
   },
   {
     index: 10,
 
     question: "I'm interested in presenting a workshop!",
     answer:
-      "We'd love to have you present a workshop on any topic related to MariHacks." +
-      " The panelist registration form will be open soon, feel free to send an application through application center!",
+      "If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants!" +
+      " The panelist registration form is open as of February 5 and can be found in the application center.",
   },
   {
     index: 11,
 
     question: "I'm interested in mentoring!",
     answer:
-      "If you are an experienced programmer who loves to help others, we'd love to have you too! " +
-      " The mentor registration form will be posted soon, or you can also send an application through the application center!",
+      "If you are an experienced programmer who loves to help others, we'd be very happy to have you!" +
+      " Find out more about the roles of a hackathon mentor and register to be a mentor through the application center!",
+  },
+  {
+    index: 14,
+
+    question: "Who can volunteer?",
+    answer:
+      "CEGEP students and up are welcome to volunteer at MariHacks!" +
+      " This is a big event, so we'd be very grateful for your help if you're available during some parts or all of MariHacks—food and drinks will be provided for free." +
+      " Sign up to be a volunteer through our application center!",
   },
 
   {
