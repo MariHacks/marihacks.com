@@ -32,7 +32,7 @@ export const faqColOne: faqCol = [
     index: 4,
 
     question: "Who can apply?",
-    answer: "Any high school, CEGEP, and U0 student is eligible to apply!",
+    answer: "Any high school, CEGEP, or U0 student is eligible to apply!",
   },
 ];
 
@@ -57,7 +57,7 @@ export const faqColTwo: faqCol = [
   {
     index: 7,
 
-    question: "Where is the location?",
+    question: "Where will MariHacks be held?",
     answer:
       "The 7th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
   },
@@ -74,7 +74,7 @@ export const faqColTwo: faqCol = [
 
     question: "Who can stay overnight at MariHacks?",
     answer:
-      "CEGEP students, volunteers and mentors can stay overnight at MariHacks as long as all necessary information is provided (see the registration forms)" +
+      "CEGEP students, volunteers and mentors can stay overnight at MariHacks as long as all necessary information is provided (see the registration forms)." +
       " Judges and guest speakers are welcome to stay as well." +
       " However, if you are a high school student, you will not be able to stay overnight.",
   },

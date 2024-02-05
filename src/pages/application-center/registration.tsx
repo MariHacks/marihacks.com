@@ -51,9 +51,10 @@ const Registration = () => {
             turn their creative ideas into reality!
           </p>
           <p>
-            Applications for MariHacks VII are now{" "}
-            <span className="font-bold">open</span> , so sign up now! We will
-            send out application decisions after registration closes.
+            Applications for MariHacks VII are{" "}
+            <span className="font-bold">open until March 10, 23:59 EST</span>,
+            so sign up now! We will send out application decisions after
+            registration closes.
           </p>
 
           <div className="flex flex-col items-center mt-8">

@@ -5,7 +5,7 @@
 @layer components {
   .subtitle {
     box-shadow: 2px 2px 0px 0px rgba(255, 224, 59, 0.55);
-    @apply px-[15px] py-[10px] w-fit text-[20px]
+    @apply px-[15px] py-[10px] w-fit text-[30px]
     border border-black rounded-2xl bg-[#FFE03B];
   }
 

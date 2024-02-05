@@ -56,11 +56,9 @@ const Landing = () => {
         </p>
 
         <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4 z-10">
-          <p className="subtitle font-bold">
-            Marianopolis' very own Hackathon.
-          </p>
+          <p className="subtitle font-bold">Sign up for MariHacks now!</p>
           <hr className="my-4 lg:my-6 w-full" />
-          <p className="text-white text-[12px] md:text-[16px]">
+          <p className="text-white text-[16px] md:text-[20px]">
             April 5-6, 2024
           </p>
           <p className="text-gray-400 text-[12px] md:text-[16px]">
