@@ -39,6 +39,14 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     imgUrl: imageManager("echo").sponsorImg,
     link: "https://www.echo3d.com/",
   },
+  laitchoco: {
+    imgUrl: imageManager("laitchoco").sponsorImg,
+    link: "https://www.lafamilledulait.com/fr/produits-laitiers/produits/lait-au-chocolat",
+  },
+  cjendg: {
+    imgUrl: imageManager("cjendg").sponsorImg,
+    link: "https://cje-ndg.com/fr/",
+  },
   brebeufhx: {
     imgUrl: imageManager("brebeufhx").sponsorImg,
     link: "https://www.brebeufhackathon.com/",

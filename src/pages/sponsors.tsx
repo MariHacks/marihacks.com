@@ -47,29 +47,37 @@ const Sponsors = () => {
           />
         </div>
         <div className="flex md:flex-row flex-col items-center justify-center">
+          <GoldSponsor
+            imgSrc={sponsors.laitchoco.imgUrl}
+            link={sponsors.laitchoco.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.cjendg.imgUrl}
+            link={sponsors.cjendg.link}
+          />
+        </div>
+        <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor imgSrc={sponsors.msu.imgUrl} link={sponsors.msu.link} />
           <GoldSponsor
             imgSrc={sponsors.concordia.imgUrl}
             link={sponsors.concordia.link}
           />
-        </div>
-        <div className="flex items-center md:flex-row flex-col justify-center">
           <GoldSponsor
             imgSrc={sponsors.uofm.imgUrl}
             link={sponsors.uofm.link}
           />
-          <GoldSponsor
-            imgSrc={sponsors.leadingleaders.imgUrl}
-            link={sponsors.leadingleaders.link}
-          />
         </div>
+        <div className="flex items-center md:flex-row flex-col justify-center"></div>
 
         <div className="flex md:flex-row flex-col justify-center items-center">
           <SilverSponsor
             imgSrc={sponsors.onepassword.imgUrl}
             link={sponsors.onepassword.link}
           />
-
+          <SilverSponsor
+            imgSrc={sponsors.leadingleaders.imgUrl}
+            link={sponsors.leadingleaders.link}
+          />
           <SilverSponsor
             imgSrc={sponsors.echo.imgUrl}
             link={sponsors.echo.link}

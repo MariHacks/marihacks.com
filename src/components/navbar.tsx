@@ -52,6 +52,7 @@ const Navbar = () => {
           <ThemedButtons link="#about" text="About" />
           <ThemedButtons link="#sponsors" text="Sponsors" />
           <ThemedButtons link="#FAQ" text="FAQ" />
+          <ThemedButtons link="/schedule" text="Schedule" />
           <NavbarLink link="/application-center" text="Application Center" />
           <Link to="/registration" className="navbar-register-btn">
             Register

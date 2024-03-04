@@ -6,6 +6,7 @@ import Judging from "./pages/application-center/judging";
 import Mentorship from "./pages/application-center/mentorship";
 import Prizes from "./pages/application-center/prizes";
 import Registration from "./pages/application-center/registration";
+import SchedulePage from "./pages/schedule";
 import Sponsorship from "./pages/application-center/sponsorship";
 import Volunteering from "./pages/application-center/volunteering";
 import Workshop from "./pages/application-center/workshop";
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "/registration",
     element: <Registration />,
+  },
+  {
+    path: "/schedule",
+    element: <SchedulePage />,
   },
 ]);
 
