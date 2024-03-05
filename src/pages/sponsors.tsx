@@ -37,39 +37,56 @@ const Sponsors = () => {
             imgSrc={sponsors.marianopolis.imgUrl}
             link={sponsors.marianopolis.link}
           />
+          <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
         </div>
 
         <div className="flex md:flex-row flex-col items-center justify-center">
-          <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
+          <GoldSponsor imgSrc={sponsors.msu.imgUrl} link={sponsors.msu.link} />
+
           <GoldSponsor
             imgSrc={sponsors.wolfram.imgUrl}
             link={sponsors.wolfram.link}
           />
         </div>
         <div className="flex md:flex-row flex-col items-center justify-center">
-          <GoldSponsor imgSrc={sponsors.msu.imgUrl} link={sponsors.msu.link} />
           <GoldSponsor
             imgSrc={sponsors.concordia.imgUrl}
             link={sponsors.concordia.link}
           />
-        </div>
-        <div className="flex items-center md:flex-row flex-col justify-center">
           <GoldSponsor
             imgSrc={sponsors.uofm.imgUrl}
             link={sponsors.uofm.link}
           />
+        </div>
+        <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor
-            imgSrc={sponsors.leadingleaders.imgUrl}
-            link={sponsors.leadingleaders.link}
+            imgSrc={sponsors.fuse.imgUrl}
+            link={sponsors.fuse.link}
+          />
+
+          <GoldSponsor
+            imgSrc={sponsors.cjendg.imgUrl}
+            link={sponsors.cjendg.link}
           />
         </div>
 
+        <div className="flex items-center md:flex-row flex-col justify-center"></div>
+
         <div className="flex md:flex-row flex-col justify-center items-center">
+          <GoldSponsor
+            imgSrc={sponsors.laitchoco.imgUrl}
+            link={sponsors.laitchoco.link}
+          />
           <SilverSponsor
             imgSrc={sponsors.onepassword.imgUrl}
             link={sponsors.onepassword.link}
           />
-
+        </div>
+        <div className="flex md:flex-row flex-col justify-center items-center">
+          <SilverSponsor
+            imgSrc={sponsors.leadingleaders.imgUrl}
+            link={sponsors.leadingleaders.link}
+          />
           <SilverSponsor
             imgSrc={sponsors.echo.imgUrl}
             link={sponsors.echo.link}

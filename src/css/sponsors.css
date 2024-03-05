@@ -17,7 +17,7 @@
 
   .sponsor-card {
     box-shadow: 4px 4px 0px 0px var(--border-main-color);
-    @apply h-full rounded-lg border border-[--border-main-color] bg-white mx-8 p-8
+    @apply w-[80%] h-full rounded-lg border border-[--border-main-color] bg-white p-8
     dark:bg-white;
   }
 
