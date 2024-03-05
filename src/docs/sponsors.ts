@@ -47,6 +47,10 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     imgUrl: imageManager("cjendg").sponsorImg,
     link: "https://cje-ndg.com/fr/",
   },
+  fuse: {
+    imgUrl: imageManager("fuse").sponsorImg,
+    link: "https://www.f.energy/",
+  },
   brebeufhx: {
     imgUrl: imageManager("brebeufhx").sponsorImg,
     link: "https://www.brebeufhackathon.com/",
