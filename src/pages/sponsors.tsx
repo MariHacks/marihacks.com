@@ -33,6 +33,8 @@ const Sponsors = () => {
         </div> */}
 
         <div className="flex md:flex-row flex-col items-center justify-center">
+          <GoldSponsor imgSrc={sponsors.msu.imgUrl} link={sponsors.msu.link} />
+
           <GoldSponsor
             imgSrc={sponsors.marianopolis.imgUrl}
             link={sponsors.marianopolis.link}
@@ -48,17 +50,6 @@ const Sponsors = () => {
         </div>
         <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor
-            imgSrc={sponsors.laitchoco.imgUrl}
-            link={sponsors.laitchoco.link}
-          />
-          <GoldSponsor
-            imgSrc={sponsors.cjendg.imgUrl}
-            link={sponsors.cjendg.link}
-          />
-        </div>
-        <div className="flex md:flex-row flex-col items-center justify-center">
-          <GoldSponsor imgSrc={sponsors.msu.imgUrl} link={sponsors.msu.link} />
-          <GoldSponsor
             imgSrc={sponsors.concordia.imgUrl}
             link={sponsors.concordia.link}
           />
@@ -67,6 +58,17 @@ const Sponsors = () => {
             link={sponsors.uofm.link}
           />
         </div>
+        <div className="flex md:flex-row flex-col items-center justify-center">
+          <GoldSponsor
+            imgSrc={sponsors.laitchoco.imgUrl}
+            link={sponsors.laitchoco.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.cjendg.imgUrl}
+            link={sponsors.cjendg.link}
+          />
+        </div>
+
         <div className="flex items-center md:flex-row flex-col justify-center"></div>
 
         <div className="flex md:flex-row flex-col justify-center items-center">
