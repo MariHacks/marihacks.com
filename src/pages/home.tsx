@@ -122,6 +122,21 @@ const Home = () => {
           </p>
           <Sponsors />
         </section>
+        <section
+          id="sponsors"
+          className="py-10 lg:px-16 flex flex-col items-center"
+        >
+          <p className="section-title">MLH code of conduct</p>
+          <p className="section-subtitle">
+            Be respectful. Harassment and abuse are never tolerated.
+          </p>
+          <a
+            className="sponsors-button"
+            href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"}
+          >
+            See code of conduct
+          </a>
+        </section>
         <section id="FAQ" className="lg:px-16">
           <p className="section-title">FAQ</p>
           <p className="section-subtitle">Questions? No problem.</p>
