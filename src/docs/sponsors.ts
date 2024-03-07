@@ -41,15 +41,19 @@ export const sponsors: { [key: string]: SponsorInfo } = {
   },
   laitchoco: {
     imgUrl: imageManager("laitchoco").sponsorImg,
-    link: "https://www.lafamilledulait.com/fr/produits-laitiers/produits/lait-au-chocolat",
+    link: "https://lait.org/",
   },
   cjendg: {
     imgUrl: imageManager("cjendg").sponsorImg,
     link: "https://cje-ndg.com/fr/",
   },
   fuse: {
-    imgUrl: imageManager("fuse").sponsorImg,
+    imgUrl: "/sponsors/fuse.svg",
     link: "https://www.f.energy/",
+  },
+  standOutStickers: {
+    imgUrl: "/sponsors/stand-out-stickers.svg",
+    link: "https://hackp.ac/mlh-standoutstickers-hackathons",
   },
   brebeufhx: {
     imgUrl: imageManager("brebeufhx").sponsorImg,
