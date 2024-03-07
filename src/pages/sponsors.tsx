@@ -12,14 +12,6 @@ const GoldSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
   );
 };
 
-const SilverSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
-  return (
-    <a className="sponsor-logo-silver" href={link}>
-      <img loading="lazy" className="w-full" src={imgSrc} alt={link} />
-    </a>
-  );
-};
-
 const Sponsors = () => {
   return (
     <div className="w-full flex flex-col items-center">
@@ -114,9 +106,9 @@ const Sponsors = () => {
       <p className="section-subtitle">We work with the best.</p>
       <hr className="w-1/4 border border-black my-4 md:my-8" />
 
-      <div className="sponsor-card md:w-1/2 flex items-center">
-        <SilverSponsor imgSrc={sponsors.mlh.imgUrl} link={sponsors.mlh.link} />
-        <SilverSponsor
+      <div className="sponsor-card md:w-1/2 flex items-center justify-center">
+        <GoldSponsor imgSrc={sponsors.mlh.imgUrl} link={sponsors.mlh.link} />
+        <GoldSponsor
           imgSrc={sponsors.brebeufhxnoir.imgUrl}
           link={sponsors.brebeufhxnoir.link}
         />
