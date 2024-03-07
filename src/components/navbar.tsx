@@ -57,7 +57,20 @@ const Navbar = () => {
           <Link to="/registration" className="navbar-register-btn">
             Register
           </Link>
+          <div className="w-[10%]"></div>
         </div>
+        <a
+          id="mlh-trust-badge"
+          href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+          target="_blank"
+          className="w-[20%] md:w-[7%] fixed right-0 top-0 z-[1000] mr-[15%] md:mr-[2%]"
+        >
+          <img
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+            alt="Major League Hacking 2024 Hackathon Season"
+            style={{ width: "100%" }}
+          />
+        </a>
 
         {isExpanded ? (
           <IoClose
@@ -72,7 +85,7 @@ const Navbar = () => {
         )}
       </nav>
       {isExpanded ? (
-        <div className="fixed w-full top-[60px] bg-[--spaceColor] z-30 flex flex-col items-center p-8">
+        <div className="fixed w-full top-[60px] bg-[--spaceColor] z-[30] flex flex-col items-center p-8">
           <ThemedButtons link="#about" text="About" />
           <ThemedButtons link="#sponsors" text="Sponsors" />
           <ThemedButtons link="#FAQ" text="FAQ" />

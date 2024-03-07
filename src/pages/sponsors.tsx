@@ -12,14 +12,6 @@ const GoldSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
   );
 };
 
-const SilverSponsor = ({ imgSrc, link }: { imgSrc: string; link: string }) => {
-  return (
-    <a className="sponsor-logo-silver" href={link}>
-      <img loading="lazy" className="w-full" src={imgSrc} alt={link} />
-    </a>
-  );
-};
-
 const Sponsors = () => {
   return (
     <div className="w-full flex flex-col items-center">
@@ -58,7 +50,8 @@ const Sponsors = () => {
             link={sponsors.uofm.link}
           />
         </div>
-        <div className="flex md:flex-row flex-col items-center justify-center">
+
+        <div className="flex md:flex-row flex-col justify-center items-center">
           <GoldSponsor
             imgSrc={sponsors.fuse.imgUrl}
             link={sponsors.fuse.link}
@@ -68,28 +61,28 @@ const Sponsors = () => {
             imgSrc={sponsors.cjendg.imgUrl}
             link={sponsors.cjendg.link}
           />
+          <GoldSponsor
+            imgSrc={sponsors.standOutStickers.imgUrl}
+            link={sponsors.standOutStickers.link}
+          />
         </div>
-
-        <div className="flex items-center md:flex-row flex-col justify-center"></div>
-
         <div className="flex md:flex-row flex-col justify-center items-center">
           <GoldSponsor
-            imgSrc={sponsors.laitchoco.imgUrl}
-            link={sponsors.laitchoco.link}
-          />
-          <SilverSponsor
-            imgSrc={sponsors.onepassword.imgUrl}
-            link={sponsors.onepassword.link}
-          />
-        </div>
-        <div className="flex md:flex-row flex-col justify-center items-center">
-          <SilverSponsor
             imgSrc={sponsors.leadingleaders.imgUrl}
             link={sponsors.leadingleaders.link}
           />
-          <SilverSponsor
+
+          <GoldSponsor
             imgSrc={sponsors.echo.imgUrl}
             link={sponsors.echo.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.onepassword.imgUrl}
+            link={sponsors.onepassword.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.laitchoco.imgUrl}
+            link={sponsors.laitchoco.link}
           />
         </div>
       </div>
@@ -113,9 +106,9 @@ const Sponsors = () => {
       <p className="section-subtitle">We work with the best.</p>
       <hr className="w-1/4 border border-black my-4 md:my-8" />
 
-      <div className="sponsor-card md:w-1/2 flex items-center">
-        <SilverSponsor imgSrc={sponsors.mlh.imgUrl} link={sponsors.mlh.link} />
-        <SilverSponsor
+      <div className="sponsor-card md:w-1/2 flex items-center justify-center">
+        <GoldSponsor imgSrc={sponsors.mlh.imgUrl} link={sponsors.mlh.link} />
+        <GoldSponsor
           imgSrc={sponsors.brebeufhxnoir.imgUrl}
           link={sponsors.brebeufhxnoir.link}
         />

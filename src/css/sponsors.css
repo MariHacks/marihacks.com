@@ -5,13 +5,13 @@
 @layer components {
   /* Two in a row */
   .sponsor-logo-gold {
-    @apply m-3 w-full h-full
+    @apply m-3 w-1/2 w-full h-full
     lg:m-8;
   }
 
   /* Three in a row */
   .sponsor-logo-silver {
-    @apply m-3
+    @apply w-1/3 m-3
     lg:m-8;
   }
 
