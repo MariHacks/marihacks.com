@@ -67,7 +67,7 @@ export const faqColTwo: faqCol = [
     question: "When can I apply?",
     answer:
       "Applications for participants, volunteers, mentors, judges, and guest speakers opened on February 5!" +
-      " Sign up at our application center before March 10 to make sure you don't miss out!",
+      " Sign up at our application center before March 17 to make sure you don't miss out!",
   },
   {
     index: 13,

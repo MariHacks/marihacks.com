@@ -52,7 +52,7 @@ const Registration = () => {
           </p>
           <p>
             Applications for MariHacks VII are{" "}
-            <span className="font-bold">open until March 10, 23:59 EST</span>,
+            <span className="font-bold">open until March 17, 23:59 EST</span>,
             so sign up now! We will send out application decisions after
             registration closes.
           </p>
