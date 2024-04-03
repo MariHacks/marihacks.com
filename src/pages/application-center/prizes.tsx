@@ -41,8 +41,8 @@ const Prizes = () => {
           </ul>
 
           <a
-            className="acp-apply-btn"
-            href="https://marihacks-2023.devpost.com/?ref_feature=challenge&ref_medium=discover"
+            className="acp-apply-btn acp-apply-btn-disabled"
+            // href="https://marihacks-2023.devpost.com/?ref_feature=challenge&ref_medium=discover"
           >
             See more
           </a>

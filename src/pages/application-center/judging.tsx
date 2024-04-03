@@ -34,8 +34,8 @@ const Judging = () => {
           </ul>
 
           <a
-            className="acp-apply-btn"
-            href="https://docs.gooogle.com/forms/d/e/1FAIpQLSfDylPcSfq_r4C-Ug7mJ-b6B5M_ZZSLnLt99dKmUzooYY514w/viewform?usp=sf_link"
+            className="acp-apply-btn acp-apply-btn-disabled"
+            // href="https://docs.gooogle.com/forms/d/e/1FAIpQLSfDylPcSfq_r4C-Ug7mJ-b6B5M_ZZSLnLt99dKmUzooYY514w/viewform?usp=sf_link"
           >
             Apply to be a judge
           </a>
