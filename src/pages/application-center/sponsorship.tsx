@@ -51,8 +51,8 @@ const Sponsorship = () => {
           </a>
           <div className="flex flex-col md:flex-row md:items-center mt-8">
             <a
-              className="acp-apply-btn"
-              href="https://forms.gle/44oZrJkWsZmNAJ7P6"
+              className="acp-apply-btn acp-apply-btn-disabled"
+              // href="https://forms.gle/44oZrJkWsZmNAJ7P6"
             >
               Sponsor MariHacks
             </a>
