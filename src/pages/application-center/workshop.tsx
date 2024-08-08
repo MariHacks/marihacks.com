@@ -46,7 +46,7 @@ const Workshop = () => {
           </a>
 
           <a
-            className="acp-apply-btn acp-apply-btn-disabled"
+            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
             // href="https://docs.google.com/forms/d/e/1FAIpQLSfvpdyxO02I8aAqEIP5PCTAkMvvMac3Q7zvLcOJs746ub3C-Q/viewform?usp=sf_link"
           >
             Present a workshop

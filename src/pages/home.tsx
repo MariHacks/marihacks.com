@@ -56,10 +56,10 @@ const Landing = () => {
         </p>
 
         <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4 z-10">
-          <p className="subtitle font-bold">MariHacks will begin soon!</p>
+          <p className="subtitle font-bold">Stay tuned!</p>
           <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[16px] md:text-[20px]">
-            April 5-6, 2024
+            April TBD, 2025
           </p>
           <p className="text-gray-400 text-[12px] md:text-[16px]">
             Marianopolis College | In-person Hackathon
@@ -110,13 +110,13 @@ const Home = () => {
           <About />
         </section>
         <section id="photos" className="">
-          <p className="section-title">This is MariHacks' 7th year!</p>
+          <p className="section-title">From MariHacks' 7th year!</p>
           <p className="section-subtitle">We made a lot of memories.</p>
           <Carousel />
         </section>
 
         <section id="sponsors" className="py-10 lg:px-16">
-          <p className="section-title">Sponsors</p>
+          <p className="section-title">Our 2023-24 Sponsors</p>
           <p className="section-subtitle">
             MariHacks wouldn't be possible without them.
           </p>

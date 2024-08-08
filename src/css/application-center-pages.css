@@ -45,14 +45,17 @@
     @apply w-1/2 h-fit rounded-xl border border-[#6A78AB];
   }
 
-  .acp-apply-btn-disabled {
+  .acp-btn-disabled-styles {
     box-shadow: 2px 2px 0px 0px var(--border-main-color);
     cursor: not-allowed;
     opacity: 0.5;
-    @apply px-[20px] py-[10px]
-    rounded-2xl border border-[#6A78AB]
-    transition bg-[--primary-color] mt-8
+    @apply rounded-2xl border border-[#6A78AB]
+    transition bg-[--primary-color]
     text-white w-fit hover:translate-x-[0px] hover:translate-y-[0px];
+  }
+
+  .acp-btn-disabled-position {
+    @apply px-[20px] py-[10px] mt-8;
   }
 
   @media (max-width: 1280px) {
