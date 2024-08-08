@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 import ThemedButtons from "./themedButtons";
 import { useState } from "react";
 
-const NavbarLink = ({ link, text }: { link: string; text: string }) => {
-  return (
-    <Link className="navbar-link" to={link}>
-      {text}
-    </Link>
-  );
-};
+// const NavbarLink = ({ link, text }: { link: string; text: string }) => {
+//   return (
+//     <Link className="navbar-link" to={link}>
+//       {text}
+//     </Link>
+//   );
+// };
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
