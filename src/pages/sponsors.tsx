@@ -96,7 +96,7 @@ const Sponsors = () => {
         </Link>
         <a
           className="sponsors-button"
-          href={imageManager("prospectus_2024").pdf}
+          href={imageManager("prospectus_2025").pdf}
         >
           See prospectus
         </a>

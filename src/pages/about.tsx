@@ -70,6 +70,7 @@ const About = () => {
                 Programming club
               </a>
             }
+            .
           </p>
 
           <div className="w-fit font-bold hover:text-blue-500 mt-2">

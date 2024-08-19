@@ -58,7 +58,7 @@ const Sponsorship = () => {
             </a>
             <a
               className="acp-apply-btn md:ml-5"
-              href={imageManager("prospectus_2024").pdf}
+              href={imageManager("prospectus_2025").pdf}
             >
               See prospectus
             </a>
