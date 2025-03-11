@@ -10,6 +10,7 @@ import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Sponsors from "./sponsors";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
 
 const Quotes = () => {
   return (
@@ -56,10 +57,10 @@ const Landing = () => {
         </p>
 
         <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4 z-10">
-          <p className="subtitle font-bold">Stay tuned!</p>
+          <Link to="/registration" className="subtitle-as-button font-bold">Register Now!</Link>
           <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[16px] md:text-[20px]">
-            April TBD, 2025
+            April 4-5<sup>th</sup>, 2025
           </p>
           <p className="text-gray-400 text-[12px] md:text-[16px]">
             Marianopolis College | In-person Hackathon

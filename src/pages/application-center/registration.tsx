@@ -72,8 +72,10 @@ const Registration = () => {
             </p>
           </div> */}
           <a
-            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            // href="https://forms.gle/NNYzGUh9u6fZu3Cq8"
+            // to disable style: acp-btn-disabled-styles
+            // to reable clicking: acp-btn-disabled-position
+            className="acp-apply-btn"
+            href="https://forms.gle/PPXaBdkQQwtwuJRLA"
           >
             Registration form
           </a>
