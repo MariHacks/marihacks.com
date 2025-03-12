@@ -58,32 +58,33 @@ export const faqColTwo: faqCol = [
 
     question: "Where will MariHacks be held?",
     answer:
-      "The 8th edition of MariHacks will most likely be in person at Marianopolis College (TBC) so you can get the best hacking experience!",
+      "The 8th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
   },
   {
     index: 8,
 
     question: "When can I apply?",
     answer:
-      "Applications for participants, volunteers, mentors, judges, and guest speakers hasn't opened yet.",
-    // + " Sign up at our application center before March 17 to make sure you don't miss out!",
+      "Sign up at our application center before March 24th 11:59 PM to make sure you don't miss out!",
+      // "Applications for participants, volunteers, mentors, judges, and guest speakers hasn't opened yet.",
   },
   {
     index: 13,
     question: "Who can stay overnight at MariHacks?",
     answer:
-      "MariHacks 7.0 allowed CEGEP participants to stay overnight for the first time ever! Stay tuned for overnight information for our 8th edition.",
-    // "CEGEP students, volunteers and mentors can stay overnight at MariHacks as long as all necessary information is provided (see the registration forms)." +
-    // " Judges and guest speakers are welcome to stay as well." +
-    // " However, if you are a high school student, you will not be able to stay overnight.",
+      // "MariHacks 8.0 allowed CEGEP participants to stay overnight!" +
+      "CEGEP students, volunteers and mentors can stay overnight at MariHacks as long as all necessary information is provided (see the registration forms)." +
+      " Judges and guest speakers are welcome to stay as well." +
+      " However, if you are a high school student, you will not be able to stay overnight.",
   },
   {
     index: 9,
 
     question: "I'm interested in judging!",
-    answer: "Judging registration is currently closed.",
-    // "If you have professional experience related to MariHacks, we'd love to invite you. ",
-    // + " Judging registration is open as of February 5, and the form can be found in our application center!",
+    answer:
+      "If you have professional experience related to MariHacks, we'd love to invite you." 
+    + " Judging registration is open as of March 10th, and the form can be found in our application center!",
+    // "Judging registration is currently closed.",
   },
 ];
 export const faqColThree: faqCol = [
@@ -92,25 +93,27 @@ export const faqColThree: faqCol = [
 
     question: "I'm interested in presenting a workshop!",
     answer:
-      "Panelist registration is currently closed. If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants!",
-    // + " The panelist registration form is open as of February 5 and can be found in the application center.",
+      "The panelist registration form is open as of March 10th and can be found in the application center.",
+  // "Panelist registration is currently closed. If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants!",
   },
   {
     index: 11,
 
     question: "I'm interested in mentoring!",
     answer:
-      "Mentor registration is currently closed. If you are an experienced programmer who loves to help others, we'd be very happy to have you!",
-    // + " Find out more about the roles of a hackathon mentor and register to be a mentor through the application center!",
+      "Find out more about the roles of a hackathon mentor and register to be a mentor through the application center!" +
+      " If you are an experienced programmer who loves to help others, we'd be very happy to have you!",
+    // "Mentor registration is currently closed. If you are an experienced programmer who loves to help others, we'd be very happy to have you!",
   },
   {
     index: 14,
 
     question: "Who can volunteer?",
     answer:
-      "CEGEP students and up are welcome to volunteer at MariHacks! Volunteer registration is currently closed.",
-    // + " This is a big event, so we'd be very grateful for your help if you're available during some parts or all of MariHacks—food and drinks will be provided for free." +
-    // " Sign up to be a volunteer through our application center!",
+      "CEGEP students and up are welcome to volunteer at MariHacks!" +
+      " This is a big event, so we'd be very grateful for your help if you're available during some parts or all of MariHacks—food and drinks will be provided for free." +
+      " Sign up to be a volunteer through our application center!",
+    // Volunteer registration is currently closed.",
   },
 
   {
