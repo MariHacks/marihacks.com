@@ -53,7 +53,7 @@ const Navbar = () => {
           <ThemedButtons link="#sponsors" text="Sponsors" />
           <ThemedButtons link="#FAQ" text="FAQ" />
           {/* <ThemedButtons link="/schedule" text="Schedule" /> */}
-          {/* <NavbarLink link="/application-center" text="Application Center" /> */}
+          <ThemedButtons link="/application-center" text="Application Center" />
           <Link
             to="/registration"
             // to disable style: acp-btn-disabled-styles
