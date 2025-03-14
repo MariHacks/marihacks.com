@@ -1,5 +1,5 @@
 import BackArrow from "../../components/BackArrow";
-import { imageManager } from "../../helper/ressourceManagers";
+// import { imageManager } from "../../helper/ressourceManagers";
 
 const Prizes = () => {
 
