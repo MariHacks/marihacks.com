@@ -57,7 +57,7 @@ const Landing = () => {
         </p>
 
         <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4 z-10">
-          <Link to="/registration" className="subtitle-as-button font-bold">Register Now!</Link>
+          <Link to="/application-center" className="subtitle-as-button font-bold">Register Now!</Link>
           <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[16px] md:text-[20px]">
             April 4-5<sup>th</sup>, 2025
