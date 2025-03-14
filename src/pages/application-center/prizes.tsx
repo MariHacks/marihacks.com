@@ -1,5 +1,5 @@
 import BackArrow from "../../components/BackArrow";
-// import { imageManager } from "../../helper/ressourceManagers";
+import { imageManager } from "../../helper/ressourceManagers";
 
 const Prizes = () => {
 
@@ -56,13 +56,11 @@ const Prizes = () => {
             See more
           </a>
         </div>
-  {/*
         <img
           className="acp-img"
           src={imageManager("prizes").acpImg}
           alt="photo"
         />
-    */}
       </div>
     </div>
   );
