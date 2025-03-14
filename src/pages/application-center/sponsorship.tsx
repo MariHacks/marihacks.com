@@ -50,9 +50,12 @@ const Sponsorship = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
           <div className="flex flex-col md:flex-row md:items-center mt-8">
+            {/*
+              to disable: acp-btn-disabled-styles acp-btn-disabled-position"
+            */}
             <a
-              className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-              // href="https://forms.gle/44oZrJkWsZmNAJ7P6"
+              className="acp-apply-btn"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfLQaWXUzH9JUJ-cyFYSOh9iPaum2R79gCZP_hl4nfMtSpfqQ/viewform?usp=header"
             >
               Sponsor MariHacks
             </a>

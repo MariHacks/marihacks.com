@@ -47,9 +47,12 @@ const Mentorship = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
 
+            {/*
+              to disable: acp-btn-disabled-styles acp-btn-disabled-position"
+            */}
           <a
-            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            // href="https://docs.google.com/forms/d/e/1FAIpQLSfUIDT29eXjNwFydUbrI-lMmjiNfMTll4u38QjsJhqhk26Vzg/viewform?usp=sf_link"
+            className="acp-apply-btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdh9Ds5WeRhEWdD2c9rXfV06xdbvD39zyuZmywyPDPdHPuyfw/viewform?usp=header"
           >
             Apply to be a mentor
           </a>
