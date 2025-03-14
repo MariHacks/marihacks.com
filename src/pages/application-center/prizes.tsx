@@ -20,23 +20,21 @@ const Prizes = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Prizes</p>
           <p className="">
-            MariHacks offers lots of great prizes to add to the fun! The prizes
-            for MariHacks VIII are to be determinated!
+            MariHacks offers lots of great prizes to add to the fun!
+            The prizes for MariHacks VIII are to be determinated!
           </p>  
-    {/*
           <p className="">
             MariHacks offers lots of great prizes to add to the fun! During
-            MariHacks VIII, 11,000 $ CAD worth of prizes were offered to our
+            MariHacks VII, 19,000 $ CAD worth of prizes were offered to our
             participants (check out{" "}
             <a
               className="text-blue-500 hover:text-blue-700"
-              href="https://marihacks-2023.devpost.com/?ref_feature=challenge&ref_medium=discover"
+              href="https://marihacks-2024.devpost.com/?ref_feature=challenge&ref_medium=discover"
             >
               Devpost
             </a>{" "}
             for more details). Stay tuned for our prize reveal this year!
           </p>
-    */}
           <br className="my-2" />
     {/*
           <p>Little sneakpeak:</p>
@@ -52,8 +50,8 @@ const Prizes = () => {
     */}
 
           <a
-            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            // href="https://marihacks-2023.devpost.com/?ref_feature=challenge&ref_medium=discover"
+            className="acp-apply-btn"
+            href="https://marihacks-2024.devpost.com/?ref_feature=challenge&ref_medium=discover"
           >
             See more
           </a>
