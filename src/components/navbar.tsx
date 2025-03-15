@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* <ThemedButtons link="/schedule" text="Schedule" /> */}
           <ThemedButtons link="/application-center" text="Application Center" />
           <Link
-            to="/registration"
+            to="/application-center"
             // to disable style: acp-btn-disabled-styles
             // to disable redirection: pointer-events-none
             className="navbar-register-btn"
@@ -98,7 +98,7 @@ const Navbar = () => {
           {/* <NavbarLink link="/application-center" text="Application Center" /> */}
 
           <Link
-            to="/registration"
+            to="/application-center"
             // disable: acp-btn-disabled-styles"
             className="navbar-register-btn"
           >
