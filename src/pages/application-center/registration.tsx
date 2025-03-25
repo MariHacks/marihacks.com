@@ -7,6 +7,7 @@ const Registration = () => {
   // monthIndex = month - 1
   const mariHacksEventDate = new Date(2025, 2, 24, 23, 59, 59);
 
+  /*
   const countdown = () => {
     const currentDate = Date.now();
 
@@ -37,6 +38,7 @@ const Registration = () => {
     }
   }, 1000);
 
+  */
   return (
     <div className="acp-container">
       <BackArrow text="Home" link="/" />
@@ -63,15 +65,19 @@ const Registration = () => {
             turn their creative ideas into reality!
           </p> 
           <div className="flex flex-col items-center mt-8">
-            <p className="">Time left for registration:</p>
+
+            <p> Registration is over!</p>
+            {/*
+            <p> Time left for registration:</p>
             <p>
               {days} days {hours} hrs {minutes} min {seconds} sec
             </p>
+            */}
           </div>
           <a
-            // to disable style: acp-btn-disabled-styles
-            // to reable clicking: acp-btn-disabled-position
-            className="acp-apply-btn"
+            // to disable style: 
+            // to diseable clicking: 
+            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
             href="https://forms.gle/PPXaBdkQQwtwuJRLA"
           >
             Registration form
