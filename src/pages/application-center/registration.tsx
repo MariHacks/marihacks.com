@@ -5,9 +5,8 @@ import { imageManager } from "../../helper/ressourceManagers";
 
 const Registration = () => {
   // monthIndex = month - 1
-  const mariHacksEventDate = new Date(2025, 2, 24, 23, 59, 59);
-
   /*
+  const mariHacksEventDate = new Date(2025, 2, 24, 23, 59, 59);
   const countdown = () => {
     const currentDate = Date.now();
 
