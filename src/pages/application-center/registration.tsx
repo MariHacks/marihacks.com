@@ -56,17 +56,17 @@ const Registration = () => {
             reach out to our team through team@marihacks.com.
           </p>
           */}
-          <p className="font-bold">Welcome to MariHacks VIII!</p>
+          <p className="font-bold">Welcome to MariHacks IX!</p>
           <p className="my-4">
             We're thrilled to invite all Cegep and high school students to join
             us for a memorable hackathon experience on{" "}
-            <span className="font-bold">April 4-5<sup>th</sup>, 2025</span>. MariHacks is an
+            <span className="font-bold">April 3-4<sup>th</sup>, 2026</span>. MariHacks is an
             opportunity for young minds to come together, push boundaries, and
             turn their creative ideas into reality!
           </p> 
           <div className="flex flex-col items-center mt-8">
 
-            <p> Registration is over!</p>
+            <p> Registration currently unavailable!</p>
             {/*
             <p> Time left for registration:</p>
             <p>
@@ -78,7 +78,7 @@ const Registration = () => {
             // to disable style: 
             // to diseable clicking: 
             className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            href="https://forms.gle/PPXaBdkQQwtwuJRLA"
+            //href="https://forms.gle/eEFY8c6jXrs3wUxZA"
           >
             Registration form
           </a>

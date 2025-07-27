@@ -35,7 +35,7 @@ const Judging = () => {
 
           <a
             className="acp-apply-btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScxbESlqnKJXWumGNF1yhrA7BJOLU4MoHTSfuDJqXxinagsUQ/viewform?usp=header"
+            href="https://forms.gle/LHQiJF64LUk9kcpw6"
           >
             Apply to be a judge
           </a>

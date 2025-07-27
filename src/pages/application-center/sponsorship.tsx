@@ -55,7 +55,7 @@ const Sponsorship = () => {
             */}
             <a
               className="acp-apply-btn"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfLQaWXUzH9JUJ-cyFYSOh9iPaum2R79gCZP_hl4nfMtSpfqQ/viewform?usp=header"
+              href="https://forms.gle/CHSh4ZZtyQkwCNfz8"
             >
               Sponsor MariHacks
             </a>
