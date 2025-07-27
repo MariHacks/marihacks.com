@@ -19,42 +19,32 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     imgUrl: imageManager("concordia").sponsorImg,
     link: "https://www.concordia.ca/ginacody.html",
   },
-  uofm: {
-    imgUrl: imageManager("uofm").sponsorImg,
-    link: "https://www.umontreal.ca/",
-  },
+
   marianopolis: {
     imgUrl: imageManager("mari").sponsorImg,
     link: "https://www.marianopolis.edu/",
   },
-  onepassword: {
-    imgUrl: imageManager("1password").sponsorImg,
-    link: "https://1password.com/",
-  },
+
   wolfram: {
     imgUrl: imageManager("wolfram").sponsorImg,
     link: "https://www.wolfram.com/",
   },
-  echo: {
-    imgUrl: imageManager("echo").sponsorImg,
-    link: "https://www.echo3d.com/",
-  },
+
   laitchoco: {
     imgUrl: imageManager("laitchoco").sponsorImg,
     link: "https://lait.org/",
   },
-  cjendg: {
-    imgUrl: imageManager("cjendg").sponsorImg,
-    link: "https://cje-ndg.com/fr/",
-  },
+
   fuse: {
     imgUrl: "/sponsors/fuse.svg",
     link: "https://www.f.energy/",
   },
-  standOutStickers: {
-    imgUrl: "/sponsors/stand-out-stickers.svg",
-    link: "https://hackp.ac/mlh-standoutstickers-hackathons",
+
+  morganStanley: {
+    imgUrl: "/sponsors/morganStanley.webp",
+    link: "https://www.morganstanley.com/",
   },
+
   brebeufhx: {
     imgUrl: imageManager("brebeufhx").sponsorImg,
     link: "https://www.brebeufhackathon.com/",

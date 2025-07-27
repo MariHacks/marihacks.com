@@ -46,45 +46,24 @@ const Sponsors = () => {
             link={sponsors.concordia.link}
           />
           <GoldSponsor
-            imgSrc={sponsors.uofm.imgUrl}
-            link={sponsors.uofm.link}
+            imgSrc={sponsors.morganStanley.imgUrl}
+            link={sponsors.morganStanley.link}
           />
-        </div>
-
-        <div className="flex md:flex-row flex-col justify-center items-center">
           <GoldSponsor
             imgSrc={sponsors.fuse.imgUrl}
             link={sponsors.fuse.link}
-          />
-
-          <GoldSponsor
-            imgSrc={sponsors.cjendg.imgUrl}
-            link={sponsors.cjendg.link}
-          />
-          <GoldSponsor
-            imgSrc={sponsors.standOutStickers.imgUrl}
-            link={sponsors.standOutStickers.link}
-          />
-        </div>
-        <div className="flex md:flex-row flex-col justify-center items-center">
-          <GoldSponsor
-            imgSrc={sponsors.leadingleaders.imgUrl}
-            link={sponsors.leadingleaders.link}
-          />
-
-          <GoldSponsor
-            imgSrc={sponsors.echo.imgUrl}
-            link={sponsors.echo.link}
-          />
-          <GoldSponsor
-            imgSrc={sponsors.onepassword.imgUrl}
-            link={sponsors.onepassword.link}
           />
           <GoldSponsor
             imgSrc={sponsors.laitchoco.imgUrl}
             link={sponsors.laitchoco.link}
           />
         </div>
+
+        <div className="flex md:flex-row flex-col justify-center items-center">
+          
+
+        </div>
+
       </div>
 
       <div className="flex md:my-8 mb-4">

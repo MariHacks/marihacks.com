@@ -52,7 +52,7 @@ const Mentorship = () => {
             */}
           <a
             className="acp-apply-btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdh9Ds5WeRhEWdD2c9rXfV06xdbvD39zyuZmywyPDPdHPuyfw/viewform?usp=header"
+            href="https://forms.gle/4fuwbE7XpfdpiRqw7"
           >
             Apply to be a mentor
           </a>
