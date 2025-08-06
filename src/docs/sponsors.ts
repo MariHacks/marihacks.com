@@ -65,6 +65,26 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     link: "https://cje-ndg.com/",
   },
 
+  learners: {
+    imgUrl: imageManager("leadinglearners").sponsorImg,
+    link: "",
+  },
+
+  stickers: {
+    imgUrl: "/sponsors/stand-out-stickers.svg",
+    link: "https://www.standoutstickers.com/",
+  },
+
+  dominos: {
+    imgUrl: imageManager("dominos").sponsorImg,
+    link: "https://www.dominos.ca/",
+  },
+
+  autodesk: {
+    imgUrl: imageManager("autodesk").sponsorImg,
+    link: "https://www.autodesk.com/",
+  },
+
   brebeufhx: {
     imgUrl: imageManager("brebeufhx").sponsorImg,
     link: "https://www.brebeufhackathon.com/",

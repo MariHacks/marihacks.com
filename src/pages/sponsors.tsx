@@ -79,6 +79,26 @@ const Sponsors = () => {
 
         </div>
 
+        <div className="flex md:flex-row flex-col justify-center items-center">
+          <GoldSponsor
+            imgSrc={sponsors.learners.imgUrl}
+            link={sponsors.learners.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.stickers.imgUrl}
+            link={sponsors.stickers.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.dominos.imgUrl}
+            link={sponsors.dominos.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.autodesk.imgUrl}
+            link={sponsors.autodesk.link}
+          />
+
+        </div>
+
       </div>
 
       <div className="flex md:my-8 mb-4">
