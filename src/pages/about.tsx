@@ -55,7 +55,7 @@ const About = () => {
           </p>
           <p className="">
             MariHacks is Montreal's first and largest 2-day hackathon for CEGEP
-            and High School students. We will bring together over 200 developers
+            and High School students. We will bring together over 300 developers
             and technology enthusiasts to create revolutionary software
             projects. Meet fellow hackers, learn new technologies, and hone your
             skills alongside amazing mentors.

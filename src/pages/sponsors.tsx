@@ -60,7 +60,22 @@ const Sponsors = () => {
         </div>
 
         <div className="flex md:flex-row flex-col justify-center items-center">
-          
+          <GoldSponsor
+            imgSrc={sponsors.UdeM.imgUrl}
+            link={sponsors.UdeM.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.echo3d.imgUrl}
+            link={sponsors.echo3d.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.onepassword.imgUrl}
+            link={sponsors.onepassword.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.cjendg.imgUrl}
+            link={sponsors.cjendg.link}
+          />
 
         </div>
 
@@ -75,7 +90,7 @@ const Sponsors = () => {
         </Link>
         <a
           className="sponsors-button"
-          href={imageManager("prospectus_2025").pdf}
+          href={imageManager("EN_MariHacks_Sponsorship_Prospectus_2026").pdf}
         >
           See prospectus
         </a>

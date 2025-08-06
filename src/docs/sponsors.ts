@@ -41,8 +41,28 @@ export const sponsors: { [key: string]: SponsorInfo } = {
   },
 
   morganStanley: {
-    imgUrl: "/sponsors/morganStanley.webp",
+    imgUrl: imageManager("morganStanley").sponsorImg,
     link: "https://www.morganstanley.com/",
+  },
+
+  UdeM: {
+    imgUrl: imageManager("uofm").sponsorImg,
+    link: "https://www.umontreal.ca/",
+  },
+
+  echo3d: {
+    imgUrl: imageManager("echo").sponsorImg,
+    link: "https://www.echo3d.com/",
+  },
+
+  onepassword: {
+    imgUrl: imageManager("1password").sponsorImg,
+    link: "https://1password.com/",
+  },
+
+  cjendg: {
+    imgUrl: imageManager("cjendg").sponsorImg,
+    link: "https://cje-ndg.com/",
   },
 
   brebeufhx: {

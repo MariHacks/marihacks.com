@@ -66,7 +66,7 @@ const Registration = () => {
           </p> 
           <div className="flex flex-col items-center mt-8">
 
-            <p> Registration currently unavailable!</p>
+            <p> Registration begins February 2nd! Get ready!</p>
             {/*
             <p> Time left for registration:</p>
             <p>
