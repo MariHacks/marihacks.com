@@ -117,7 +117,7 @@ const Home = () => {
         </section>
 
         <section id="sponsors" className="py-10 lg:px-16">
-          <p className="section-title">Our 2024-25 Sponsors</p>
+          <p className="section-title">Our Past Sponsors</p>
           <p className="section-subtitle">
             MariHacks wouldn't be possible without them.
           </p>
