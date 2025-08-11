@@ -14,7 +14,7 @@ const Judging = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Judging</p>
           <p className="">
-            Judging registration opens February 2nd and closes March 8th at 11:59pm! Based on the judging criteria for
+            Judging registration opens February 2nd 2026 and closes March 8th 2026 at 11:59pm! Based on the judging criteria for
             the submissions, judges would bring their expert insights in order
             to select the winners. Thus, if you are a professional in the field
             of programming or have a professional background of working with

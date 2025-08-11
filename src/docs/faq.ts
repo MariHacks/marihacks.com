@@ -65,7 +65,7 @@ export const faqColTwo: faqCol = [
 
     question: "When can I apply?",
     answer:
-      "Sign up at our application center starting February 2nd and before March 8th 11:59 PM to make sure you don't miss out!",
+      "Sign up at our application center starting February 2nd 2026 and before 11:59 PM on March 8th 2026 to make sure you don't miss out!",
       // "Applications for participants, volunteers, mentors, judges, and guest speakers hasn't opened yet.",
   },
   {
@@ -83,7 +83,7 @@ export const faqColTwo: faqCol = [
     question: "I'm interested in judging!",
     answer:
       "If you have professional experience related to MariHacks, we'd love to invite you." 
-    + " Judging registration is open as of February 2nd, and the form can be found in our application center!",
+    + " Judging registration is open as of February 2nd 2026, and the form can be found in our application center!",
     // "Judging registration is currently closed.",
   },
 ];
