@@ -47,7 +47,7 @@ const Workshop = () => {
 
           <a
             className="acp-apply-btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfIbBW50aG-otSp4vmGVz5aau8ulH9s95WWkz27ho9mU7Rr-g/viewform?usp=header"
+            href="https://forms.gle/Tf53cHkQXnqjrrPbA"
           >
             Present a workshop
           </a>

@@ -37,7 +37,7 @@ const Volunteering = () => {
 
           <a
             className="acp-apply-btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScUNVRwGumuD66ZIg0ODnbubtcagWH7QNfnEuSUfr1UuD_uqA/viewform?usp=header"
+            href="https://forms.gle/1hodx8XmmGDqY7Be8"
           >
             Apply to be a volunteer
           </a>
