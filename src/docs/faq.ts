@@ -58,14 +58,14 @@ export const faqColTwo: faqCol = [
 
     question: "Where will MariHacks be held?",
     answer:
-      "The 8th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
+      "The 9th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
   },
   {
     index: 8,
 
     question: "When can I apply?",
     answer:
-      "Sign up at our application center before March 24th 11:59 PM to make sure you don't miss out!",
+      "Sign up at our application center starting February 2nd 2026 and before 11:59 PM on March 8th 2026 to make sure you don't miss out!",
       // "Applications for participants, volunteers, mentors, judges, and guest speakers hasn't opened yet.",
   },
   {
@@ -83,7 +83,7 @@ export const faqColTwo: faqCol = [
     question: "I'm interested in judging!",
     answer:
       "If you have professional experience related to MariHacks, we'd love to invite you." 
-    + " Judging registration is open as of March 10th, and the form can be found in our application center!",
+    + " Judging registration is open as of February 2nd 2026, and the form can be found in our application center!",
     // "Judging registration is currently closed.",
   },
 ];
@@ -93,7 +93,7 @@ export const faqColThree: faqCol = [
 
     question: "I'm interested in presenting a workshop!",
     answer:
-      "The panelist registration form is open as of March 10th and can be found in the application center.",
+      "The panelist registration form is open as of February 2nd and can be found in the application center.",
   // "Panelist registration is currently closed. If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants!",
   },
   {

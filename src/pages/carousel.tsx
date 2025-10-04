@@ -16,7 +16,7 @@ const CarouselItem = ({ img }: { img: string }) => {
 const Carousel = () => {
   const images = [];
 
-  for (let i = 1; i < 9; i++) {
+  for (let i = 1; i < 10; i++) {
     images.push(imageManager(`${i}`).carouselImg);
   }
 

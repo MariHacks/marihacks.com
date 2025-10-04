@@ -60,7 +60,7 @@ const Landing = () => {
           <Link to="/application-center" className="subtitle-as-button font-bold">Register Now!</Link>
           <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[16px] md:text-[20px]">
-            April 4-5<sup>th</sup>, 2025
+            April 3-4<sup>th</sup>, 2026
           </p>
           <p className="text-gray-400 text-[12px] md:text-[16px]">
             Marianopolis College | In-person Hackathon
@@ -111,13 +111,13 @@ const Home = () => {
           <About />
         </section>
         <section id="photos" className="">
-          <p className="section-title">From MariHacks' 7th year!</p>
+          <p className="section-title">From MariHacks' 8th year!</p>
           <p className="section-subtitle">We made a lot of memories.</p>
           <Carousel />
         </section>
 
         <section id="sponsors" className="py-10 lg:px-16">
-          <p className="section-title">Our 2023-24 Sponsors</p>
+          <p className="section-title">Our Past Sponsors</p>
           <p className="section-subtitle">
             MariHacks wouldn't be possible without them.
           </p>

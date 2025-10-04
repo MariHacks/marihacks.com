@@ -46,45 +46,59 @@ const Sponsors = () => {
             link={sponsors.concordia.link}
           />
           <GoldSponsor
-            imgSrc={sponsors.uofm.imgUrl}
-            link={sponsors.uofm.link}
+            imgSrc={sponsors.morganStanley.imgUrl}
+            link={sponsors.morganStanley.link}
           />
-        </div>
-
-        <div className="flex md:flex-row flex-col justify-center items-center">
           <GoldSponsor
             imgSrc={sponsors.fuse.imgUrl}
             link={sponsors.fuse.link}
-          />
-
-          <GoldSponsor
-            imgSrc={sponsors.cjendg.imgUrl}
-            link={sponsors.cjendg.link}
-          />
-          <GoldSponsor
-            imgSrc={sponsors.standOutStickers.imgUrl}
-            link={sponsors.standOutStickers.link}
-          />
-        </div>
-        <div className="flex md:flex-row flex-col justify-center items-center">
-          <GoldSponsor
-            imgSrc={sponsors.leadingleaders.imgUrl}
-            link={sponsors.leadingleaders.link}
-          />
-
-          <GoldSponsor
-            imgSrc={sponsors.echo.imgUrl}
-            link={sponsors.echo.link}
-          />
-          <GoldSponsor
-            imgSrc={sponsors.onepassword.imgUrl}
-            link={sponsors.onepassword.link}
           />
           <GoldSponsor
             imgSrc={sponsors.laitchoco.imgUrl}
             link={sponsors.laitchoco.link}
           />
         </div>
+
+        <div className="flex md:flex-row flex-col justify-center items-center">
+          <GoldSponsor
+            imgSrc={sponsors.UdeM.imgUrl}
+            link={sponsors.UdeM.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.echo3d.imgUrl}
+            link={sponsors.echo3d.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.onepassword.imgUrl}
+            link={sponsors.onepassword.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.cjendg.imgUrl}
+            link={sponsors.cjendg.link}
+          />
+
+        </div>
+
+        <div className="flex md:flex-row flex-col justify-center items-center">
+          <GoldSponsor
+            imgSrc={sponsors.learners.imgUrl}
+            link={sponsors.learners.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.stickers.imgUrl}
+            link={sponsors.stickers.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.dominos.imgUrl}
+            link={sponsors.dominos.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.autodesk.imgUrl}
+            link={sponsors.autodesk.link}
+          />
+
+        </div>
+
       </div>
 
       <div className="flex md:my-8 mb-4">
@@ -96,7 +110,7 @@ const Sponsors = () => {
         </Link>
         <a
           className="sponsors-button"
-          href={imageManager("prospectus_2025").pdf}
+          href={imageManager("EN_MariHacks_Sponsorship_Prospectus_2026").pdf}
         >
           See prospectus
         </a>
