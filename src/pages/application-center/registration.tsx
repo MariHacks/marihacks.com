@@ -60,7 +60,7 @@ const Registration = () => {
           <p className="my-4">
             We're thrilled to invite all Cegep and high school students to join
             us for a memorable hackathon experience on{" "}
-            <span className="font-bold">April 3-4<sup>th</sup>, 2026</span>. MariHacks is an
+            <span className="font-bold">April 17-18<sup>th</sup>, 2026</span>. MariHacks is an
             opportunity for young minds to come together, push boundaries, and
             turn their creative ideas into reality!
           </p> 

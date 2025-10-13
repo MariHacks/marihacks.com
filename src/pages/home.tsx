@@ -60,7 +60,7 @@ const Landing = () => {
           <Link to="/application-center" className="subtitle-as-button font-bold">Register Now!</Link>
           <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[16px] md:text-[20px]">
-            April 3-4<sup>th</sup>, 2026
+            April 17-18<sup>th</sup>, 2026
           </p>
           <p className="text-gray-400 text-[12px] md:text-[16px]">
             Marianopolis College | In-person Hackathon
