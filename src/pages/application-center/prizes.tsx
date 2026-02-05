@@ -25,11 +25,11 @@ const Prizes = () => {
           </p>  
           <p className="">
             MariHacks offers lots of great prizes to add to the fun! During
-            MariHacks VII, 19,000 $ CAD worth of prizes were offered to our
+            MariHacks VIII, 19,000 $ CAD worth of prizes were offered to our
             participants (check out{" "}
             <a
               className="text-blue-500 hover:text-blue-700"
-              href="https://marihacks-2024.devpost.com/?ref_feature=challenge&ref_medium=discover"
+              href="https://marihacks-8-0.devpost.com/?ref_feature=challenge&ref_medium=discover"
             >
               Devpost
             </a>{" "}
