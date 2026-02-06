@@ -61,7 +61,8 @@ const About = () => {
             skills alongside amazing mentors.
           </p>
           <p className="mt-2">
-            Organized by Marianopolis'{" "}
+            Organized by Marianopolis' Programming Club
+            {/* Organized by Marianopolis'{" "}
             {
               <a
                 className="font-bold hover:text-blue-500"
@@ -69,7 +70,7 @@ const About = () => {
               >
                 Programming club
               </a>
-            }
+            } */}
             .
           </p>
 
