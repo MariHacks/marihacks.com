@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 */
 import BackArrow from "../../components/BackArrow";
 import { imageManager } from "../../helper/ressourceManagers";
+import { useState, useEffect } from 'react';
+
 
 const Registration = () => {
   // monthIndex = month - 1
-  /*
-  const mariHacksEventDate = new Date(2025, 2, 24, 23, 59, 59);
+  
+  const mariHacksEventDate = new Date(2026, 3, 22, 24, 59, 59);
   const countdown = () => {
     const currentDate = Date.now();
 
@@ -38,7 +40,7 @@ const Registration = () => {
     }
   }, 1000);
 
-  */
+
   return (
     <div className="acp-container">
       <BackArrow text="Home" link="/" />
@@ -66,19 +68,19 @@ const Registration = () => {
           </p> 
           <div className="flex flex-col items-center mt-8">
 
-            <p> Registration begins February 16th 2026! Get ready!</p>
-            {/*
+            {/* <p> Registration begins February 16th 2026! Get ready!</p> */}
+            
             <p> Time left for registration:</p>
             <p>
               {days} days {hours} hrs {minutes} min {seconds} sec
             </p>
-            */}
+           
           </div>
           <a
             // to disable style: 
-            // to diseable clicking: 
-            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            //href="https://forms.gle/eEFY8c6jXrs3wUxZA"
+            // to diseable clicking: className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
+            className="acp-apply-btn"
+            href="https://forms.gle/eEFY8c6jXrs3wUxZA"
           >
             Registration form
           </a>

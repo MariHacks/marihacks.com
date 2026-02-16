@@ -51,8 +51,8 @@ const Mentorship = () => {
               to disable: acp-btn-disabled-styles acp-btn-disabled-position"
             */}
           <a
-            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            //href="https://forms.gle/4fuwbE7XpfdpiRqw7"
+            className="acp-apply-btn"
+            href="https://forms.gle/4fuwbE7XpfdpiRqw7"
           >
             Apply to be a mentor
           </a>
