@@ -29,17 +29,21 @@ const Sponsors = () => {
             imgSrc={sponsors.marianopolis.imgUrl}
             link={sponsors.marianopolis.link}
           />
-          <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
-        </div>
-
-        <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor imgSrc={sponsors.msu.imgUrl} link={sponsors.msu.link} />
-
-          <GoldSponsor
-            imgSrc={sponsors.wolfram.imgUrl}
-            link={sponsors.wolfram.link}
-          />
         </div>
+        <div className="flex md:flex-row flex-col items-center justify-center">
+          <GoldSponsor 
+            imgSrc={sponsors.alten.imgUrl} 
+            link={sponsors.alten.link} 
+          />
+          <GoldSponsor
+            imgSrc={sponsors.cae.imgUrl}
+            link={sponsors.cae.link}
+          />
+          <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
+
+        </div>
+
         <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor
             imgSrc={sponsors.concordia.imgUrl}
@@ -49,13 +53,33 @@ const Sponsors = () => {
             imgSrc={sponsors.morganStanley.imgUrl}
             link={sponsors.morganStanley.link}
           />
+
           <GoldSponsor
-            imgSrc={sponsors.fuse.imgUrl}
-            link={sponsors.fuse.link}
+            imgSrc={sponsors.wolfram.imgUrl}
+            link={sponsors.wolfram.link}
           />
+          <GoldSponsor
+            imgSrc={sponsors.autodesk.imgUrl}
+            link={sponsors.autodesk.link}
+          />
+        </div>
+        
+        <div className="flex md:flex-row flex-col items-center justify-center">
           <GoldSponsor
             imgSrc={sponsors.laitchoco.imgUrl}
             link={sponsors.laitchoco.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.levio.imgUrl}
+            link={sponsors.levio.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.liftoff.imgUrl}
+            link={sponsors.liftoff.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.genpact.imgUrl}
+            link={sponsors.genpact.link}
           />
         </div>
 
@@ -93,8 +117,8 @@ const Sponsors = () => {
             link={sponsors.dominos.link}
           />
           <GoldSponsor
-            imgSrc={sponsors.autodesk.imgUrl}
-            link={sponsors.autodesk.link}
+            imgSrc={sponsors.fuse.imgUrl}
+            link={sponsors.fuse.link}
           />
 
         </div>

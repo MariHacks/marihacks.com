@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 const Registration = () => {
   // monthIndex = month - 1
   
-  const mariHacksEventDate = new Date(2026, 2, 22, 24, 59, 59);
+  const mariHacksEventDate = new Date(2026, 2, 29, 24, 59, 59);
   const countdown = () => {
     const currentDate = Date.now();
 

@@ -84,6 +84,30 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     imgUrl: imageManager("autodesk").sponsorImg,
     link: "https://www.autodesk.com/",
   },
+  alten: {
+    imgUrl: imageManager("alten").sponsorImg,
+    link: "https://www.alten.com/",
+  },
+
+  cae: {
+    imgUrl: imageManager("cae").sponsorImg,
+    link: "https://www.cae.com/",
+  },
+
+  liftoff: {
+    imgUrl: imageManager("liftoff").sponsorImg,
+    link: "https://liftoffrank.com/",
+  },
+
+  genpact: {
+    imgUrl: imageManager("genpact").sponsorImg,
+    link: "https://www.genpact.com/",
+  },
+
+  levio: {
+    imgUrl: imageManager("levio").sponsorImg,
+    link: "https://levioconsulting.com/",
+  },
 
   brebeufhx: {
     imgUrl: imageManager("brebeufhx").sponsorImg,
