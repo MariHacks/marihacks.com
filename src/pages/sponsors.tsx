@@ -40,7 +40,10 @@ const Sponsors = () => {
             imgSrc={sponsors.cae.imgUrl}
             link={sponsors.cae.link}
           />
-          <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
+          <GoldSponsor
+            imgSrc={sponsors.levio.imgUrl}
+            link={sponsors.levio.link}
+          />
 
         </div>
 
@@ -69,10 +72,8 @@ const Sponsors = () => {
             imgSrc={sponsors.laitchoco.imgUrl}
             link={sponsors.laitchoco.link}
           />
-          <GoldSponsor
-            imgSrc={sponsors.levio.imgUrl}
-            link={sponsors.levio.link}
-          />
+          <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
+          
           <GoldSponsor
             imgSrc={sponsors.liftoff.imgUrl}
             link={sponsors.liftoff.link}

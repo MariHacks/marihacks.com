@@ -20,7 +20,7 @@ const Mentorship = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Mentorship</p>
           <p className="">
-            Mentor registration opens February 16th 2026 and closes March 22nd 2026 at 11:59pm! MariHacks is open to programmers of
+            Mentor registration opens February 16th 2026 and closes March 29th 2026 at 11:59pm! MariHacks is open to programmers of
             any level, and we encourage participants to try out new programming
             fields and techniques! That being said, our hackathon strives to
             inspire learning, innovation and collaboration, which would not be
