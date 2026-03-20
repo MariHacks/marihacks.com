@@ -56,11 +56,6 @@ const Sponsors = () => {
             imgSrc={sponsors.morganStanley.imgUrl}
             link={sponsors.morganStanley.link}
           />
-
-          <GoldSponsor
-            imgSrc={sponsors.wolfram.imgUrl}
-            link={sponsors.wolfram.link}
-          />
           <GoldSponsor
             imgSrc={sponsors.autodesk.imgUrl}
             link={sponsors.autodesk.link}
@@ -79,8 +74,8 @@ const Sponsors = () => {
             link={sponsors.liftoff.link}
           />
           <GoldSponsor
-            imgSrc={sponsors.genpact.imgUrl}
-            link={sponsors.genpact.link}
+            imgSrc={sponsors.wolfram.imgUrl}
+            link={sponsors.wolfram.link}
           />
         </div>
 

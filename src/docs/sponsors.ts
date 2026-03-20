@@ -99,11 +99,6 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     link: "https://liftoffrank.com/",
   },
 
-  genpact: {
-    imgUrl: imageManager("genpact").sponsorImg,
-    link: "https://www.genpact.com/",
-  },
-
   levio: {
     imgUrl: imageManager("levio").sponsorImg,
     link: "https://levioconsulting.com/",
