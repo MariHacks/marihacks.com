@@ -115,6 +115,14 @@ export const faqColThree: faqCol = [
       " Sign up to be a volunteer through our application center!",
     // Volunteer registration is currently closed.",
   },
+  {
+    index: 15,
+
+    question: "What are the policies regarding AI usage?",
+    answer:
+      "Use of Generative AI will be allowed for specific tracks only." +
+      " The specific guidelines will be revealed during the Opening Ceremony." 
+  },
 
   {
     index: 12,

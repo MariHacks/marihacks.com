@@ -71,8 +71,11 @@ const Registration = () => {
             {/* <p> Registration begins February 16th 2026! Get ready!</p> */}
             
             <p> Time left for registration:</p>
-            <p>
+            {/* <p>
               {days} days {hours} hrs {minutes} min {seconds} sec
+            </p> */}
+            <p>
+              The deadline for registration has already passed, but don't worry! You can still fill out the late registration form to have a chance to participate in MariHacks!
             </p>
            
           </div>
@@ -80,7 +83,7 @@ const Registration = () => {
             // to disable style: 
             // to diseable clicking: className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
             className="acp-apply-btn"
-            href="https://forms.gle/eEFY8c6jXrs3wUxZA"
+            href="https://forms.gle/MPijqAoJisb9r2FT6"
           >
             Registration form
           </a>
