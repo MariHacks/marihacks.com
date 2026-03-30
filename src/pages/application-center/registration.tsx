@@ -3,42 +3,42 @@ import { useEffect, useState } from "react";
 */
 import BackArrow from "../../components/BackArrow";
 import { imageManager } from "../../helper/ressourceManagers";
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
 
 const Registration = () => {
   // monthIndex = month - 1
   
-  const mariHacksEventDate = new Date(2026, 2, 29, 24, 59, 59);
-  const countdown = () => {
-    const currentDate = Date.now();
+  // const mariHacksEventDate = new Date(2026, 2, 29, 24, 59, 59);
+  // const countdown = () => {
+  //   const currentDate = Date.now();
 
-    const totalSecond = (mariHacksEventDate.getTime() - currentDate) / 1000;
+  //   const totalSecond = (mariHacksEventDate.getTime() - currentDate) / 1000;
 
-    setDays(formatTime(Math.floor(totalSecond / 3600 / 24)));
-    setHours(Math.floor(totalSecond / 3600) % 24);
-    setMinutes(Math.floor(totalSecond / 60) % 60);
-    setSeconds(Math.floor(totalSecond % 60));
-  };
+  //   setDays(formatTime(Math.floor(totalSecond / 3600 / 24)));
+  //   setHours(Math.floor(totalSecond / 3600) % 24);
+  //   setMinutes(Math.floor(totalSecond / 60) % 60);
+  //   setSeconds(Math.floor(totalSecond % 60));
+  // };
 
-  const [days, setDays] = useState<number>(0);
-  const [hours, setHours] = useState<number>(0);
-  const [minutes, setMinutes] = useState<number>(0);
-  const [seconds, setSeconds] = useState<number>(0);
+  // const [days, setDays] = useState<number>(0);
+  // const [hours, setHours] = useState<number>(0);
+  // const [minutes, setMinutes] = useState<number>(0);
+  // const [seconds, setSeconds] = useState<number>(0);
 
-  const formatTime = (time: number): number => {
-    return time < 10 ? Number(`0${time}`) : time;
-  };
+  // const formatTime = (time: number): number => {
+  //   return time < 10 ? Number(`0${time}`) : time;
+  // };
 
-  useEffect(() => {
-    countdown();
-  }, []);
+  // useEffect(() => {
+  //   countdown();
+  // }, []);
 
-  setInterval(() => {
-    if (seconds !== 0) {
-      countdown();
-    }
-  }, 1000);
+  // setInterval(() => {
+  //   if (seconds !== 0) {
+  //     countdown();
+  //   }
+  // }, 1000);
 
 
   return (
