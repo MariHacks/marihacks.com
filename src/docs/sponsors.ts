@@ -108,10 +108,32 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     imgUrl: imageManager("brebeufhx").sponsorImg,
     link: "https://www.brebeufhackathon.com/",
   },
+
   brebeufhxnoir: {
     imgUrl: imageManager("brebeufhxnoir").sponsorImg,
     link: "https://www.brebeufhackathon.com/",
   },
+
+    incogni: {
+    imgUrl: imageManager("incogni").sponsorImg,
+    link: "https://incogni.com/",
+  },
+
+  saily: {
+    imgUrl: imageManager("saily").sponsorImg,
+    link: "https://saily.com/",
+  },
+
+  nordvpn: {
+    imgUrl: imageManager("nordvpn").sponsorImg,
+    link: "https://www.nordvpn.com/",
+  },
+
+  nexos: {
+    imgUrl: imageManager("nexos").sponsorImg,
+    link: "https://nexos.ai/",
+  },
+  
   mlh: { imgUrl: imageManager("mlh").sponsorImg, link: "https://mlh.io/" },
 };
 

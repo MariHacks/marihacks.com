@@ -81,6 +81,26 @@ const Sponsors = () => {
 
         <div className="flex md:flex-row flex-col justify-center items-center">
           <GoldSponsor
+            imgSrc={sponsors.incogni.imgUrl}
+            link={sponsors.incogni.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.saily.imgUrl}
+            link={sponsors.saily.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.nordvpn.imgUrl}
+            link={sponsors.nordvpn.link}
+          />
+          <GoldSponsor
+            imgSrc={sponsors.nexos.imgUrl}
+            link={sponsors.nexos.link}
+          />
+
+        </div>
+
+        <div className="flex md:flex-row flex-col justify-center items-center">
+          <GoldSponsor
             imgSrc={sponsors.UdeM.imgUrl}
             link={sponsors.UdeM.link}
           />
