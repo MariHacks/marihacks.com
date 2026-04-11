@@ -133,6 +133,10 @@ export const sponsors: { [key: string]: SponsorInfo } = {
     imgUrl: imageManager("nexos").sponsorImg,
     link: "https://nexos.ai/",
   },
+  nordpass: {
+    imgUrl: imageManager("nordpass").sponsorImg,
+    link: "https://nordpass.com/",
+  },
   
   mlh: { imgUrl: imageManager("mlh").sponsorImg, link: "https://mlh.io/" },
 };

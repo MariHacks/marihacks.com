@@ -60,6 +60,10 @@ const Sponsors = () => {
             imgSrc={sponsors.autodesk.imgUrl}
             link={sponsors.autodesk.link}
           />
+          <GoldSponsor
+            imgSrc={sponsors.liftoff.imgUrl}
+            link={sponsors.liftoff.link}
+          />
         </div>
         
         <div className="flex md:flex-row flex-col items-center justify-center">
@@ -68,10 +72,9 @@ const Sponsors = () => {
             link={sponsors.laitchoco.link}
           />
           <GoldSponsor imgSrc={sponsors.nbc.imgUrl} link={sponsors.nbc.link} />
-          
           <GoldSponsor
-            imgSrc={sponsors.liftoff.imgUrl}
-            link={sponsors.liftoff.link}
+            imgSrc={sponsors.nexos.imgUrl}
+            link={sponsors.nexos.link}
           />
           <GoldSponsor
             imgSrc={sponsors.wolfram.imgUrl}
@@ -93,8 +96,8 @@ const Sponsors = () => {
             link={sponsors.nordvpn.link}
           />
           <GoldSponsor
-            imgSrc={sponsors.nexos.imgUrl}
-            link={sponsors.nexos.link}
+            imgSrc={sponsors.nordpass.imgUrl}
+            link={sponsors.nordpass.link}
           />
 
         </div>
