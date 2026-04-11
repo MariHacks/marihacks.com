@@ -126,7 +126,7 @@ export const sponsors: { [key: string]: SponsorInfo } = {
 
   nordvpn: {
     imgUrl: imageManager("nordvpn").sponsorImg,
-    link: "https://www.nordvpn.com/",
+    link: "https://nordvpn.com/hackathons/",
   },
 
   nexos: {
