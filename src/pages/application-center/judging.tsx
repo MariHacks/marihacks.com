@@ -14,7 +14,8 @@ const Judging = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Judging</p>
           <p className="">
-            Judging registration opens February 16th 2026 and closes March 29th 2026 at 11:59pm! Based on the judging criteria for
+            {/* TODO(2027): replace with real dates, e.g. "Judging registration opens <OPEN DATE> and closes <CLOSE DATE> at 11:59pm!" */}
+            Judging registration dates for 2027 will be announced soon — stay tuned! Based on the judging criteria for
             the submissions, judges would bring their expert insights in order
             to select the winners. Thus, if you are a professional in the field
             of programming or have a professional background of working with
@@ -33,9 +34,11 @@ const Judging = () => {
             })}
           </ul>
 
+          {/* TODO(2027): add the new judge form link, then re-enable by removing
+              acp-btn-disabled-styles acp-btn-disabled-position from className. */}
           <a
-            className="acp-apply-btn"
-            href="https://forms.gle/LHQiJF64LUk9kcpw6"
+            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
+            href="#"
           >
             Apply to be a judge
           </a>

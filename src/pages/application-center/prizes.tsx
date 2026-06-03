@@ -19,21 +19,22 @@ const Prizes = () => {
       <div className="acp-card-bg">
         <div className="acp-text">
           <p className="font-bold acp-title">Prizes</p>
+          {/* TODO(2027): fill in the prize pool total + new Devpost link once decided. */}
           <p className="">
-            MariHacks offers lots of great prizes to add to the fun!
-            The prizes for MariHacks VIII are to be determinated!
-          </p>  
+            MariHacks offers lots of great prizes to add to the fun! The prizes
+            for MariHacks X are to be determined — stay tuned for our prize
+            reveal this year!
+          </p>
           <p className="">
-            MariHacks offers lots of great prizes to add to the fun! During
-            MariHacks VIII, 19,000 $ CAD worth of prizes were offered to our
-            participants (check out{" "}
+            Past editions have offered thousands of dollars worth of prizes to
+            our participants. Check out{" "}
             <a
               className="text-blue-500 hover:text-blue-700"
               href="https://marihacks-8-0.devpost.com/?ref_feature=challenge&ref_medium=discover"
             >
-              Devpost
+              a past edition on Devpost
             </a>{" "}
-            for more details). Stay tuned for our prize reveal this year!
+            for a taste of what's in store.
           </p>
           <br className="my-2" />
     {/*

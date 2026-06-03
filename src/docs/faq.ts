@@ -58,15 +58,16 @@ export const faqColTwo: faqCol = [
 
     question: "Where will MariHacks be held?",
     answer:
-      "The 9th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
+      "The 10th edition of MariHacks will be in person at Marianopolis College so you can get the best hacking experience!",
   },
   {
     index: 8,
 
     question: "When can I apply?",
     answer:
-      "Sign up at our application center starting February 16th 2026 and before 11:59 PM on March 29th 2026 to make sure you don't miss out!",
-      // "Applications for participants, volunteers, mentors, judges, and guest speakers hasn't opened yet.",
+      // TODO(2027): restore with real dates, e.g.
+      // "Sign up at our application center starting <OPEN DATE> and before 11:59 PM on <CLOSE DATE> to make sure you don't miss out!",
+      "Applications for participants, volunteers, mentors, judges, and guest speakers haven't opened yet. Stay tuned — dates will be announced soon!",
   },
   {
     index: 13,
@@ -82,9 +83,9 @@ export const faqColTwo: faqCol = [
 
     question: "I'm interested in judging!",
     answer:
-      "If you have professional experience related to MariHacks, we'd love to invite you." 
-    + " Judging registration is open as of February 16th 2026, and the form can be found in our application center!",
-    // "Judging registration is currently closed.",
+      "If you have professional experience related to MariHacks, we'd love to invite you."
+    + " Judging registration hasn't opened yet — the form will be available in our application center soon!",
+    // TODO(2027): when open, restore "Judging registration is open as of <DATE>, and the form can be found in our application center!"
   },
 ];
 export const faqColThree: faqCol = [
@@ -93,8 +94,8 @@ export const faqColThree: faqCol = [
 
     question: "I'm interested in presenting a workshop!",
     answer:
-      "The panelist registration form is open as of February 16th and can be found in the application center.",
-  // "Panelist registration is currently closed. If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants!",
+      "Panelist registration hasn't opened yet. If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants — check back soon!",
+  // TODO(2027): when open, restore "The panelist registration form is open as of <DATE> and can be found in the application center."
   },
   {
     index: 11,

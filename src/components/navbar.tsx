@@ -64,15 +64,16 @@ const Navbar = () => {
           </Link>
           <div className="w-[10%]"></div>
         </div>
+        {/* TODO(2027): confirm MLH 2027 season badge asset is live (MLH publishes per-season badges). */}
         <a
-          id="mlh-trust-badge" 
-          href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white" 
+          id="mlh-trust-badge"
+          href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2027-season&utm_content=white"
           target="_blank"
           className="w-[20%] md:w-[7%] fixed right-0 top-0 z-[1000] mr-[15%] md:mr-[2%]"
         >
           <img
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg" 
-            alt="Major League Hacking 2026 Hackathon Season" 
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2027/mlh-trust-badge-2027-white.svg"
+            alt="Major League Hacking 2027 Hackathon Season"
             style={{ width: "100%" }}
           />
         </a>

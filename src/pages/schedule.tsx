@@ -12,9 +12,10 @@ function SchedulePage() {
           Here's how MariHacks will go!
         </div> */}
         <hr className="w-1/3 border border-black my-8" />
+        {/* TODO(2027): fill in the check-in / closing-ceremony dates once confirmed. */}
         <p className="w-full md:w-1/2">
-          MariHacks 9.0 participants are welcome to check-in at the College
-          on Friday, April 17. We expect the closing ceremony to be on Saturday, April 18. The full schedule will be public soon!
+          MariHacks 10.0 is coming in 2027! The exact dates and full schedule
+          will be announced soon — stay tuned!
         </p>
         {/* <div className="">
           <a

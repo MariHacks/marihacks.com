@@ -50,15 +50,16 @@ const Sponsorship = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
           <div className="flex flex-col md:flex-row md:items-center mt-8">
-            {/*
-              to disable: acp-btn-disabled-styles acp-btn-disabled-position"
-            */}
+            {/* TODO(2027): swap in the new sponsor form link for MariHacks X.
+                To disable instead, add: acp-btn-disabled-styles acp-btn-disabled-position */}
             <a
               className="acp-apply-btn"
               href="https://forms.gle/CHSh4ZZtyQkwCNfz8"
             >
               Sponsor MariHacks
             </a>
+            {/* TODO(2027): replace the 2026 prospectus PDF in public/pdfs (+ public/packages)
+                with the 2027 edition, then update the filename below to ..._2027. */}
             <a
               className="acp-apply-btn md:ml-5"
               href={imageManager("EN_MariHacks_Sponsorship_Prospectus_2026").pdf}

@@ -18,7 +18,8 @@ const Workshop = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Workshops</p>
           <p className="">
-            Panelist registration is now open! Workshops, technical or
+            {/* TODO(2027): when the form is live, change back to "Panelist registration is now open!" */}
+            Panelist registration isn't open yet — stay tuned! Workshops, technical or
             non-technical, are essential to MariHacks. They're the perfect way
             for hackers to get started on a new technology or learn more about a
             topic in depth!
@@ -45,9 +46,11 @@ const Workshop = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
 
+          {/* TODO(2027): add the new panelist form link, then re-enable by removing
+              acp-btn-disabled-styles acp-btn-disabled-position from className. */}
           <a
-            className="acp-apply-btn"
-            href="https://forms.gle/Tf53cHkQXnqjrrPbA"
+            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
+            href="#"
           >
             Present a workshop
           </a>

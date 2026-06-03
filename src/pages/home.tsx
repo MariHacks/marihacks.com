@@ -60,7 +60,8 @@ const Landing = () => {
           <Link to="/application-center" className="subtitle-as-button font-bold">Register Now!</Link>
           <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[16px] md:text-[20px]">
-            April 17-18<sup>th</sup>, 2026
+            {/* TODO(2027): replace with confirmed dates once set */}
+            Dates TBD<sup></sup>, 2027
           </p>
           <p className="text-gray-400 text-[12px] md:text-[16px]">
             Marianopolis College | In-person Hackathon
@@ -111,7 +112,8 @@ const Home = () => {
           <About />
         </section>
         <section id="photos" className="">
-          <p className="section-title">From MariHacks' 8th year!</p>
+          {/* TODO(2027): swap public/carousel/*.webp for photos from the 9th edition (April 2026) */}
+          <p className="section-title">From MariHacks' 9th year!</p>
           <p className="section-subtitle">We made a lot of memories.</p>
           <Carousel />
         </section>

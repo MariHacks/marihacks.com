@@ -58,32 +58,27 @@ const Registration = () => {
             reach out to our team through team@marihacks.com.
           </p>
           */}
-          <p className="font-bold">Welcome to MariHacks IX!</p>
+          <p className="font-bold">Welcome to MariHacks X!</p>
           <p className="my-4">
             We're thrilled to invite all Cegep and high school students to join
-            us for a memorable hackathon experience on{" "}
-            <span className="font-bold">April 17-18<sup>th</sup>, 2026</span>. MariHacks is an
+            us for a memorable hackathon experience in{" "}
+            <span className="font-bold">2027 (dates TBD)</span>. MariHacks is an
             opportunity for young minds to come together, push boundaries, and
             turn their creative ideas into reality!
-          </p> 
+          </p>
           <div className="flex flex-col items-center mt-8">
-
-            {/* <p> Registration begins February 16th 2026! Get ready!</p> */}
-            
-            <p> Time left for registration:</p>
-            {/* <p>
-              {days} days {hours} hrs {minutes} min {seconds} sec
-            </p> */}
-            <p>
-              The deadline for registration has already passed, but don't worry! You can still fill out the late registration form to have a chance to participate in MariHacks!
+            {/* TODO(2027): once dates are set, restore the "Registration begins <DATE>!" line and the countdown above */}
+            <p>Registration isn't open yet — stay tuned!</p>
+            <p className="mt-2">
+              Follow us on Instagram (@marihacks) and check back here for the
+              registration form and exact dates.
             </p>
-           
           </div>
+          {/* TODO(2027): drop in the new registration form link, then re-enable the button by
+              removing "acp-btn-disabled-styles acp-btn-disabled-position" from className. */}
           <a
-            // to disable style: 
-            // to diseable clicking: className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            className="acp-apply-btn"
-            href="https://forms.gle/MPijqAoJisb9r2FT6"
+            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
+            href="#"
           >
             Registration form
           </a>
