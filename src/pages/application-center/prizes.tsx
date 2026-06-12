@@ -22,7 +22,7 @@ const Prizes = () => {
           {/* TODO(2027): fill in the prize pool total + new Devpost link once decided. */}
           <p className="">
             MariHacks offers lots of great prizes to add to the fun! The prizes
-            for MariHacks X are to be determined — stay tuned for our prize
+            for MariHacks X are to be determined, stay tuned for our prize
             reveal this year!
           </p>
           <p className="">

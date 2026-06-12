@@ -15,7 +15,7 @@ const Judging = () => {
           <p className="font-bold acp-title">Judging</p>
           <p className="">
             {/* TODO(2027): replace with real dates, e.g. "Judging registration opens <OPEN DATE> and closes <CLOSE DATE> at 11:59pm!" */}
-            Judging registration dates for 2027 will be announced soon — stay tuned! Based on the judging criteria for
+            Judging registration dates for 2027 will be announced soon, stay tuned! Based on the judging criteria for
             the submissions, judges would bring their expert insights in order
             to select the winners. Thus, if you are a professional in the field
             of programming or have a professional background of working with

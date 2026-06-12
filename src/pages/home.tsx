@@ -57,11 +57,11 @@ const Landing = () => {
         </p>
 
         <div className="flex flex-col items-center lg:items-start md:ml-2 md:mt-8 lg:mt-16 mt-4 z-10">
-          <Link to="/application-center" className="subtitle-as-button font-bold">Register Now!</Link>
+          <Link to="/application-center" className="subtitle-as-button font-bold">Express Interest</Link>
           <hr className="my-4 lg:my-6 w-full" />
           <p className="text-white text-[16px] md:text-[20px]">
             {/* TODO(2027): replace with confirmed dates once set */}
-            Dates TBD<sup></sup>, 2027
+            April, 2027
           </p>
           <p className="text-gray-400 text-[12px] md:text-[16px]">
             Marianopolis College | In-person Hackathon

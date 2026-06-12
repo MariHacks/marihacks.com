@@ -21,7 +21,7 @@ const Mentorship = () => {
           <p className="font-bold acp-title">Mentorship</p>
           <p className="">
             {/* TODO(2027): replace with real dates, e.g. "Mentor registration opens <OPEN DATE> and closes <CLOSE DATE> at 11:59pm!" */}
-            Mentor registration dates for 2027 will be announced soon — stay tuned! MariHacks is open to programmers of
+            Mentor registration dates for 2027 will be announced soon, stay tuned! MariHacks is open to programmers of
             any level, and we encourage participants to try out new programming
             fields and techniques! That being said, our hackathon strives to
             inspire learning, innovation and collaboration, which would not be

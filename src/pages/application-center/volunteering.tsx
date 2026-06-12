@@ -17,7 +17,7 @@ const Volunteering = () => {
           <p className="font-bold acp-title">Volunteering</p>
           <p className="">
             {/* TODO(2027): when the form is live, change back to "Volunteer registration is now open!" */}
-            Volunteer registration isn't open yet — stay tuned! MariHacks is run by a small team
+            Volunteer registration isn't open yet, stay tuned! MariHacks is run by a small team
             of Marianopolis students, and the event would not be as fun or even
             possible without our amazing volunteers! If you are a CEGEP student
             interested in helping out and you are available during some parts or

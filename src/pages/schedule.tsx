@@ -15,7 +15,7 @@ function SchedulePage() {
         {/* TODO(2027): fill in the check-in / closing-ceremony dates once confirmed. */}
         <p className="w-full md:w-1/2">
           MariHacks 10.0 is coming in 2027! The exact dates and full schedule
-          will be announced soon — stay tuned!
+          will be announced soon, stay tuned!
         </p>
         {/* <div className="">
           <a

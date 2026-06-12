@@ -62,25 +62,24 @@ const Registration = () => {
           <p className="my-4">
             We're thrilled to invite all Cegep and high school students to join
             us for a memorable hackathon experience in{" "}
-            <span className="font-bold">2027 (dates TBD)</span>. MariHacks is an
+            <span className="font-bold">April 2027</span>. MariHacks is an
             opportunity for young minds to come together, push boundaries, and
             turn their creative ideas into reality!
           </p>
           <div className="flex flex-col items-center mt-8">
-            {/* TODO(2027): once dates are set, restore the "Registration begins <DATE>!" line and the countdown above */}
-            <p>Registration isn't open yet — stay tuned!</p>
+            <p>Registration isn't open yet, fill out our interest form to stay in the loop!</p>
             <p className="mt-2">
               Follow us on Instagram (@marihacks) and check back here for the
               registration form and exact dates.
             </p>
           </div>
-          {/* TODO(2027): drop in the new registration form link, then re-enable the button by
-              removing "acp-btn-disabled-styles acp-btn-disabled-position" from className. */}
           <a
-            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            href="#"
+            className="acp-apply-btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScEXJ_yEwTbnjSySLKgvh8WuvF2zLrIETdmyZpkp0a2-PbzsA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Registration form
+            Interest Form
           </a>
         </div>
 

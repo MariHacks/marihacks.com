@@ -18,7 +18,7 @@ export const faqColOne: faqCol = [
 
     question: "How much does it cost?",
     answer:
-      "Nothing! That's right, we provide all food, drinks and even prizes for free—the entire event will be held in-person at Marianopolis, and all you need to participate is a computer.",
+      "Nothing! That's right, we provide all food, drinks and even prizes for free, the entire event will be held in-person at Marianopolis, and all you need to participate is a computer.",
   },
   {
     index: 3,
@@ -67,7 +67,7 @@ export const faqColTwo: faqCol = [
     answer:
       // TODO(2027): restore with real dates, e.g.
       // "Sign up at our application center starting <OPEN DATE> and before 11:59 PM on <CLOSE DATE> to make sure you don't miss out!",
-      "Applications for participants, volunteers, mentors, judges, and guest speakers haven't opened yet. Stay tuned — dates will be announced soon!",
+      "Applications for participants, volunteers, mentors, judges, and guest speakers haven't opened yet. Stay tuned, dates will be announced soon!",
   },
   {
     index: 13,
@@ -84,7 +84,7 @@ export const faqColTwo: faqCol = [
     question: "I'm interested in judging!",
     answer:
       "If you have professional experience related to MariHacks, we'd love to invite you."
-    + " Judging registration hasn't opened yet — the form will be available in our application center soon!",
+    + " Judging registration hasn't opened yet, the form will be available in our application center soon!",
     // TODO(2027): when open, restore "Judging registration is open as of <DATE>, and the form can be found in our application center!"
   },
 ];
@@ -94,7 +94,7 @@ export const faqColThree: faqCol = [
 
     question: "I'm interested in presenting a workshop!",
     answer:
-      "Panelist registration hasn't opened yet. If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants — check back soon!",
+      "Panelist registration hasn't opened yet. If you have extensive experience in programming, business, or any other topic related to MariHacks, we would love to invite you to share your insights with our participants, check back soon!",
   // TODO(2027): when open, restore "The panelist registration form is open as of <DATE> and can be found in the application center."
   },
   {
@@ -112,7 +112,7 @@ export const faqColThree: faqCol = [
     question: "Who can volunteer?",
     answer:
       "CEGEP students and up are welcome to volunteer at MariHacks!" +
-      " This is a big event, so we'd be very grateful for your help if you're available during some parts or all of MariHacks—food and drinks will be provided for free." +
+      " This is a big event, so we'd be very grateful for your help if you're available during some parts or all of MariHacks, food and drinks will be provided for free." +
       " Sign up to be a volunteer through our application center!",
     // Volunteer registration is currently closed.",
   },
