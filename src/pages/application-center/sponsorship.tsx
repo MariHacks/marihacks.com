@@ -58,11 +58,9 @@ const Sponsorship = () => {
             >
               Sponsor MariHacks
             </a>
-            {/* TODO(2027): replace the 2026 prospectus PDF in public/pdfs (+ public/packages)
-                with the 2027 edition, then update the filename below to ..._2027. */}
             <a
               className="acp-apply-btn md:ml-5"
-              href={imageManager("EN_MariHacks_Sponsorship_Prospectus_2026").pdf}
+              href={imageManager("EN_MariHacks_Sponsorship_Prospectus_2027").pdf}
             >
               See prospectus
             </a>
