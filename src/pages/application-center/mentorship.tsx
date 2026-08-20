@@ -20,8 +20,7 @@ const Mentorship = () => {
         <div className="acp-text">
           <p className="font-bold acp-title">Mentorship</p>
           <p className="">
-            {/* TODO(2027): replace with real dates, e.g. "Mentor registration opens <OPEN DATE> and closes <CLOSE DATE> at 11:59pm!" */}
-            Mentor registration dates for 2027 will be announced soon, stay tuned! MariHacks is open to programmers of
+            Mentor registration is now open! MariHacks is open to programmers of
             any level, and we encourage participants to try out new programming
             fields and techniques! That being said, our hackathon strives to
             inspire learning, innovation and collaboration, which would not be
@@ -48,11 +47,11 @@ const Mentorship = () => {
             <p className="ml-2">team@marihacks.com</p>
           </a>
 
-            {/* TODO(2027): add the new mentor form link, then re-enable by removing
-                acp-btn-disabled-styles acp-btn-disabled-position from className. */}
           <a
-            className="acp-apply-btn acp-btn-disabled-styles acp-btn-disabled-position"
-            href="#"
+            className="acp-apply-btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd3K3J_rGVRjUGCKk1cd8gp8ILQ7ctepddj8Pq4tSZMTxd-oA/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Apply to be a mentor
           </a>
